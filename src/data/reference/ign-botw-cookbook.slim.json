@@ -1,0 +1,1398 @@
+{
+  "meta": {
+    "recipeCount": 118,
+    "mealTypeCounts": {
+      "Vegetarian Entrees": 26,
+      "Seafood Entrees": 23,
+      "Poultry and Meat Entrees": 31,
+      "Surf and Turf Entrees": 4,
+      "Desserts": 16,
+      "Monster Foods": 5,
+      "Sides and Snacks": 13
+    },
+    "sourceUrl": "https://www.ign.com/wikis/the-legend-of-zelda-breath-of-the-wild/All_Recipes_and_Cookbook",
+    "imageDirectory": "public/images/recipes"
+  },
+  "recipes": [
+    {
+      "slug": "creamy-heart-soup",
+      "name": "Creamy Heart Soup",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any radish",
+        "Hydromelon",
+        "Voltfruit",
+        "Fresh Milk"
+      ],
+      "image": "/images/recipes/creamy-heart-soup.jpg"
+    },
+    {
+      "slug": "pumpkin-stew",
+      "name": "Pumpkin Stew",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Fortified Pumpkin",
+        "Goat Butter",
+        "Fresh Milk",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/pumpkin-stew.jpg"
+    },
+    {
+      "slug": "veggie-cream-soup",
+      "name": "Veggie Cream Soup",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any carrot or pumpkin",
+        "Fresh Milk",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/veggie-cream-soup.jpg"
+    },
+    {
+      "slug": "cream-of-mushroom-soup",
+      "name": "Cream of Mushroom Soup",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any mushroom",
+        "Any other vegetable, herb, or flower",
+        "Fresh Milk",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/cream-of-mushroom-soup.jpg"
+    },
+    {
+      "slug": "cream-of-vegetable-soup",
+      "name": "Cream of Vegetable Soup",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any herb, vegetable, or flower",
+        "Fresh Milk",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/cream-of-vegetable-soup.jpg"
+    },
+    {
+      "slug": "carrot-stew",
+      "name": "Carrot Stew",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any carrot",
+        "Goat Butter",
+        "Fresh Milk",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/carrot-stew.jpg"
+    },
+    {
+      "slug": "vegetable-risotto",
+      "name": "Vegetable Risotto",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any carrot or pumpkin",
+        "Goat Butter",
+        "Hylian Rice",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/vegetable-risotto.jpg"
+    },
+    {
+      "slug": "mushroom-risotto",
+      "name": "Mushroom Risotto",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any mushroom",
+        "Hylian Rice",
+        "Goat Butter",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/mushroom-risotto.jpg"
+    },
+    {
+      "slug": "curry-pilaf",
+      "name": "Curry Pilaf",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Goat Butter",
+        "Goron Spice",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/curry-pilaf.jpg"
+    },
+    {
+      "slug": "mushroom-rice-balls",
+      "name": "Mushroom Rice Balls",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Hylian Rice",
+        "Any mushroom"
+      ],
+      "image": "/images/recipes/mushroom-rice-balls.jpg"
+    },
+    {
+      "slug": "veggie-rice-balls",
+      "name": "Veggie Rice Balls",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Hylian Rice",
+        "Any vegetable, herb, or flower"
+      ],
+      "image": "/images/recipes/veggie-rice-balls.jpg"
+    },
+    {
+      "slug": "curry-rice",
+      "name": "Curry Rice",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Goron Spice",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/curry-rice.jpg"
+    },
+    {
+      "slug": "fried-egg-and-rice",
+      "name": "Fried Egg and Rice",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Bird Egg",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/fried-egg-and-rice.jpg"
+    },
+    {
+      "slug": "mushroom-omelet",
+      "name": "Mushroom Omelet",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any mushroom",
+        "Bird Egg",
+        "Goat Butter",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/mushroom-omelet.jpg"
+    },
+    {
+      "slug": "vegetable-omelet",
+      "name": "Vegetable Omelet",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any vegetable, herb, or flower",
+        "Bird Egg",
+        "Goat Butter",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/vegetable-omelet.jpg"
+    },
+    {
+      "slug": "vegetable-curry",
+      "name": "Vegetable Curry",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any carrot or pumpkin",
+        "Goron Spice",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/vegetable-curry.jpg"
+    },
+    {
+      "slug": "fragrant-mushroom-saute",
+      "name": "Fragrant Mushroom Sauté",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any mushroom",
+        "Goron Spice"
+      ],
+      "image": "/images/recipes/fragrant-mushroom-saute.jpg"
+    },
+    {
+      "slug": "herb-saute",
+      "name": "Herb Sauté",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any vegetable, herb, or flower",
+        "Goron Spice"
+      ],
+      "image": "/images/recipes/herb-saute.jpg"
+    },
+    {
+      "slug": "salt-grilled-greens",
+      "name": "Salt-Grilled Greens",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any vegetable, herb, or flower",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/salt-grilled-greens.jpg"
+    },
+    {
+      "slug": "salt-grilled-mushrooms",
+      "name": "Salt-Grilled Mushrooms",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any mushroom",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/salt-grilled-mushrooms.jpg"
+    },
+    {
+      "slug": "steamed-mushrooms",
+      "name": "Steamed Mushrooms",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any vegetable, herb, or flower",
+        "Any mushroom"
+      ],
+      "image": "/images/recipes/steamed-mushrooms.jpg"
+    },
+    {
+      "slug": "mushroom-skewer",
+      "name": "Mushroom Skewer",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any mushroom"
+      ],
+      "image": "/images/recipes/mushroom-skewer.jpg"
+    },
+    {
+      "slug": "copious-mushroom-skewers",
+      "name": "Copious Mushroom Skewers",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any four different mushrooms"
+      ],
+      "image": "/images/recipes/copious-mushroom-skewers.jpg"
+    },
+    {
+      "slug": "fried-wild-greens",
+      "name": "Fried Wild Greens",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any vegetable, flower, or herb combination"
+      ],
+      "image": "/images/recipes/fried-wild-greens.jpg"
+    },
+    {
+      "slug": "copious-fried-wild-greens",
+      "name": "Copious Fried Wild Greens",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Any four different herbs, vegetables, or flowers"
+      ],
+      "image": "/images/recipes/copious-fried-wild-greens.jpg"
+    },
+    {
+      "slug": "omelet",
+      "name": "Omelet",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "ingredients": [
+        "Bird Egg"
+      ],
+      "image": "/images/recipes/omelet.jpg"
+    },
+    {
+      "slug": "clam-chowder",
+      "name": "Clam Chowder",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Hearty Blueshell Snail",
+        "Goat Butter",
+        "Fresh Milk",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/clam-chowder.jpg"
+    },
+    {
+      "slug": "creamy-seafood-soup",
+      "name": "Creamy Seafood Soup",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any seafood",
+        "Any herb, vegetable, or flower",
+        "Rock Salt",
+        "Fresh Milk"
+      ],
+      "image": "/images/recipes/creamy-seafood-soup.jpg"
+    },
+    {
+      "slug": "seafood-curry",
+      "name": "Seafood Curry",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Hearty Blueshell Snail or any Porgy",
+        "Hylian Rice",
+        "Goron Spice"
+      ],
+      "image": "/images/recipes/seafood-curry.jpg"
+    },
+    {
+      "slug": "salmon-risotto",
+      "name": "Salmon Risotto",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Hearty Salmon",
+        "Rock Salt",
+        "Hylian Rice",
+        "Goat Butter"
+      ],
+      "image": "/images/recipes/salmon-risotto.jpg"
+    },
+    {
+      "slug": "crab-risotto",
+      "name": "Crab Risotto",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any crab",
+        "Rock Salt",
+        "Hylian Rice",
+        "Goat Butter"
+      ],
+      "image": "/images/recipes/crab-risotto.jpg"
+    },
+    {
+      "slug": "seafood-fried-rice",
+      "name": "Seafood Fried Rice",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Hearty Blueshell Snail or any Porgy",
+        "Rock Salt",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/seafood-fried-rice.jpg"
+    },
+    {
+      "slug": "seafood-paella",
+      "name": "Seafood Paella",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any Porgy",
+        "Hearty Blueshell Snail",
+        "Rock Salt",
+        "Goat Butter",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/seafood-paella.jpg"
+    },
+    {
+      "slug": "crab-omelet-with-rice",
+      "name": "Crab Omelet with Rice",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any crab",
+        "Bird Egg",
+        "Rock Salt",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/crab-omelet-with-rice.jpg"
+    },
+    {
+      "slug": "seafood-rice-balls",
+      "name": "Seafood Rice Balls",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any fish",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/seafood-rice-balls.jpg"
+    },
+    {
+      "slug": "fish-pie",
+      "name": "Fish Pie",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any seafood",
+        "Rock Salt",
+        "Goat Butter",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/fish-pie.jpg"
+    },
+    {
+      "slug": "salmon-meuniere",
+      "name": "Salmon Meuniere",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Hearty Salmon",
+        "Goat Butter",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/salmon-meuniere.jpg"
+    },
+    {
+      "slug": "porgy-meuniere",
+      "name": "Porgy Meuniere",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any Porgy",
+        "Goat Butter",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/porgy-meuniere.jpg"
+    },
+    {
+      "slug": "seafood-meuniere",
+      "name": "Seafood Meuniere",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any seafood excluding Hearty Salmon or Porgy",
+        "Goat Butter",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/seafood-meuniere.jpg"
+    },
+    {
+      "slug": "glazed-seafood",
+      "name": "Glazed Seafood",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Courser Bee Honey",
+        "Any seafood"
+      ],
+      "image": "/images/recipes/glazed-seafood.jpg"
+    },
+    {
+      "slug": "crab-stir-fry",
+      "name": "Crab Stir-Fry",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any crab",
+        "Goron Spice"
+      ],
+      "image": "/images/recipes/crab-stir-fry.jpg"
+    },
+    {
+      "slug": "salt-grilled-crab",
+      "name": "Salt-Grilled Crab",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any crab",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/salt-grilled-crab.jpg"
+    },
+    {
+      "slug": "salt-grilled-fish",
+      "name": "Salt-Grilled Fish",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any fish",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/salt-grilled-fish.jpg"
+    },
+    {
+      "slug": "copious-fish-skewers",
+      "name": "Copious Fish Skewers",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any four different fish"
+      ],
+      "image": "/images/recipes/copious-fish-skewers.jpg"
+    },
+    {
+      "slug": "spicy-peppered-seafood",
+      "name": "Spicy Peppered Seafood",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any seafood",
+        "Spicy Pepper"
+      ],
+      "image": "/images/recipes/spicy-peppered-seafood.jpg"
+    },
+    {
+      "slug": "steamed-fish",
+      "name": "Steamed Fish",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any herb, vegetable, or flower",
+        "Any fish"
+      ],
+      "image": "/images/recipes/steamed-fish.jpg"
+    },
+    {
+      "slug": "fish-and-mushroom-skewer",
+      "name": "Fish and Mushroom Skewer",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any fish",
+        "Any mushroom"
+      ],
+      "image": "/images/recipes/fish-and-mushroom-skewer.jpg"
+    },
+    {
+      "slug": "seafood-skewer",
+      "name": "Seafood Skewer",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any snail or crab"
+      ],
+      "image": "/images/recipes/seafood-skewer.jpg"
+    },
+    {
+      "slug": "fish-skewer",
+      "name": "Fish Skewer",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "ingredients": [
+        "Any fish"
+      ],
+      "image": "/images/recipes/fish-skewer.jpg"
+    },
+    {
+      "slug": "gourmet-meat-stew",
+      "name": "Gourmet Meat Stew",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Gourmet Meat or Raw Whole Bird",
+        "Fresh Milk",
+        "Goat Butter",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/gourmet-meat-stew.jpg"
+    },
+    {
+      "slug": "prime-meat-stew",
+      "name": "Prime Meat Stew",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Prime Meat or Raw Bird Thigh",
+        "Fresh Milk",
+        "Goat Butter",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/prime-meat-stew.jpg"
+    },
+    {
+      "slug": "meat-stew",
+      "name": "Meat Stew",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Meat or Raw Bird Drumstick",
+        "Fresh Milk",
+        "Goat Butter",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/meat-stew.jpg"
+    },
+    {
+      "slug": "creamy-meat-soup",
+      "name": "Creamy Meat Soup",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Any meat",
+        "Any herb, flower, or vegetable",
+        "Fresh Milk",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/creamy-meat-soup.jpg"
+    },
+    {
+      "slug": "meat-curry",
+      "name": "Meat Curry",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Meat",
+        "Goron Spice",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/meat-curry.jpg"
+    },
+    {
+      "slug": "prime-meat-curry",
+      "name": "Prime Meat Curry",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Prime Meat",
+        "Goron Spice",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/prime-meat-curry.jpg"
+    },
+    {
+      "slug": "gourmet-meat-curry",
+      "name": "Gourmet Meat Curry",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Gourmet Meat",
+        "Goron Spice",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/gourmet-meat-curry.jpg"
+    },
+    {
+      "slug": "poultry-curry",
+      "name": "Poultry Curry",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Bird Drumstick",
+        "Goron Spice",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/poultry-curry.jpg"
+    },
+    {
+      "slug": "prime-poultry-curry",
+      "name": "Prime Poultry Curry",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Bird Thigh",
+        "Goron Spice",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/prime-poultry-curry.jpg"
+    },
+    {
+      "slug": "gourmet-poultry-curry",
+      "name": "Gourmet Poultry Curry",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Whole Bird",
+        "Goron Spice",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/gourmet-poultry-curry.jpg"
+    },
+    {
+      "slug": "meaty-rice-balls",
+      "name": "Meaty Rice Balls",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Any meat",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/meaty-rice-balls.jpg"
+    },
+    {
+      "slug": "meat-stuffed-pumpkins",
+      "name": "Meat-Stuffed Pumpkins",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Any meat",
+        "Fortified Pumpkin"
+      ],
+      "image": "/images/recipes/meat-stuffed-pumpkins.jpg"
+    },
+    {
+      "slug": "meat-pie",
+      "name": "Meat Pie",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Any meat",
+        "Goat Butter",
+        "Rock Salt",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/meat-pie.jpg"
+    },
+    {
+      "slug": "poultry-pilaf",
+      "name": "Poultry Pilaf",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Bird Drumstick",
+        "Bird Egg",
+        "Goat Butter",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/poultry-pilaf.jpg"
+    },
+    {
+      "slug": "prime-poultry-pilaf",
+      "name": "Prime Poultry Pilaf",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Bird Thigh",
+        "Bird Egg",
+        "Goat Butter",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/prime-poultry-pilaf.jpg"
+    },
+    {
+      "slug": "gourmet-poultry-pilaf",
+      "name": "Gourmet Poultry Pilaf",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Whole Bird",
+        "Bird Egg",
+        "Goat Butter",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/gourmet-poultry-pilaf.jpg"
+    },
+    {
+      "slug": "meat-and-rice-bowl",
+      "name": "Meat and Rice Bowl",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Meat or Raw Bird Drumstick",
+        "Rock Salt",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/meat-and-rice-bowl.jpg"
+    },
+    {
+      "slug": "prime-meat-and-rice-bowl",
+      "name": "Prime Meat and Rice Bowl",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Prime Meat or Raw Bird Thigh",
+        "Rock Salt",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/prime-meat-and-rice-bowl.jpg"
+    },
+    {
+      "slug": "gourmet-meat-and-rice-bowl",
+      "name": "Gourmet Meat and Rice Bowl",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Gourmet Meat or Raw Whole Bird",
+        "Rock Salt",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/gourmet-meat-and-rice-bowl.jpg"
+    },
+    {
+      "slug": "glazed-meat",
+      "name": "Glazed Meat",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Any meat",
+        "Courser Bee Honey"
+      ],
+      "image": "/images/recipes/glazed-meat.jpg"
+    },
+    {
+      "slug": "spiced-meat-skewer",
+      "name": "Spiced Meat Skewer",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Meat",
+        "Goron Spice"
+      ],
+      "image": "/images/recipes/spiced-meat-skewer.jpg"
+    },
+    {
+      "slug": "prime-spiced-meat-skewer",
+      "name": "Prime Spiced Meat Skewer",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Prime Meat",
+        "Goron Spice"
+      ],
+      "image": "/images/recipes/prime-spiced-meat-skewer.jpg"
+    },
+    {
+      "slug": "gourmet-spiced-meat-skewer",
+      "name": "Gourmet Spiced Meat Skewer",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Gourmet Meat",
+        "Goron Spice"
+      ],
+      "image": "/images/recipes/gourmet-spiced-meat-skewer.jpg"
+    },
+    {
+      "slug": "salt-grilled-meat",
+      "name": "Salt-Grilled Meat",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Meat or Raw Bird Drumstick",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/salt-grilled-meat.jpg"
+    },
+    {
+      "slug": "salt-grilled-prime-meat",
+      "name": "Salt-Grilled Prime Meat",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Prime Meat or Raw Bird Thigh",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/salt-grilled-prime-meat.jpg"
+    },
+    {
+      "slug": "salt-grilled-gourmet-meat",
+      "name": "Salt-Grilled Gourmet Meat",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Raw Gourmet Meat or Raw Whole Bird",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/salt-grilled-gourmet-meat.jpg"
+    },
+    {
+      "slug": "copious-meat-skewers",
+      "name": "Copious Meat Skewers",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Any four different meats"
+      ],
+      "image": "/images/recipes/copious-meat-skewers.jpg"
+    },
+    {
+      "slug": "pepper-steak",
+      "name": "Pepper Steak",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Any meat",
+        "Spicy Pepper"
+      ],
+      "image": "/images/recipes/pepper-steak.jpg"
+    },
+    {
+      "slug": "steamed-meat",
+      "name": "Steamed Meat",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Any meat",
+        "Any vegetable, herb, or flower"
+      ],
+      "image": "/images/recipes/steamed-meat.jpg"
+    },
+    {
+      "slug": "meat-and-mushroom-skewer",
+      "name": "Meat and Mushroom Skewer",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Any meat",
+        "Any mushroom"
+      ],
+      "image": "/images/recipes/meat-and-mushroom-skewer.jpg"
+    },
+    {
+      "slug": "meat-skewer",
+      "name": "Meat Skewer",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "ingredients": [
+        "Any meat"
+      ],
+      "image": "/images/recipes/meat-skewer.jpg"
+    },
+    {
+      "slug": "meat-and-seafood-fry",
+      "name": "Meat and Seafood Fry",
+      "recipeType": "Surf and Turf Entrees",
+      "recipeTypeId": "surf_and_turf",
+      "ingredients": [
+        "Raw Meat or Raw Bird Drumstick",
+        "Any seafood"
+      ],
+      "image": "/images/recipes/meat-and-seafood-fry.jpg"
+    },
+    {
+      "slug": "prime-meat-and-seafood-fry",
+      "name": "Prime Meat and Seafood Fry",
+      "recipeType": "Surf and Turf Entrees",
+      "recipeTypeId": "surf_and_turf",
+      "ingredients": [
+        "Raw Bird Thigh or Raw Prime Meat",
+        "Any seafood"
+      ],
+      "image": "/images/recipes/prime-meat-and-seafood-fry.jpg"
+    },
+    {
+      "slug": "gourmet-meat-and-seafood-fry",
+      "name": "Gourmet Meat and Seafood Fry",
+      "recipeType": "Surf and Turf Entrees",
+      "recipeTypeId": "surf_and_turf",
+      "ingredients": [
+        "Raw Gourmet Meat or Raw Whole Bird",
+        "Any seafood"
+      ],
+      "image": "/images/recipes/gourmet-meat-and-seafood-fry.jpg"
+    },
+    {
+      "slug": "spicy-meat-and-seafood-fry",
+      "name": "Spicy Meat and Seafood Fry",
+      "recipeType": "Surf and Turf Entrees",
+      "recipeTypeId": "surf_and_turf",
+      "ingredients": [
+        "Spicy Pepper",
+        "Hyrule Bass",
+        "Raw Meat"
+      ],
+      "image": "/images/recipes/spicy-meat-and-seafood-fry.jpg"
+    },
+    {
+      "slug": "apple-pie",
+      "name": "Apple Pie",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Apple",
+        "Goat Butter",
+        "Cane Sugar",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/apple-pie.jpg"
+    },
+    {
+      "slug": "pumpkin-pie",
+      "name": "Pumpkin Pie",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Fortified Pumpkin",
+        "Goat Butter",
+        "Cane Sugar",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/pumpkin-pie.jpg"
+    },
+    {
+      "slug": "fruit-pie",
+      "name": "Fruit Pie",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Any fruit excluding apple or pumpkin",
+        "Goat Butter",
+        "Cane Sugar",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/fruit-pie.jpg"
+    },
+    {
+      "slug": "fruitcake",
+      "name": "Fruitcake",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Wildberry or Apple",
+        "Any other fruit",
+        "Cane Sugar",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/fruitcake.jpg"
+    },
+    {
+      "slug": "carrot-cake",
+      "name": "Carrot Cake",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Any carrot",
+        "Goat Butter",
+        "Cane Sugar",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/carrot-cake.jpg"
+    },
+    {
+      "slug": "nutcake",
+      "name": "Nutcake",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Any nut",
+        "Goat Butter",
+        "Cane Sugar",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/nutcake.jpg"
+    },
+    {
+      "slug": "plain-crepe",
+      "name": "Plain Crepe",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Tabantha Wheat",
+        "Fresh Milk",
+        "Bird Egg",
+        "Cane Sugar"
+      ],
+      "image": "/images/recipes/plain-crepe.jpg"
+    },
+    {
+      "slug": "honey-crepe",
+      "name": "Honey Crepe",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Courser Bee Honey",
+        "Cane Sugar",
+        "Fresh Milk",
+        "Bird Egg",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/honey-crepe.jpg"
+    },
+    {
+      "slug": "wildberry-crepe",
+      "name": "Wildberry Crepe",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Wildberry",
+        "Fresh Milk",
+        "Cane Sugar",
+        "Bird Egg",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/wildberry-crepe.jpg"
+    },
+    {
+      "slug": "egg-tart",
+      "name": "Egg Tart",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Bird Egg",
+        "Goat Butter",
+        "Cane Sugar",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/egg-tart.jpg"
+    },
+    {
+      "slug": "egg-pudding",
+      "name": "Egg Pudding",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Bird Egg",
+        "Fresh Milk",
+        "Cane Sugar"
+      ],
+      "image": "/images/recipes/egg-pudding.jpg"
+    },
+    {
+      "slug": "fried-bananas",
+      "name": "Fried Bananas",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Mighty Bananas",
+        "Cane Sugar",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/fried-bananas.jpg"
+    },
+    {
+      "slug": "hot-buttered-apple",
+      "name": "Hot Buttered Apple",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Goat Butter",
+        "Apple"
+      ],
+      "image": "/images/recipes/hot-buttered-apple.jpg"
+    },
+    {
+      "slug": "honeyed-apple",
+      "name": "Honeyed Apple",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Apple",
+        "Courser Bee Honey"
+      ],
+      "image": "/images/recipes/honeyed-apple.jpg"
+    },
+    {
+      "slug": "honeyed-fruits",
+      "name": "Honeyed Fruits",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Any fruit excluding apples",
+        "Courser Bee Honey"
+      ],
+      "image": "/images/recipes/honeyed-fruits.jpg"
+    },
+    {
+      "slug": "honey-candy",
+      "name": "Honey Candy",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "ingredients": [
+        "Courser Bee Honey"
+      ],
+      "image": "/images/recipes/honey-candy.jpg"
+    },
+    {
+      "slug": "monster-soup",
+      "name": "Monster Soup",
+      "recipeType": "Monster Foods",
+      "recipeTypeId": "monster_food",
+      "ingredients": [
+        "Monster Extract",
+        "Goat Butter",
+        "Fresh Milk",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/monster-soup.jpg"
+    },
+    {
+      "slug": "monster-curry",
+      "name": "Monster Curry",
+      "recipeType": "Monster Foods",
+      "recipeTypeId": "monster_food",
+      "ingredients": [
+        "Monster Extract",
+        "Goron Spice",
+        "Hylian Rice"
+      ],
+      "image": "/images/recipes/monster-curry.jpg"
+    },
+    {
+      "slug": "monster-rice-balls",
+      "name": "Monster Rice Balls",
+      "recipeType": "Monster Foods",
+      "recipeTypeId": "monster_food",
+      "ingredients": [
+        "Monster Extract",
+        "Hylian Rice",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/monster-rice-balls.jpg"
+    },
+    {
+      "slug": "monster-stew",
+      "name": "Monster Stew",
+      "recipeType": "Monster Foods",
+      "recipeTypeId": "monster_food",
+      "ingredients": [
+        "Monster Extract",
+        "Any meat",
+        "Any seafood"
+      ],
+      "image": "/images/recipes/monster-stew.jpg"
+    },
+    {
+      "slug": "monster-cake",
+      "name": "Monster Cake",
+      "recipeType": "Monster Foods",
+      "recipeTypeId": "monster_food",
+      "ingredients": [
+        "Monster Extract",
+        "Cane Sugar",
+        "Goat Butter",
+        "Tabantha Wheat"
+      ],
+      "image": "/images/recipes/monster-cake.jpg"
+    },
+    {
+      "slug": "dubious-food",
+      "name": "Dubious Food",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Two or more items with effect",
+        "Monster parts",
+        "Generally incompatible items"
+      ],
+      "image": "/images/recipes/dubious-food.jpg"
+    },
+    {
+      "slug": "rock-hard-food",
+      "name": "Rock-Hard Food",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Wood",
+        "Gems (optional)"
+      ],
+      "image": "/images/recipes/rock-hard-food.jpg"
+    },
+    {
+      "slug": "sauteed-peppers",
+      "name": "Sauteed Peppers",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Spicy Pepper"
+      ],
+      "image": "/images/recipes/sauteed-peppers.jpg"
+    },
+    {
+      "slug": "fairy-tonic",
+      "name": "Fairy Tonic",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Fairy",
+        "Any gem, animal, or monster part"
+      ],
+      "image": "/images/recipes/fairy-tonic.jpg"
+    },
+    {
+      "slug": "sauteed-nuts",
+      "name": "Sauteed Nuts",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Any nut"
+      ],
+      "image": "/images/recipes/sauteed-nuts.jpg"
+    },
+    {
+      "slug": "simmered-fruit",
+      "name": "Simmered Fruit",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Any fruit"
+      ],
+      "image": "/images/recipes/simmered-fruit.jpg"
+    },
+    {
+      "slug": "warm-milk",
+      "name": "Warm Milk",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Fresh Milk"
+      ],
+      "image": "/images/recipes/warm-milk.jpg"
+    },
+    {
+      "slug": "wheat-bread",
+      "name": "Wheat Bread",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Tabantha Wheat",
+        "Rock Salt"
+      ],
+      "image": "/images/recipes/wheat-bread.jpg"
+    },
+    {
+      "slug": "steamed-fruit",
+      "name": "Steamed Fruit",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Any fruit",
+        "Any vegetable, flower, or herb"
+      ],
+      "image": "/images/recipes/steamed-fruit.jpg"
+    },
+    {
+      "slug": "fruit-and-mushroom-mix",
+      "name": "Fruit and Mushroom Mix",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Any fruit",
+        "Any mushroom"
+      ],
+      "image": "/images/recipes/fruit-and-mushroom-mix.jpg"
+    },
+    {
+      "slug": "copious-simmered-fruit",
+      "name": "Copious Simmered Fruit",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Four different fruits"
+      ],
+      "image": "/images/recipes/copious-simmered-fruit.jpg"
+    },
+    {
+      "slug": "glazed-mushrooms",
+      "name": "Glazed Mushrooms",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Any mushroom",
+        "Courser Bee Honey"
+      ],
+      "image": "/images/recipes/glazed-mushrooms.jpg"
+    },
+    {
+      "slug": "glazed-veggies",
+      "name": "Glazed Veggies",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "ingredients": [
+        "Any vegetable",
+        "Courser Bee Honey"
+      ],
+      "image": "/images/recipes/glazed-veggies.jpg"
+    }
+  ]
+}

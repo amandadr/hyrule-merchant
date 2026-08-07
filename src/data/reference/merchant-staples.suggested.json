@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "note": "Suggestion list only. Runtime shop data lives in src/data/overrides/merchant-staples.json."
+  },
+  "staples": [
+    { "stapleId": "bird-egg", "name": "Bird Egg" },
+    { "stapleId": "cane-sugar", "name": "Cane Sugar" },
+    { "stapleId": "fresh-milk", "name": "Fresh Milk" },
+    { "stapleId": "goat-butter", "name": "Goat Butter" },
+    { "stapleId": "goron-spice", "name": "Goron Spice" },
+    { "stapleId": "hylian-rice", "name": "Hylian Rice" },
+    { "stapleId": "monster-extract", "name": "Monster Extract" },
+    { "stapleId": "raw-bird-drumstick", "name": "Raw Bird Drumstick" },
+    { "stapleId": "raw-bird-thigh", "name": "Raw Bird Thigh" },
+    { "stapleId": "raw-gourmet-meat", "name": "Raw Gourmet Meat" },
+    { "stapleId": "raw-meat", "name": "Raw Meat" },
+    { "stapleId": "raw-prime-meat", "name": "Raw Prime Meat" },
+    { "stapleId": "raw-whole-bird", "name": "Raw Whole Bird" },
+    { "stapleId": "rock-salt", "name": "Rock Salt" },
+    { "stapleId": "tabantha-wheat", "name": "Tabantha Wheat" }
+  ]
+}

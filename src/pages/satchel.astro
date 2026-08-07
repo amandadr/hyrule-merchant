@@ -1,0 +1,37 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import { SatchelPanel } from '@/components/satchel/SatchelWidgets';
+import SatchelRecommendations from '@/components/satchel/SatchelRecommendations';
+import {
+  getAllEntries,
+  getMerchantStapleEntries,
+  getMerchantStaples,
+  getOutfits,
+  getProducts,
+  getRecipes,
+  getRegions,
+} from '@/lib/content';
+
+const products = getProducts();
+const recipes = getRecipes();
+const regions = getRegions();
+const outfits = getOutfits();
+const staples = getMerchantStaples();
+const entries = [...getAllEntries(), ...getMerchantStapleEntries()];
+---
+
+<BaseLayout title="My Satchel">
+  <div class="stack">
+    <h1>My Satchel</h1>
+    <SatchelPanel client:load />
+    <SatchelRecommendations
+      client:load
+      products={products}
+      recipes={recipes}
+      regions={regions}
+      outfits={outfits}
+      staples={staples}
+      entries={entries}
+    />
+  </div>
+</BaseLayout>

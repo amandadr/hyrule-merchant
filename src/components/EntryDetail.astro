@@ -1,0 +1,109 @@
+---
+import type { SourceEntry } from '@/lib/data/normalize';
+import { titleCaseName } from '@/lib/data/normalize';
+
+interface Props {
+  entry: SourceEntry;
+}
+
+const { entry } = Astro.props;
+---
+
+<section class="detail-layout">
+  <img src={entry.image} alt="" width="128" height="128" />
+  <div class="stack">
+    <p class="muted">
+      <span class="badge">{entry.category}</span>
+      <span class="badge">id {entry.sourceId}</span>
+      <span class="badge">{entry.game}</span>
+    </p>
+    <p>{entry.description}</p>
+
+    {
+      entry.commonLocations.length > 0 ? (
+        <div>
+          <h2>Common locations</h2>
+          <ul>
+            {entry.commonLocations.map((location) => (
+              <li>{location}</li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <p class="muted">Common locations unknown.</p>
+      )
+    }
+
+    {
+      entry.category === 'creatures' && entry.edible === true && (
+        <div>
+          <h2>Cooking</h2>
+          <ul>
+            <li>Effect: {entry.cookingEffect || 'none'}</li>
+            <li>Hearts recovered: {entry.heartsRecovered}</li>
+          </ul>
+        </div>
+      )
+    }
+
+    {
+      entry.category === 'creatures' && entry.edible === false && (
+        <div>
+          <h2>Drops</h2>
+          {entry.drops.length > 0 ? (
+            <ul>
+              {entry.drops.map((drop) => (
+                <li>{titleCaseName(drop)}</li>
+              ))}
+            </ul>
+          ) : (
+            <p class="muted">No drops listed.</p>
+          )}
+        </div>
+      )
+    }
+
+    {
+      entry.category === 'materials' && (
+        <div>
+          <h2>Cooking</h2>
+          <ul>
+            <li>Effect: {entry.cookingEffect || 'none'}</li>
+            <li>Hearts recovered: {entry.heartsRecovered}</li>
+          </ul>
+        </div>
+      )
+    }
+
+    {
+      entry.category === 'equipment' && (
+        <div>
+          <h2>Properties</h2>
+          <ul>
+            <li>Attack: {entry.properties.attack}</li>
+            <li>Defense: {entry.properties.defense}</li>
+            {entry.properties.type ? <li>Type: {entry.properties.type}</li> : null}
+            {entry.properties.effect ? <li>Effect: {entry.properties.effect}</li> : null}
+          </ul>
+        </div>
+      )
+    }
+
+    {
+      (entry.category === 'monsters' || entry.category === 'treasure') && (
+        <div>
+          <h2>Drops</h2>
+          {entry.drops.length > 0 ? (
+            <ul>
+              {entry.drops.map((drop) => (
+                <li>{titleCaseName(drop)}</li>
+              ))}
+            </ul>
+          ) : (
+            <p class="muted">No drops listed.</p>
+          )}
+        </div>
+      )
+    }
+  </div>
+</section>

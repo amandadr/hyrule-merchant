@@ -1,0 +1,34 @@
+{
+  "name": "hyrule-merchant",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "ingest": "tsx scripts/ingest.ts",
+    "parse:ign-cookbook": "tsx scripts/parse-ign-cookbook.ts",
+    "build:cookbook": "tsx scripts/build-cookbook-from-ign.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@astrojs/preact": "^6.0.2",
+    "@nanostores/persistent": "^1.3.5",
+    "@nanostores/preact": "^1.1.0",
+    "astro": "^7.2.0",
+    "nanostores": "^1.4.2",
+    "preact": "^10.29.8",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.11",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}

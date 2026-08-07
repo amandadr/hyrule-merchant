@@ -1,0 +1,19 @@
+{
+  "game": "botw",
+  "retrievedAt": "2026-08-07T19:52:19.524Z",
+  "upstream": {
+    "compendium": "https://api.hyrule-compendium.com/v3/compendium/all?game=botw",
+    "regions": "https://api.hyrule-compendium.com/v3/regions/all"
+  },
+  "counts": {
+    "entries": 389,
+    "regions": 15,
+    "byCategory": {
+      "creatures": 83,
+      "equipment": 185,
+      "materials": 36,
+      "monsters": 81,
+      "treasure": 4
+    }
+  }
+}

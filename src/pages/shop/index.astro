@@ -1,0 +1,75 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import ShopFilters, { toShopCard } from '@/components/shop/ShopFilters';
+import {
+  getMerchantStaples,
+  getOutfits,
+  getProducts,
+  getRecipes,
+  getAllEntries,
+  getMerchantStapleEntries,
+} from '@/lib/content';
+import { resolveRecipeSlots } from '@/lib/brew/resolve';
+
+const products = getProducts().filter(
+  (product) =>
+    product.stockStatus !== 'not_sold' && product.stockStatus !== 'guide_only',
+);
+const outfits = getOutfits();
+const recipes = getRecipes().filter((recipe) => recipe.kind !== 'failure');
+const entries = [...getAllEntries(), ...getMerchantStapleEntries()];
+const staples = getMerchantStaples();
+
+const recipeIngredientIds = new Map<string, Set<number>>();
+for (const recipe of recipes) {
+  const resolved = resolveRecipeSlots(recipe, entries, staples);
+  recipeIngredientIds.set(recipe.slug, new Set(resolved.exampleSourceIds));
+}
+
+const cards = products.map((product) => {
+  const outfitSlugs = outfits
+    .filter((outfit) => outfit.sourceIds.includes(product.sourceId))
+    .map((outfit) => outfit.slug);
+  const recipeSlugs = [...recipeIngredientIds.entries()]
+    .filter(([, ids]) => ids.has(product.sourceId))
+    .map(([slug]) => slug);
+  return toShopCard(product, outfitSlugs, recipeSlugs);
+});
+
+const stockStatuses = [...new Set(products.map((p) => p.stockStatus))].sort();
+const effects = [
+  ...new Set(
+    cards
+      .map((card) => card.cookingEffect)
+      .filter((effect): effect is string => Boolean(effect)),
+  ),
+].sort();
+const categories = [...new Set(cards.map((card) => card.category))].sort();
+const stapleCount = products.filter((p) => p.origin === 'merchant_staple').length;
+---
+
+<BaseLayout title="Shop">
+  <div class="stack">
+    <h1>Shop</h1>
+    <p class="muted">
+      Curated Compendium catalogue ({products.length} SKUs) including{' '}
+      {stapleCount} pantry staples. Browse by shelf; prices and stock are
+      invented.
+    </p>
+    <ShopFilters
+      client:load
+      products={cards}
+      stockStatuses={stockStatuses}
+      effects={effects}
+      categories={categories}
+      outfits={outfits.map((outfit) => ({
+        slug: outfit.slug,
+        name: outfit.name,
+      }))}
+      recipes={recipes.map((recipe) => ({
+        slug: recipe.slug,
+        name: recipe.name,
+      }))}
+    />
+  </div>
+</BaseLayout>

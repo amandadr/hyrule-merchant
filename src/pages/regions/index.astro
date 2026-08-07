@@ -1,0 +1,34 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import { getRegions } from '@/lib/content';
+import { titleCaseName } from '@/lib/data/normalize';
+
+const regions = getRegions();
+---
+
+<BaseLayout title="Regions">
+  <div class="stack">
+    <h1>Regions</h1>
+    <p class="muted">
+      Destination shells from the Regions API. Editorial guide copy is placeholder
+      for now.
+    </p>
+    <ul class="grid-list">
+      {
+        regions.map((region) => (
+          <li class="entry-card">
+            <a href={`/regions/${region.slug}`}>
+              <strong>{titleCaseName(region.name)}</strong>
+              <div class="muted">
+                {region.shrines.length} shrines
+                {region.settlements.length > 0
+                  ? ` · ${region.settlements.length} settlements`
+                  : ''}
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>

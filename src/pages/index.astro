@@ -1,0 +1,73 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import { SITE_NAME, SITE_TAGLINE } from '@/config/site';
+import {
+  getCategoryCounts,
+  getProducts,
+  getRecipes,
+  getRegions,
+  getSourceMeta,
+} from '@/lib/content';
+import { getDailyExperiment } from '@/lib/brew/daily';
+
+const counts = getCategoryCounts();
+const products = getProducts();
+const regions = getRegions();
+const meta = getSourceMeta();
+const daily = getDailyExperiment(getRecipes());
+---
+
+<BaseLayout title="Home" description={SITE_TAGLINE}>
+  <div class="stack">
+    <h1>{SITE_NAME}</h1>
+    <p>{SITE_TAGLINE}</p>
+    <p class="muted">
+      Unofficial portfolio prototype. Snapshot: {meta.counts.entries} BotW entries ·{' '}
+      {meta.counts.regions} regions · retrieved {meta.retrievedAt.slice(0, 10)}.
+    </p>
+
+    {
+      daily ? (
+        <div class="notice stack">
+          <strong>Today’s bench challenge</strong>
+          <p style="margin:0">{daily.blurb}</p>
+          <p style="margin:0">
+            <a href={`/brew#${daily.recipe.slug}`}>Open the brewing bench</a>
+          </p>
+        </div>
+      ) : null
+    }
+
+    <div class="stack">
+      <h2>Start here</h2>
+      <ul>
+        <li>
+          <a href="/shop">Shop</a> — {products.length} Compendium goods & pantry
+          staples
+        </li>
+        <li><a href="/regions">Regions</a> — {regions.length} destinations</li>
+        <li><a href="/guide">Field Guide</a> — browse & filter the full snapshot</li>
+        <li>
+          <a href="/brew">Brew</a> — meals, elixirs, and today’s experiment
+        </li>
+        <li><a href="/satchel">My Satchel</a> — cart & recommendations</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Guide categories</h2>
+      <ul class="grid-list">
+        {
+          Object.entries(counts).map(([category, count]) => (
+            <li class="entry-card">
+              <a href={`/guide/${category}`}>
+                <strong>{category}</strong>
+                <div class="muted">{count} entries</div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</BaseLayout>

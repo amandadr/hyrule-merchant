@@ -1,0 +1,836 @@
+{
+  "meta": {
+    "count": 118,
+    "directory": "public/images/recipes",
+    "publicBasePath": "/images/recipes",
+    "updatedAt": "2026-08-07"
+  },
+  "images": [
+    {
+      "slug": "creamy-heart-soup",
+      "name": "Creamy Heart Soup",
+      "path": "/images/recipes/creamy-heart-soup.jpg",
+      "filename": "creamy-heart-soup.jpg",
+      "bytes": 2422
+    },
+    {
+      "slug": "pumpkin-stew",
+      "name": "Pumpkin Stew",
+      "path": "/images/recipes/pumpkin-stew.jpg",
+      "filename": "pumpkin-stew.jpg",
+      "bytes": 2651
+    },
+    {
+      "slug": "veggie-cream-soup",
+      "name": "Veggie Cream Soup",
+      "path": "/images/recipes/veggie-cream-soup.jpg",
+      "filename": "veggie-cream-soup.jpg",
+      "bytes": 2750
+    },
+    {
+      "slug": "cream-of-mushroom-soup",
+      "name": "Cream of Mushroom Soup",
+      "path": "/images/recipes/cream-of-mushroom-soup.jpg",
+      "filename": "cream-of-mushroom-soup.jpg",
+      "bytes": 2643
+    },
+    {
+      "slug": "cream-of-vegetable-soup",
+      "name": "Cream of Vegetable Soup",
+      "path": "/images/recipes/cream-of-vegetable-soup.jpg",
+      "filename": "cream-of-vegetable-soup.jpg",
+      "bytes": 2458
+    },
+    {
+      "slug": "carrot-stew",
+      "name": "Carrot Stew",
+      "path": "/images/recipes/carrot-stew.jpg",
+      "filename": "carrot-stew.jpg",
+      "bytes": 2681
+    },
+    {
+      "slug": "vegetable-risotto",
+      "name": "Vegetable Risotto",
+      "path": "/images/recipes/vegetable-risotto.jpg",
+      "filename": "vegetable-risotto.jpg",
+      "bytes": 2690
+    },
+    {
+      "slug": "mushroom-risotto",
+      "name": "Mushroom Risotto",
+      "path": "/images/recipes/mushroom-risotto.jpg",
+      "filename": "mushroom-risotto.jpg",
+      "bytes": 2423
+    },
+    {
+      "slug": "curry-pilaf",
+      "name": "Curry Pilaf",
+      "path": "/images/recipes/curry-pilaf.jpg",
+      "filename": "curry-pilaf.jpg",
+      "bytes": 2712
+    },
+    {
+      "slug": "mushroom-rice-balls",
+      "name": "Mushroom Rice Balls",
+      "path": "/images/recipes/mushroom-rice-balls.jpg",
+      "filename": "mushroom-rice-balls.jpg",
+      "bytes": 2455
+    },
+    {
+      "slug": "veggie-rice-balls",
+      "name": "Veggie Rice Balls",
+      "path": "/images/recipes/veggie-rice-balls.jpg",
+      "filename": "veggie-rice-balls.jpg",
+      "bytes": 2480
+    },
+    {
+      "slug": "curry-rice",
+      "name": "Curry Rice",
+      "path": "/images/recipes/curry-rice.jpg",
+      "filename": "curry-rice.jpg",
+      "bytes": 2577
+    },
+    {
+      "slug": "fried-egg-and-rice",
+      "name": "Fried Egg and Rice",
+      "path": "/images/recipes/fried-egg-and-rice.jpg",
+      "filename": "fried-egg-and-rice.jpg",
+      "bytes": 2723
+    },
+    {
+      "slug": "mushroom-omelet",
+      "name": "Mushroom Omelet",
+      "path": "/images/recipes/mushroom-omelet.jpg",
+      "filename": "mushroom-omelet.jpg",
+      "bytes": 2851
+    },
+    {
+      "slug": "vegetable-omelet",
+      "name": "Vegetable Omelet",
+      "path": "/images/recipes/vegetable-omelet.jpg",
+      "filename": "vegetable-omelet.jpg",
+      "bytes": 2899
+    },
+    {
+      "slug": "vegetable-curry",
+      "name": "Vegetable Curry",
+      "path": "/images/recipes/vegetable-curry.jpg",
+      "filename": "vegetable-curry.jpg",
+      "bytes": 2852
+    },
+    {
+      "slug": "fragrant-mushroom-saute",
+      "name": "Fragrant Mushroom Sauté",
+      "path": "/images/recipes/fragrant-mushroom-saute.jpg",
+      "filename": "fragrant-mushroom-saute.jpg",
+      "bytes": 2601
+    },
+    {
+      "slug": "herb-saute",
+      "name": "Herb Sauté",
+      "path": "/images/recipes/herb-saute.jpg",
+      "filename": "herb-saute.jpg",
+      "bytes": 2390
+    },
+    {
+      "slug": "salt-grilled-greens",
+      "name": "Salt-Grilled Greens",
+      "path": "/images/recipes/salt-grilled-greens.jpg",
+      "filename": "salt-grilled-greens.jpg",
+      "bytes": 2675
+    },
+    {
+      "slug": "salt-grilled-mushrooms",
+      "name": "Salt-Grilled Mushrooms",
+      "path": "/images/recipes/salt-grilled-mushrooms.jpg",
+      "filename": "salt-grilled-mushrooms.jpg",
+      "bytes": 2647
+    },
+    {
+      "slug": "steamed-mushrooms",
+      "name": "Steamed Mushrooms",
+      "path": "/images/recipes/steamed-mushrooms.jpg",
+      "filename": "steamed-mushrooms.jpg",
+      "bytes": 2456
+    },
+    {
+      "slug": "mushroom-skewer",
+      "name": "Mushroom Skewer",
+      "path": "/images/recipes/mushroom-skewer.jpg",
+      "filename": "mushroom-skewer.jpg",
+      "bytes": 2056
+    },
+    {
+      "slug": "copious-mushroom-skewers",
+      "name": "Copious Mushroom Skewers",
+      "path": "/images/recipes/copious-mushroom-skewers.jpg",
+      "filename": "copious-mushroom-skewers.jpg",
+      "bytes": 2637
+    },
+    {
+      "slug": "fried-wild-greens",
+      "name": "Fried Wild Greens",
+      "path": "/images/recipes/fried-wild-greens.jpg",
+      "filename": "fried-wild-greens.jpg",
+      "bytes": 2570
+    },
+    {
+      "slug": "copious-fried-wild-greens",
+      "name": "Copious Fried Wild Greens",
+      "path": "/images/recipes/copious-fried-wild-greens.jpg",
+      "filename": "copious-fried-wild-greens.jpg",
+      "bytes": 2800
+    },
+    {
+      "slug": "omelet",
+      "name": "Omelet",
+      "path": "/images/recipes/omelet.jpg",
+      "filename": "omelet.jpg",
+      "bytes": 2593
+    },
+    {
+      "slug": "clam-chowder",
+      "name": "Clam Chowder",
+      "path": "/images/recipes/clam-chowder.jpg",
+      "filename": "clam-chowder.jpg",
+      "bytes": 2598
+    },
+    {
+      "slug": "creamy-seafood-soup",
+      "name": "Creamy Seafood Soup",
+      "path": "/images/recipes/creamy-seafood-soup.jpg",
+      "filename": "creamy-seafood-soup.jpg",
+      "bytes": 2543
+    },
+    {
+      "slug": "seafood-curry",
+      "name": "Seafood Curry",
+      "path": "/images/recipes/seafood-curry.jpg",
+      "filename": "seafood-curry.jpg",
+      "bytes": 2894
+    },
+    {
+      "slug": "salmon-risotto",
+      "name": "Salmon Risotto",
+      "path": "/images/recipes/salmon-risotto.jpg",
+      "filename": "salmon-risotto.jpg",
+      "bytes": 2866
+    },
+    {
+      "slug": "crab-risotto",
+      "name": "Crab Risotto",
+      "path": "/images/recipes/crab-risotto.jpg",
+      "filename": "crab-risotto.jpg",
+      "bytes": 2609
+    },
+    {
+      "slug": "seafood-fried-rice",
+      "name": "Seafood Fried Rice",
+      "path": "/images/recipes/seafood-fried-rice.jpg",
+      "filename": "seafood-fried-rice.jpg",
+      "bytes": 2841
+    },
+    {
+      "slug": "seafood-paella",
+      "name": "Seafood Paella",
+      "path": "/images/recipes/seafood-paella.jpg",
+      "filename": "seafood-paella.jpg",
+      "bytes": 2945
+    },
+    {
+      "slug": "crab-omelet-with-rice",
+      "name": "Crab Omelet with Rice",
+      "path": "/images/recipes/crab-omelet-with-rice.jpg",
+      "filename": "crab-omelet-with-rice.jpg",
+      "bytes": 2687
+    },
+    {
+      "slug": "seafood-rice-balls",
+      "name": "Seafood Rice Balls",
+      "path": "/images/recipes/seafood-rice-balls.jpg",
+      "filename": "seafood-rice-balls.jpg",
+      "bytes": 2625
+    },
+    {
+      "slug": "fish-pie",
+      "name": "Fish Pie",
+      "path": "/images/recipes/fish-pie.jpg",
+      "filename": "fish-pie.jpg",
+      "bytes": 2509
+    },
+    {
+      "slug": "salmon-meuniere",
+      "name": "Salmon Meuniere",
+      "path": "/images/recipes/salmon-meuniere.jpg",
+      "filename": "salmon-meuniere.jpg",
+      "bytes": 2886
+    },
+    {
+      "slug": "porgy-meuniere",
+      "name": "Porgy Meuniere",
+      "path": "/images/recipes/porgy-meuniere.jpg",
+      "filename": "porgy-meuniere.jpg",
+      "bytes": 2747
+    },
+    {
+      "slug": "seafood-meuniere",
+      "name": "Seafood Meuniere",
+      "path": "/images/recipes/seafood-meuniere.jpg",
+      "filename": "seafood-meuniere.jpg",
+      "bytes": 2649
+    },
+    {
+      "slug": "glazed-seafood",
+      "name": "Glazed Seafood",
+      "path": "/images/recipes/glazed-seafood.jpg",
+      "filename": "glazed-seafood.jpg",
+      "bytes": 2645
+    },
+    {
+      "slug": "crab-stir-fry",
+      "name": "Crab Stir-Fry",
+      "path": "/images/recipes/crab-stir-fry.jpg",
+      "filename": "crab-stir-fry.jpg",
+      "bytes": 2762
+    },
+    {
+      "slug": "salt-grilled-crab",
+      "name": "Salt-Grilled Crab",
+      "path": "/images/recipes/salt-grilled-crab.jpg",
+      "filename": "salt-grilled-crab.jpg",
+      "bytes": 3060
+    },
+    {
+      "slug": "salt-grilled-fish",
+      "name": "Salt-Grilled Fish",
+      "path": "/images/recipes/salt-grilled-fish.jpg",
+      "filename": "salt-grilled-fish.jpg",
+      "bytes": 2637
+    },
+    {
+      "slug": "copious-fish-skewers",
+      "name": "Copious Fish Skewers",
+      "path": "/images/recipes/copious-fish-skewers.jpg",
+      "filename": "copious-fish-skewers.jpg",
+      "bytes": 2535
+    },
+    {
+      "slug": "spicy-peppered-seafood",
+      "name": "Spicy Peppered Seafood",
+      "path": "/images/recipes/spicy-peppered-seafood.jpg",
+      "filename": "spicy-peppered-seafood.jpg",
+      "bytes": 2834
+    },
+    {
+      "slug": "steamed-fish",
+      "name": "Steamed Fish",
+      "path": "/images/recipes/steamed-fish.jpg",
+      "filename": "steamed-fish.jpg",
+      "bytes": 2348
+    },
+    {
+      "slug": "fish-and-mushroom-skewer",
+      "name": "Fish and Mushroom Skewer",
+      "path": "/images/recipes/fish-and-mushroom-skewer.jpg",
+      "filename": "fish-and-mushroom-skewer.jpg",
+      "bytes": 2661
+    },
+    {
+      "slug": "seafood-skewer",
+      "name": "Seafood Skewer",
+      "path": "/images/recipes/seafood-skewer.jpg",
+      "filename": "seafood-skewer.jpg",
+      "bytes": 2722
+    },
+    {
+      "slug": "fish-skewer",
+      "name": "Fish Skewer",
+      "path": "/images/recipes/fish-skewer.jpg",
+      "filename": "fish-skewer.jpg",
+      "bytes": 2077
+    },
+    {
+      "slug": "gourmet-meat-stew",
+      "name": "Gourmet Meat Stew",
+      "path": "/images/recipes/gourmet-meat-stew.jpg",
+      "filename": "gourmet-meat-stew.jpg",
+      "bytes": 2556
+    },
+    {
+      "slug": "prime-meat-stew",
+      "name": "Prime Meat Stew",
+      "path": "/images/recipes/prime-meat-stew.jpg",
+      "filename": "prime-meat-stew.jpg",
+      "bytes": 2451
+    },
+    {
+      "slug": "meat-stew",
+      "name": "Meat Stew",
+      "path": "/images/recipes/meat-stew.jpg",
+      "filename": "meat-stew.jpg",
+      "bytes": 2387
+    },
+    {
+      "slug": "creamy-meat-soup",
+      "name": "Creamy Meat Soup",
+      "path": "/images/recipes/creamy-meat-soup.jpg",
+      "filename": "creamy-meat-soup.jpg",
+      "bytes": 2431
+    },
+    {
+      "slug": "meat-curry",
+      "name": "Meat Curry",
+      "path": "/images/recipes/meat-curry.jpg",
+      "filename": "meat-curry.jpg",
+      "bytes": 2458
+    },
+    {
+      "slug": "prime-meat-curry",
+      "name": "Prime Meat Curry",
+      "path": "/images/recipes/prime-meat-curry.jpg",
+      "filename": "prime-meat-curry.jpg",
+      "bytes": 2518
+    },
+    {
+      "slug": "gourmet-meat-curry",
+      "name": "Gourmet Meat Curry",
+      "path": "/images/recipes/gourmet-meat-curry.jpg",
+      "filename": "gourmet-meat-curry.jpg",
+      "bytes": 2578
+    },
+    {
+      "slug": "poultry-curry",
+      "name": "Poultry Curry",
+      "path": "/images/recipes/poultry-curry.jpg",
+      "filename": "poultry-curry.jpg",
+      "bytes": 2532
+    },
+    {
+      "slug": "prime-poultry-curry",
+      "name": "Prime Poultry Curry",
+      "path": "/images/recipes/prime-poultry-curry.jpg",
+      "filename": "prime-poultry-curry.jpg",
+      "bytes": 2667
+    },
+    {
+      "slug": "gourmet-poultry-curry",
+      "name": "Gourmet Poultry Curry",
+      "path": "/images/recipes/gourmet-poultry-curry.jpg",
+      "filename": "gourmet-poultry-curry.jpg",
+      "bytes": 2767
+    },
+    {
+      "slug": "meaty-rice-balls",
+      "name": "Meaty Rice Balls",
+      "path": "/images/recipes/meaty-rice-balls.jpg",
+      "filename": "meaty-rice-balls.jpg",
+      "bytes": 2430
+    },
+    {
+      "slug": "meat-stuffed-pumpkins",
+      "name": "Meat-Stuffed Pumpkins",
+      "path": "/images/recipes/meat-stuffed-pumpkins.jpg",
+      "filename": "meat-stuffed-pumpkins.jpg",
+      "bytes": 2826
+    },
+    {
+      "slug": "meat-pie",
+      "name": "Meat Pie",
+      "path": "/images/recipes/meat-pie.jpg",
+      "filename": "meat-pie.jpg",
+      "bytes": 2537
+    },
+    {
+      "slug": "poultry-pilaf",
+      "name": "Poultry Pilaf",
+      "path": "/images/recipes/poultry-pilaf.jpg",
+      "filename": "poultry-pilaf.jpg",
+      "bytes": 2765
+    },
+    {
+      "slug": "prime-poultry-pilaf",
+      "name": "Prime Poultry Pilaf",
+      "path": "/images/recipes/prime-poultry-pilaf.jpg",
+      "filename": "prime-poultry-pilaf.jpg",
+      "bytes": 2759
+    },
+    {
+      "slug": "gourmet-poultry-pilaf",
+      "name": "Gourmet Poultry Pilaf",
+      "path": "/images/recipes/gourmet-poultry-pilaf.jpg",
+      "filename": "gourmet-poultry-pilaf.jpg",
+      "bytes": 2881
+    },
+    {
+      "slug": "meat-and-rice-bowl",
+      "name": "Meat and Rice Bowl",
+      "path": "/images/recipes/meat-and-rice-bowl.jpg",
+      "filename": "meat-and-rice-bowl.jpg",
+      "bytes": 2724
+    },
+    {
+      "slug": "prime-meat-and-rice-bowl",
+      "name": "Prime Meat and Rice Bowl",
+      "path": "/images/recipes/prime-meat-and-rice-bowl.jpg",
+      "filename": "prime-meat-and-rice-bowl.jpg",
+      "bytes": 2682
+    },
+    {
+      "slug": "gourmet-meat-and-rice-bowl",
+      "name": "Gourmet Meat and Rice Bowl",
+      "path": "/images/recipes/gourmet-meat-and-rice-bowl.jpg",
+      "filename": "gourmet-meat-and-rice-bowl.jpg",
+      "bytes": 2737
+    },
+    {
+      "slug": "glazed-meat",
+      "name": "Glazed Meat",
+      "path": "/images/recipes/glazed-meat.jpg",
+      "filename": "glazed-meat.jpg",
+      "bytes": 2713
+    },
+    {
+      "slug": "spiced-meat-skewer",
+      "name": "Spiced Meat Skewer",
+      "path": "/images/recipes/spiced-meat-skewer.jpg",
+      "filename": "spiced-meat-skewer.jpg",
+      "bytes": 2108
+    },
+    {
+      "slug": "prime-spiced-meat-skewer",
+      "name": "Prime Spiced Meat Skewer",
+      "path": "/images/recipes/prime-spiced-meat-skewer.jpg",
+      "filename": "prime-spiced-meat-skewer.jpg",
+      "bytes": 2525
+    },
+    {
+      "slug": "gourmet-spiced-meat-skewer",
+      "name": "Gourmet Spiced Meat Skewer",
+      "path": "/images/recipes/gourmet-spiced-meat-skewer.jpg",
+      "filename": "gourmet-spiced-meat-skewer.jpg",
+      "bytes": 2680
+    },
+    {
+      "slug": "salt-grilled-meat",
+      "name": "Salt-Grilled Meat",
+      "path": "/images/recipes/salt-grilled-meat.jpg",
+      "filename": "salt-grilled-meat.jpg",
+      "bytes": 2730
+    },
+    {
+      "slug": "salt-grilled-prime-meat",
+      "name": "Salt-Grilled Prime Meat",
+      "path": "/images/recipes/salt-grilled-prime-meat.jpg",
+      "filename": "salt-grilled-prime-meat.jpg",
+      "bytes": 2714
+    },
+    {
+      "slug": "salt-grilled-gourmet-meat",
+      "name": "Salt-Grilled Gourmet Meat",
+      "path": "/images/recipes/salt-grilled-gourmet-meat.jpg",
+      "filename": "salt-grilled-gourmet-meat.jpg",
+      "bytes": 2903
+    },
+    {
+      "slug": "copious-meat-skewers",
+      "name": "Copious Meat Skewers",
+      "path": "/images/recipes/copious-meat-skewers.jpg",
+      "filename": "copious-meat-skewers.jpg",
+      "bytes": 2457
+    },
+    {
+      "slug": "pepper-steak",
+      "name": "Pepper Steak",
+      "path": "/images/recipes/pepper-steak.jpg",
+      "filename": "pepper-steak.jpg",
+      "bytes": 3088
+    },
+    {
+      "slug": "steamed-meat",
+      "name": "Steamed Meat",
+      "path": "/images/recipes/steamed-meat.jpg",
+      "filename": "steamed-meat.jpg",
+      "bytes": 2312
+    },
+    {
+      "slug": "meat-and-mushroom-skewer",
+      "name": "Meat and Mushroom Skewer",
+      "path": "/images/recipes/meat-and-mushroom-skewer.jpg",
+      "filename": "meat-and-mushroom-skewer.jpg",
+      "bytes": 2246
+    },
+    {
+      "slug": "meat-skewer",
+      "name": "Meat Skewer",
+      "path": "/images/recipes/meat-skewer.jpg",
+      "filename": "meat-skewer.jpg",
+      "bytes": 2045
+    },
+    {
+      "slug": "meat-and-seafood-fry",
+      "name": "Meat and Seafood Fry",
+      "path": "/images/recipes/meat-and-seafood-fry.jpg",
+      "filename": "meat-and-seafood-fry.jpg",
+      "bytes": 2784
+    },
+    {
+      "slug": "prime-meat-and-seafood-fry",
+      "name": "Prime Meat and Seafood Fry",
+      "path": "/images/recipes/prime-meat-and-seafood-fry.jpg",
+      "filename": "prime-meat-and-seafood-fry.jpg",
+      "bytes": 2752
+    },
+    {
+      "slug": "gourmet-meat-and-seafood-fry",
+      "name": "Gourmet Meat and Seafood Fry",
+      "path": "/images/recipes/gourmet-meat-and-seafood-fry.jpg",
+      "filename": "gourmet-meat-and-seafood-fry.jpg",
+      "bytes": 2590
+    },
+    {
+      "slug": "spicy-meat-and-seafood-fry",
+      "name": "Spicy Meat and Seafood Fry",
+      "path": "/images/recipes/spicy-meat-and-seafood-fry.jpg",
+      "filename": "spicy-meat-and-seafood-fry.jpg",
+      "bytes": 3182
+    },
+    {
+      "slug": "apple-pie",
+      "name": "Apple Pie",
+      "path": "/images/recipes/apple-pie.jpg",
+      "filename": "apple-pie.jpg",
+      "bytes": 2338
+    },
+    {
+      "slug": "pumpkin-pie",
+      "name": "Pumpkin Pie",
+      "path": "/images/recipes/pumpkin-pie.jpg",
+      "filename": "pumpkin-pie.jpg",
+      "bytes": 2357
+    },
+    {
+      "slug": "fruit-pie",
+      "name": "Fruit Pie",
+      "path": "/images/recipes/fruit-pie.jpg",
+      "filename": "fruit-pie.jpg",
+      "bytes": 2569
+    },
+    {
+      "slug": "fruitcake",
+      "name": "Fruitcake",
+      "path": "/images/recipes/fruitcake.jpg",
+      "filename": "fruitcake.jpg",
+      "bytes": 2683
+    },
+    {
+      "slug": "carrot-cake",
+      "name": "Carrot Cake",
+      "path": "/images/recipes/carrot-cake.jpg",
+      "filename": "carrot-cake.jpg",
+      "bytes": 2402
+    },
+    {
+      "slug": "nutcake",
+      "name": "Nutcake",
+      "path": "/images/recipes/nutcake.jpg",
+      "filename": "nutcake.jpg",
+      "bytes": 2411
+    },
+    {
+      "slug": "plain-crepe",
+      "name": "Plain Crepe",
+      "path": "/images/recipes/plain-crepe.jpg",
+      "filename": "plain-crepe.jpg",
+      "bytes": 2252
+    },
+    {
+      "slug": "honey-crepe",
+      "name": "Honey Crepe",
+      "path": "/images/recipes/honey-crepe.jpg",
+      "filename": "honey-crepe.jpg",
+      "bytes": 2642
+    },
+    {
+      "slug": "wildberry-crepe",
+      "name": "Wildberry Crepe",
+      "path": "/images/recipes/wildberry-crepe.jpg",
+      "filename": "wildberry-crepe.jpg",
+      "bytes": 2539
+    },
+    {
+      "slug": "egg-tart",
+      "name": "Egg Tart",
+      "path": "/images/recipes/egg-tart.jpg",
+      "filename": "egg-tart.jpg",
+      "bytes": 2386
+    },
+    {
+      "slug": "egg-pudding",
+      "name": "Egg Pudding",
+      "path": "/images/recipes/egg-pudding.jpg",
+      "filename": "egg-pudding.jpg",
+      "bytes": 2189
+    },
+    {
+      "slug": "fried-bananas",
+      "name": "Fried Bananas",
+      "path": "/images/recipes/fried-bananas.jpg",
+      "filename": "fried-bananas.jpg",
+      "bytes": 2625
+    },
+    {
+      "slug": "hot-buttered-apple",
+      "name": "Hot Buttered Apple",
+      "path": "/images/recipes/hot-buttered-apple.jpg",
+      "filename": "hot-buttered-apple.jpg",
+      "bytes": 2573
+    },
+    {
+      "slug": "honeyed-apple",
+      "name": "Honeyed Apple",
+      "path": "/images/recipes/honeyed-apple.jpg",
+      "filename": "honeyed-apple.jpg",
+      "bytes": 2965
+    },
+    {
+      "slug": "honeyed-fruits",
+      "name": "Honeyed Fruits",
+      "path": "/images/recipes/honeyed-fruits.jpg",
+      "filename": "honeyed-fruits.jpg",
+      "bytes": 2858
+    },
+    {
+      "slug": "honey-candy",
+      "name": "Honey Candy",
+      "path": "/images/recipes/honey-candy.jpg",
+      "filename": "honey-candy.jpg",
+      "bytes": 2666
+    },
+    {
+      "slug": "monster-soup",
+      "name": "Monster Soup",
+      "path": "/images/recipes/monster-soup.jpg",
+      "filename": "monster-soup.jpg",
+      "bytes": 2230
+    },
+    {
+      "slug": "monster-curry",
+      "name": "Monster Curry",
+      "path": "/images/recipes/monster-curry.jpg",
+      "filename": "monster-curry.jpg",
+      "bytes": 2477
+    },
+    {
+      "slug": "monster-rice-balls",
+      "name": "Monster Rice Balls",
+      "path": "/images/recipes/monster-rice-balls.jpg",
+      "filename": "monster-rice-balls.jpg",
+      "bytes": 2297
+    },
+    {
+      "slug": "monster-stew",
+      "name": "Monster Stew",
+      "path": "/images/recipes/monster-stew.jpg",
+      "filename": "monster-stew.jpg",
+      "bytes": 2316
+    },
+    {
+      "slug": "monster-cake",
+      "name": "Monster Cake",
+      "path": "/images/recipes/monster-cake.jpg",
+      "filename": "monster-cake.jpg",
+      "bytes": 2242
+    },
+    {
+      "slug": "dubious-food",
+      "name": "Dubious Food",
+      "path": "/images/recipes/dubious-food.jpg",
+      "filename": "dubious-food.jpg",
+      "bytes": 2331
+    },
+    {
+      "slug": "rock-hard-food",
+      "name": "Rock-Hard Food",
+      "path": "/images/recipes/rock-hard-food.jpg",
+      "filename": "rock-hard-food.jpg",
+      "bytes": 2306
+    },
+    {
+      "slug": "sauteed-peppers",
+      "name": "Sauteed Peppers",
+      "path": "/images/recipes/sauteed-peppers.jpg",
+      "filename": "sauteed-peppers.jpg",
+      "bytes": 2676
+    },
+    {
+      "slug": "fairy-tonic",
+      "name": "Fairy Tonic",
+      "path": "/images/recipes/fairy-tonic.jpg",
+      "filename": "fairy-tonic.jpg",
+      "bytes": 2052
+    },
+    {
+      "slug": "sauteed-nuts",
+      "name": "Sauteed Nuts",
+      "path": "/images/recipes/sauteed-nuts.jpg",
+      "filename": "sauteed-nuts.jpg",
+      "bytes": 2475
+    },
+    {
+      "slug": "simmered-fruit",
+      "name": "Simmered Fruit",
+      "path": "/images/recipes/simmered-fruit.jpg",
+      "filename": "simmered-fruit.jpg",
+      "bytes": 2728
+    },
+    {
+      "slug": "warm-milk",
+      "name": "Warm Milk",
+      "path": "/images/recipes/warm-milk.jpg",
+      "filename": "warm-milk.jpg",
+      "bytes": 1962
+    },
+    {
+      "slug": "wheat-bread",
+      "name": "Wheat Bread",
+      "path": "/images/recipes/wheat-bread.jpg",
+      "filename": "wheat-bread.jpg",
+      "bytes": 2336
+    },
+    {
+      "slug": "steamed-fruit",
+      "name": "Steamed Fruit",
+      "path": "/images/recipes/steamed-fruit.jpg",
+      "filename": "steamed-fruit.jpg",
+      "bytes": 2483
+    },
+    {
+      "slug": "fruit-and-mushroom-mix",
+      "name": "Fruit and Mushroom Mix",
+      "path": "/images/recipes/fruit-and-mushroom-mix.jpg",
+      "filename": "fruit-and-mushroom-mix.jpg",
+      "bytes": 2730
+    },
+    {
+      "slug": "copious-simmered-fruit",
+      "name": "Copious Simmered Fruit",
+      "path": "/images/recipes/copious-simmered-fruit.jpg",
+      "filename": "copious-simmered-fruit.jpg",
+      "bytes": 2996
+    },
+    {
+      "slug": "glazed-mushrooms",
+      "name": "Glazed Mushrooms",
+      "path": "/images/recipes/glazed-mushrooms.jpg",
+      "filename": "glazed-mushrooms.jpg",
+      "bytes": 2749
+    },
+    {
+      "slug": "glazed-veggies",
+      "name": "Glazed Veggies",
+      "path": "/images/recipes/glazed-veggies.jpg",
+      "filename": "glazed-veggies.jpg",
+      "bytes": 2420
+    }
+  ]
+}

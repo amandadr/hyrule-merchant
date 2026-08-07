@@ -1,0 +1,57 @@
+# build output
+dist/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# environment variables
+.env
+.env.*
+!.env.example
+
+# test / coverage
+coverage/
+*.lcov
+.vitest/
+
+# caches
+.cache/
+.turbo/
+.vercel/
+.netlify/
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+*.swp
+*.swo
+*~
+
+# backups / archives (keep out of the repo)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.part001.zip
+*.wpvivid*
+
+# local scratch
+*.local
+tmp/
+temp/

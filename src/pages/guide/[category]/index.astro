@@ -1,0 +1,52 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import GuideFilters from '@/components/guide/GuideFilters';
+import {
+  getCategories,
+  getEntriesByCategory,
+  isEntryCategory,
+} from '@/lib/content';
+import {
+  collectEffects,
+  collectLocations,
+  toGuideCardEntry,
+} from '@/lib/guide/filter';
+
+export function getStaticPaths() {
+  return getCategories().map((category) => ({
+    params: { category },
+  }));
+}
+
+const { category } = Astro.params;
+
+if (!category || !isEntryCategory(category)) {
+  throw new Error(`Unknown guide category: ${category}`);
+}
+
+const entries = getEntriesByCategory(category).map(toGuideCardEntry);
+const locations = collectLocations(entries);
+const effects = collectEffects(entries);
+const showEdible = category === 'creatures';
+const showDrops =
+  category === 'creatures' || category === 'monsters' || category === 'treasure';
+const showHeartsSort = category === 'materials' || category === 'creatures';
+---
+
+<BaseLayout title={`${category} · Field Guide`}>
+  <div class="stack">
+    <p><a href="/guide">← Field Guide</a></p>
+    <h1>{category}</h1>
+    <p class="muted">{entries.length} entries from the BotW snapshot.</p>
+    <GuideFilters
+      client:load
+      category={category}
+      entries={entries}
+      locations={locations}
+      effects={effects}
+      showEdible={showEdible}
+      showDrops={showDrops}
+      showHeartsSort={showHeartsSort}
+    />
+  </div>
+</BaseLayout>

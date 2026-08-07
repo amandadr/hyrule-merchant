@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Merchant staple">
+  <rect width="128" height="128" rx="12" fill="#2f3b2e"/>
+  <rect x="28" y="24" width="72" height="80" rx="8" fill="#c4a574" stroke="#5c4a2f" stroke-width="3"/>
+  <rect x="40" y="18" width="48" height="14" rx="4" fill="#8b6914"/>
+  <circle cx="64" cy="64" r="18" fill="#5c4a2f" opacity="0.35"/>
+  <path d="M52 70c4-10 16-10 20 0" fill="none" stroke="#f4e8c8" stroke-width="3" stroke-linecap="round"/>
+</svg>

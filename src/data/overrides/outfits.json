@@ -1,0 +1,24 @@
+{
+  "outfits": [
+    {
+      "slug": "hebra-cold-kit",
+      "name": "Hebra Cold Kit",
+      "sourceIds": [170, 180, 366],
+      "regionSlug": "hebra",
+      "merchantNote": "Spicy peppers, sunshrooms, and a kite shield for snowy ridges. Not a full armor set—just a merchant's cold-road bundle."
+    },
+    {
+      "slug": "eldin-heat-kit",
+      "name": "Eldin Heat Kit",
+      "sourceIds": [169, 179, 305],
+      "regionSlug": "eldin",
+      "merchantNote": "Hydromelon, chillshroom, and a flamespear for volcanic approaches."
+    },
+    {
+      "slug": "trail-skewer-kit",
+      "name": "Trail Skewer Kit",
+      "sourceIds": [174, 900011, 900014],
+      "merchantNote": "Hylian shroom, raw meat, and rock salt—enough for simple skewers at any stable."
+    }
+  ]
+}

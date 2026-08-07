@@ -1,0 +1,216 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import EntryDetail from '@/components/EntryDetail.astro';
+import AddToSatchelButton from '@/components/satchel/SatchelWidgets';
+import { ProductMeta } from '@/components/shop/ProductBadges';
+import {
+  getOutfits,
+  getProductBySlug,
+  getProducts,
+  getRecipes,
+  getRegions,
+  getMerchantStaples,
+} from '@/lib/content';
+import { titleCaseName } from '@/lib/data/normalize';
+import { recipeOverlapScore } from '@/lib/brew/evaluate';
+import { regionSlugForLocation } from '@/lib/brew/regions';
+
+export function getStaticPaths() {
+  return getProducts().map((product) => ({
+    params: { slug: product.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const product = getProductBySlug(slug!);
+
+if (!product) {
+  throw new Error(`Unknown product slug: ${slug}`);
+}
+
+const displayName = titleCaseName(product.entry.name);
+const isStaple = product.origin === 'merchant_staple';
+const products = getProducts();
+const staples = getMerchantStaples();
+const recipes = getRecipes();
+const outfits = getOutfits();
+
+function cookingEffectOf(entry: (typeof product)['entry']): string {
+  if (entry.category === 'materials') return entry.cookingEffect || '';
+  if (entry.category === 'creatures' && entry.edible === true) {
+    return entry.cookingEffect || '';
+  }
+  return '';
+}
+
+const effect = cookingEffectOf(product.entry);
+const hearts =
+  product.entry.category === 'materials'
+    ? product.entry.heartsRecovered
+    : product.entry.category === 'creatures' && product.entry.edible === true
+      ? product.entry.heartsRecovered
+      : undefined;
+const shelf = isStaple
+  ? 'staples'
+  : product.entry.category === 'equipment'
+    ? 'equipment'
+    : product.entry.category === 'creatures' || product.entry.category === 'monsters'
+      ? 'creatures'
+      : 'materials';
+
+const relatedProducts = products
+  .filter((candidate) => candidate.slug !== product.slug)
+  .filter((candidate) => {
+    const sharedLoc = candidate.entry.commonLocations.some((loc) =>
+      product.entry.commonLocations.includes(loc),
+    );
+    const sharedEffect =
+      effect && cookingEffectOf(candidate.entry) === effect;
+    return sharedLoc || sharedEffect;
+  })
+  .slice(0, 3);
+
+const relatedRecipes = recipes
+  .filter((recipe) => recipe.kind !== 'failure')
+  .map((recipe) => ({
+    recipe,
+    overlap: recipeOverlapScore(recipe, new Set([product.sourceId]), staples),
+  }))
+  .filter(({ overlap }) => overlap.have > 0)
+  .sort((a, b) => b.overlap.have - a.overlap.have)
+  .slice(0, 2)
+  .map(({ recipe, overlap }) => ({ recipe, overlap }));
+
+const relatedOutfits = outfits.filter((outfit) =>
+  outfit.sourceIds.includes(product.sourceId),
+);
+const regions = getRegions();
+const sourcedNear = product.entry.commonLocations.slice(0, 4);
+---
+
+<BaseLayout title={displayName}>
+  <div class="stack">
+    <p><a href="/shop">← Shop</a></p>
+    <h1>{displayName}</h1>
+    <ProductMeta
+      client:load
+      priceRupees={product.priceRupees}
+      stockStatus={product.stockStatus}
+      origin={product.origin}
+      category={product.entry.category}
+      cookingEffect={effect || undefined}
+      heartsRecovered={hearts}
+      shelf={shelf}
+      compactPrice={false}
+      emphasizePrice
+    />
+    <p class="notice">{product.merchantNote}</p>
+
+    {
+      sourcedNear.length > 0 ? (
+        <p class="muted">
+          Sourced near:{' '}
+          {sourcedNear.map((location, index) => {
+            const regionSlug = regionSlugForLocation(location, regions);
+            const prefix = index > 0 ? ', ' : '';
+            return regionSlug ? (
+              <span>
+                {prefix}
+                <a href={`/regions/${regionSlug}`}>{location}</a>
+              </span>
+            ) : (
+              <span>
+                {prefix}
+                {location}
+              </span>
+            );
+          })}
+        </p>
+      ) : null
+    }
+
+    <AddToSatchelButton
+      client:load
+      productSlug={product.slug}
+      sourceId={product.sourceId}
+      name={displayName}
+      priceRupees={product.priceRupees}
+      stockStatus={product.stockStatus}
+    />
+
+    <h2>{isStaple ? 'Merchant pantry notes' : 'Source facts'}</h2>
+    {
+      isStaple ? (
+        <p class="muted">
+          Authored staple — not present in the Hyrule Compendium API materials
+          snapshot. Synthetic id {product.sourceId}
+          {product.stapleId ? ` (${product.stapleId})` : ''}.
+        </p>
+      ) : null
+    }
+    <EntryDetail entry={product.entry} />
+
+    {
+      relatedProducts.length > 0 ? (
+        <section class="stack">
+          <h2>Pairs well with</h2>
+          <ul class="grid-list">
+            {relatedProducts.map((related) => (
+              <li class="entry-card">
+                <a href={`/shop/${related.slug}`}>
+                  <img
+                    src={related.entry.image}
+                    alt=""
+                    width="64"
+                    height="64"
+                    loading="lazy"
+                  />
+                  <strong>{titleCaseName(related.entry.name)}</strong>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null
+    }
+
+    {
+      relatedRecipes.length > 0 ? (
+        <section class="stack">
+          <h2>Finishes these recipes</h2>
+          <ul class="stack" style="list-style:none;padding:0;margin:0">
+            {relatedRecipes.map(({ recipe, overlap }) => (
+              <li class="entry-card">
+                <a href={`/brew#${recipe.slug}`}>
+                  <strong>{recipe.name}</strong>
+                  <div class="muted">
+                    You would have {overlap.have} of {overlap.need} ingredients
+                    with this alone.
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null
+    }
+
+    {
+      relatedOutfits.length > 0 ? (
+        <section class="stack">
+          <h2>Outfit kits</h2>
+          <ul class="stack" style="list-style:none;padding:0;margin:0">
+            {relatedOutfits.map((outfit) => (
+              <li class="entry-card">
+                <a href={`/shop?outfit=${outfit.slug}`}>
+                  <strong>{outfit.name}</strong>
+                  <div class="muted">{outfit.merchantNote}</div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null
+    }
+  </div>
+</BaseLayout>

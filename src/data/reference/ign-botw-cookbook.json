@@ -1,0 +1,5070 @@
+{
+  "meta": {
+    "source": "IGN All Recipes and Cookbook (saved HTML)",
+    "sourceUrl": "https://www.ign.com/wikis/the-legend-of-zelda-breath-of-the-wild/All_Recipes_and_Cookbook",
+    "localHtml": "All Recipes and Cookbook - The Legend of Zelda_ Breath of the Wild Guide - IGN.html",
+    "retrievedNote": "Parsed from locally saved HTML. Reference only for authoring — not Nintendo/IGN affiliated. Meal recipes only; elixirs are on a separate IGN page and are not included. Recipe images live in public/images/recipes/.",
+    "parsedAt": "2026-08-07",
+    "recipeCount": 118,
+    "mealTypeCounts": {
+      "Vegetarian Entrees": 26,
+      "Seafood Entrees": 23,
+      "Poultry and Meat Entrees": 31,
+      "Surf and Turf Entrees": 4,
+      "Desserts": 16,
+      "Monster Foods": 5,
+      "Sides and Snacks": 13
+    },
+    "ingredientKindCounts": {
+      "item": 221,
+      "tag": 77,
+      "alternatives": 15,
+      "special": 5
+    },
+    "uniqueIngredientLineCount": 68,
+    "tagCounts": {
+      "vegetable_herb_flower": 14,
+      "mushroom": 13,
+      "meat": 11,
+      "seafood": 9,
+      "fruit": 7,
+      "fish": 6,
+      "porgy": 4,
+      "crab": 4,
+      "carrot_or_pumpkin": 3,
+      "carrot": 2,
+      "nut": 2,
+      "radish": 1,
+      "snail_or_crab": 1,
+      "gem_animal_or_monster_part": 1,
+      "vegetable": 1
+    },
+    "merchantStapleUsage": {
+      "goat-butter": 31,
+      "hylian-rice": 30,
+      "rock-salt": 28,
+      "tabantha-wheat": 25,
+      "fresh-milk": 18,
+      "goron-spice": 17,
+      "bird-egg": 13,
+      "cane-sugar": 13,
+      "raw-meat": 7,
+      "raw-gourmet-meat": 6,
+      "raw-whole-bird": 6,
+      "raw-prime-meat": 6,
+      "raw-bird-thigh": 6,
+      "raw-bird-drumstick": 6,
+      "monster-extract": 5
+    },
+    "unresolvedSpecificItemCount": 0,
+    "unresolvedSpecificItems": [],
+    "images": {
+      "directory": "public/images/recipes",
+      "publicBasePath": "/images/recipes",
+      "count": 118,
+      "note": "Filenames are recipe slugs. IGN _files dump is not required after migration."
+    },
+    "schemaNotes": [
+      "Ingredient slots are item | tag | alternatives | special — not fixed sourceId lists.",
+      "Effects are not listed on this IGN page; meal effects derive from ingredient cooking_effect in-game.",
+      "15 cooking staples (milk, meats, rice, etc.) are missing from the Compendium API materials snapshot."
+    ]
+  },
+  "merchantStaples": [
+    {
+      "stapleId": "bird-egg",
+      "name": "Bird Egg",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "cane-sugar",
+      "name": "Cane Sugar",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "fresh-milk",
+      "name": "Fresh Milk",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "goat-butter",
+      "name": "Goat Butter",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "goron-spice",
+      "name": "Goron Spice",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "hylian-rice",
+      "name": "Hylian Rice",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "monster-extract",
+      "name": "Monster Extract",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "raw-bird-drumstick",
+      "name": "Raw Bird Drumstick",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "raw-bird-thigh",
+      "name": "Raw Bird Thigh",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "raw-gourmet-meat",
+      "name": "Raw Gourmet Meat",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "raw-meat",
+      "name": "Raw Meat",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "raw-prime-meat",
+      "name": "Raw Prime Meat",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "raw-whole-bird",
+      "name": "Raw Whole Bird",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "rock-salt",
+      "name": "Rock Salt",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    },
+    {
+      "stapleId": "tabantha-wheat",
+      "name": "Tabantha Wheat",
+      "note": "Present in BotW cooking but absent from Hyrule Compendium API materials snapshot; author as merchant staple overlay when selling or brewing."
+    }
+  ],
+  "ingredientTags": [
+    "carrot",
+    "carrot_or_pumpkin",
+    "crab",
+    "fish",
+    "fruit",
+    "gem_animal_or_monster_part",
+    "meat",
+    "mushroom",
+    "nut",
+    "porgy",
+    "radish",
+    "seafood",
+    "snail_or_crab",
+    "vegetable",
+    "vegetable_herb_flower"
+  ],
+  "recipes": [
+    {
+      "slug": "creamy-heart-soup",
+      "name": "Creamy Heart Soup",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any radish",
+          "tag": "radish",
+          "categoryHint": "radish",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Hydromelon",
+          "name": "Hydromelon",
+          "sourceId": 169,
+          "compendiumCategory": "materials",
+          "compendiumName": "hydromelon",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Voltfruit",
+          "name": "Voltfruit",
+          "sourceId": 171,
+          "compendiumCategory": "materials",
+          "compendiumName": "voltfruit",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Creamy Heart Soup",
+      "image": {
+        "path": "/images/recipes/creamy-heart-soup.jpg",
+        "filename": "creamy-heart-soup.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/0/04/Creamyheartsoup.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "pumpkin-stew",
+      "name": "Pumpkin Stew",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Fortified Pumpkin",
+          "name": "Fortified Pumpkin",
+          "sourceId": 194,
+          "compendiumCategory": "materials",
+          "compendiumName": "fortified pumpkin",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Pumpkin Stew",
+      "image": {
+        "path": "/images/recipes/pumpkin-stew.jpg",
+        "filename": "pumpkin-stew.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/0/02/Pumpkinsoup.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "veggie-cream-soup",
+      "name": "Veggie Cream Soup",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any carrot or pumpkin",
+          "tag": "carrot_or_pumpkin",
+          "categoryHint": "carrot or pumpkin",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Veggie Cream Soup",
+      "image": {
+        "path": "/images/recipes/veggie-cream-soup.jpg",
+        "filename": "veggie-cream-soup.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/c/c2/Veggiecreamsoup.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "cream-of-mushroom-soup",
+      "name": "Cream of Mushroom Soup",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any other vegetable, herb, or flower",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "other vegetable, herb, or flower",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Cream of Mushroom Soup",
+      "image": {
+        "path": "/images/recipes/cream-of-mushroom-soup.jpg",
+        "filename": "cream-of-mushroom-soup.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/2/2e/Creamofmushroomsoup.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "cream-of-vegetable-soup",
+      "name": "Cream of Vegetable Soup",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any herb, vegetable, or flower",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "herb, vegetable, or flower",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Cream of Vegetable Soup",
+      "image": {
+        "path": "/images/recipes/cream-of-vegetable-soup.jpg",
+        "filename": "cream-of-vegetable-soup.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/e/ee/Creamofvegetable.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "carrot-stew",
+      "name": "Carrot Stew",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any carrot",
+          "tag": "carrot",
+          "categoryHint": "carrot",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Carrot Stew",
+      "image": {
+        "path": "/images/recipes/carrot-stew.jpg",
+        "filename": "carrot-stew.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/35/Carrotstew.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "vegetable-risotto",
+      "name": "Vegetable Risotto",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any carrot or pumpkin",
+          "tag": "carrot_or_pumpkin",
+          "categoryHint": "carrot or pumpkin",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Vegetable Risotto",
+      "image": {
+        "path": "/images/recipes/vegetable-risotto.jpg",
+        "filename": "vegetable-risotto.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/37/Vegetablerisotto.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "mushroom-risotto",
+      "name": "Mushroom Risotto",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Mushroom Risotto",
+      "image": {
+        "path": "/images/recipes/mushroom-risotto.jpg",
+        "filename": "mushroom-risotto.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/3a/Mushroomrisotto.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "curry-pilaf",
+      "name": "Curry Pilaf",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Curry Pilaf",
+      "image": {
+        "path": "/images/recipes/curry-pilaf.jpg",
+        "filename": "curry-pilaf.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/6/6b/Currypilaf.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "mushroom-rice-balls",
+      "name": "Mushroom Rice Balls",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Mushroom Rice Balls",
+      "image": {
+        "path": "/images/recipes/mushroom-rice-balls.jpg",
+        "filename": "mushroom-rice-balls.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/0/00/Mushroomriceballs.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "veggie-rice-balls",
+      "name": "Veggie Rice Balls",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "tag",
+          "raw": "Any vegetable, herb, or flower",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "vegetable, herb, or flower",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Veggie Rice Balls",
+      "image": {
+        "path": "/images/recipes/veggie-rice-balls.jpg",
+        "filename": "veggie-rice-balls.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/d/da/Veggie_rice_balls.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "curry-rice",
+      "name": "Curry Rice",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Curry Rice",
+      "image": {
+        "path": "/images/recipes/curry-rice.jpg",
+        "filename": "curry-rice.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/a/a5/Curryrice.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fried-egg-and-rice",
+      "name": "Fried Egg and Rice",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Fried Egg and Rice",
+      "image": {
+        "path": "/images/recipes/fried-egg-and-rice.jpg",
+        "filename": "fried-egg-and-rice.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/f3/Fried_egg_and_rice.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "mushroom-omelet",
+      "name": "Mushroom Omelet",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Mushroom Omelet",
+      "image": {
+        "path": "/images/recipes/mushroom-omelet.jpg",
+        "filename": "mushroom-omelet.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/0/0f/Mushroomomelet.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "vegetable-omelet",
+      "name": "Vegetable Omelet",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any vegetable, herb, or flower",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "vegetable, herb, or flower",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Vegetable Omelet",
+      "image": {
+        "path": "/images/recipes/vegetable-omelet.jpg",
+        "filename": "vegetable-omelet.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/c/c4/Vegetableomelet.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "vegetable-curry",
+      "name": "Vegetable Curry",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any carrot or pumpkin",
+          "tag": "carrot_or_pumpkin",
+          "categoryHint": "carrot or pumpkin",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Vegetable Curry",
+      "image": {
+        "path": "/images/recipes/vegetable-curry.jpg",
+        "filename": "vegetable-curry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/33/Vegetablecurry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fragrant-mushroom-saute",
+      "name": "Fragrant Mushroom Sauté",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Fragrant Mushroom Sauté",
+      "image": {
+        "path": "/images/recipes/fragrant-mushroom-saute.jpg",
+        "filename": "fragrant-mushroom-saute.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/7/75/Fragrantmushroomsaute.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "herb-saute",
+      "name": "Herb Sauté",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any vegetable, herb, or flower",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "vegetable, herb, or flower",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Herb Sauté",
+      "image": {
+        "path": "/images/recipes/herb-saute.jpg",
+        "filename": "herb-saute.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/8/88/Herbsaute.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "salt-grilled-greens",
+      "name": "Salt-Grilled Greens",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any vegetable, herb, or flower",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "vegetable, herb, or flower",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Salt-Grilled Greens",
+      "image": {
+        "path": "/images/recipes/salt-grilled-greens.jpg",
+        "filename": "salt-grilled-greens.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/8/85/Salt-grilledgreens.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "salt-grilled-mushrooms",
+      "name": "Salt-Grilled Mushrooms",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Salt-Grilled Mushrooms",
+      "image": {
+        "path": "/images/recipes/salt-grilled-mushrooms.jpg",
+        "filename": "salt-grilled-mushrooms.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/7/77/Salt-grilledmushrooms.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "steamed-mushrooms",
+      "name": "Steamed Mushrooms",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any vegetable, herb, or flower",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "vegetable, herb, or flower",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Steamed Mushrooms",
+      "image": {
+        "path": "/images/recipes/steamed-mushrooms.jpg",
+        "filename": "steamed-mushrooms.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/f5/Steamedmushrooms.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "mushroom-skewer",
+      "name": "Mushroom Skewer",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Mushroom Skewer",
+      "image": {
+        "path": "/images/recipes/mushroom-skewer.jpg",
+        "filename": "mushroom-skewer.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/b/b7/Mushroomskewer.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "copious-mushroom-skewers",
+      "name": "Copious Mushroom Skewers",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any four different mushrooms",
+          "tag": "mushroom",
+          "categoryHint": "mushrooms",
+          "count": 4,
+          "distinct": true
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Copious Mushroom Skewers",
+      "image": {
+        "path": "/images/recipes/copious-mushroom-skewers.jpg",
+        "filename": "copious-mushroom-skewers.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/f2/Copiousmushroomskewers.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fried-wild-greens",
+      "name": "Fried Wild Greens",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any vegetable, flower, or herb combination",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "vegetable, flower, or herb",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Fried Wild Greens",
+      "image": {
+        "path": "/images/recipes/fried-wild-greens.jpg",
+        "filename": "fried-wild-greens.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/6/6a/Friedwildgreensreal.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "copious-fried-wild-greens",
+      "name": "Copious Fried Wild Greens",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any four different herbs, vegetables, or flowers",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "herbs, vegetables, or flowers",
+          "count": 4,
+          "distinct": true
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Copious Fried Wild Greens",
+      "image": {
+        "path": "/images/recipes/copious-fried-wild-greens.jpg",
+        "filename": "copious-fried-wild-greens.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/5/50/Friedwildgreens.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "omelet",
+      "name": "Omelet",
+      "kind": "meal",
+      "recipeType": "Vegetarian Entrees",
+      "recipeTypeId": "vegetarian_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Omelet",
+      "image": {
+        "path": "/images/recipes/omelet.jpg",
+        "filename": "omelet.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/1/19/Omelet.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "clam-chowder",
+      "name": "Clam Chowder",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Hearty Blueshell Snail",
+          "name": "Hearty Blueshell Snail",
+          "sourceId": 62,
+          "compendiumCategory": "creatures",
+          "compendiumName": "hearty blueshell snail",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Clam Chowder",
+      "image": {
+        "path": "/images/recipes/clam-chowder.jpg",
+        "filename": "clam-chowder.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/6/63/Clamchowder.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "creamy-seafood-soup",
+      "name": "Creamy Seafood Soup",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any seafood",
+          "tag": "seafood",
+          "categoryHint": "seafood",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any herb, vegetable, or flower",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "herb, vegetable, or flower",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Creamy Seafood Soup",
+      "image": {
+        "path": "/images/recipes/creamy-seafood-soup.jpg",
+        "filename": "creamy-seafood-soup.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/7/77/Creamyseafoodsoupr.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "seafood-curry",
+      "name": "Seafood Curry",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Hearty Blueshell Snail or any Porgy",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Hearty Blueshell Snail",
+              "name": "Hearty Blueshell Snail",
+              "sourceId": 62,
+              "compendiumCategory": "creatures",
+              "compendiumName": "hearty blueshell snail",
+              "resolution": "compendium"
+            },
+            {
+              "kind": "tag",
+              "raw": "any Porgy",
+              "tag": "porgy",
+              "categoryHint": "Porgy",
+              "count": 1,
+              "distinct": false
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Seafood Curry",
+      "image": {
+        "path": "/images/recipes/seafood-curry.jpg",
+        "filename": "seafood-curry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/9/9e/Seafoodcurry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "salmon-risotto",
+      "name": "Salmon Risotto",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Hearty Salmon",
+          "name": "Hearty Salmon",
+          "sourceId": 51,
+          "compendiumCategory": "creatures",
+          "compendiumName": "hearty salmon",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Salmon Risotto",
+      "image": {
+        "path": "/images/recipes/salmon-risotto.jpg",
+        "filename": "salmon-risotto.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/e/e2/Salmonrisotto.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "crab-risotto",
+      "name": "Crab Risotto",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any crab",
+          "tag": "crab",
+          "categoryHint": "crab",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Crab Risotto",
+      "image": {
+        "path": "/images/recipes/crab-risotto.jpg",
+        "filename": "crab-risotto.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/a/ad/Crabrisotto.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "seafood-fried-rice",
+      "name": "Seafood Fried Rice",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Hearty Blueshell Snail or any Porgy",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Hearty Blueshell Snail",
+              "name": "Hearty Blueshell Snail",
+              "sourceId": 62,
+              "compendiumCategory": "creatures",
+              "compendiumName": "hearty blueshell snail",
+              "resolution": "compendium"
+            },
+            {
+              "kind": "tag",
+              "raw": "any Porgy",
+              "tag": "porgy",
+              "categoryHint": "Porgy",
+              "count": 1,
+              "distinct": false
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Seafood Fried Rice",
+      "image": {
+        "path": "/images/recipes/seafood-fried-rice.jpg",
+        "filename": "seafood-fried-rice.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/fb/Seafoodfriedrice.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "seafood-paella",
+      "name": "Seafood Paella",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any Porgy",
+          "tag": "porgy",
+          "categoryHint": "Porgy",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Hearty Blueshell Snail",
+          "name": "Hearty Blueshell Snail",
+          "sourceId": 62,
+          "compendiumCategory": "creatures",
+          "compendiumName": "hearty blueshell snail",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 5,
+      "made": "Seafood Paella",
+      "image": {
+        "path": "/images/recipes/seafood-paella.jpg",
+        "filename": "seafood-paella.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/2/21/Seafoodpaella.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "crab-omelet-with-rice",
+      "name": "Crab Omelet with Rice",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any crab",
+          "tag": "crab",
+          "categoryHint": "crab",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Crab Omelet with Rice",
+      "image": {
+        "path": "/images/recipes/crab-omelet-with-rice.jpg",
+        "filename": "crab-omelet-with-rice.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/39/Crabomeletwithrice.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "seafood-rice-balls",
+      "name": "Seafood Rice Balls",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any fish",
+          "tag": "fish",
+          "categoryHint": "fish",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Seafood Rice Balls",
+      "image": {
+        "path": "/images/recipes/seafood-rice-balls.jpg",
+        "filename": "seafood-rice-balls.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/8/8c/Seafoodriceballs.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fish-pie",
+      "name": "Fish Pie",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any seafood",
+          "tag": "seafood",
+          "categoryHint": "seafood",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Fish Pie",
+      "image": {
+        "path": "/images/recipes/fish-pie.jpg",
+        "filename": "fish-pie.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/e/e0/Fishpie.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "salmon-meuniere",
+      "name": "Salmon Meuniere",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Hearty Salmon",
+          "name": "Hearty Salmon",
+          "sourceId": 51,
+          "compendiumCategory": "creatures",
+          "compendiumName": "hearty salmon",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Salmon Meuniere",
+      "image": {
+        "path": "/images/recipes/salmon-meuniere.jpg",
+        "filename": "salmon-meuniere.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/6/64/SalmonMeuniere.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "porgy-meuniere",
+      "name": "Porgy Meuniere",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any Porgy",
+          "tag": "porgy",
+          "categoryHint": "Porgy",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Porgy Meuniere",
+      "image": {
+        "path": "/images/recipes/porgy-meuniere.jpg",
+        "filename": "porgy-meuniere.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/f5/Porgymeuniere.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "seafood-meuniere",
+      "name": "Seafood Meuniere",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any seafood excluding Hearty Salmon or Porgy",
+          "tag": "seafood",
+          "categoryHint": "seafood",
+          "count": 1,
+          "distinct": false,
+          "exclude": [
+            "Hearty Salmon",
+            "Porgy"
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Seafood Meuniere",
+      "image": {
+        "path": "/images/recipes/seafood-meuniere.jpg",
+        "filename": "seafood-meuniere.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/2/2a/Seafoodmeuniere.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "glazed-seafood",
+      "name": "Glazed Seafood",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Courser Bee Honey",
+          "name": "Courser Bee Honey",
+          "sourceId": 200,
+          "compendiumCategory": "materials",
+          "compendiumName": "courser bee honey",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "tag",
+          "raw": "Any seafood",
+          "tag": "seafood",
+          "categoryHint": "seafood",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Glazed Seafood",
+      "image": {
+        "path": "/images/recipes/glazed-seafood.jpg",
+        "filename": "glazed-seafood.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/b/b3/Glazedseafood.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "crab-stir-fry",
+      "name": "Crab Stir-Fry",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any crab",
+          "tag": "crab",
+          "categoryHint": "crab",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Crab Stir-Fry",
+      "image": {
+        "path": "/images/recipes/crab-stir-fry.jpg",
+        "filename": "crab-stir-fry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/8/85/Crabstir-fry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "salt-grilled-crab",
+      "name": "Salt-Grilled Crab",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any crab",
+          "tag": "crab",
+          "categoryHint": "crab",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Salt-Grilled Crab",
+      "image": {
+        "path": "/images/recipes/salt-grilled-crab.jpg",
+        "filename": "salt-grilled-crab.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/d/d8/Salt-grilledcrab.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "salt-grilled-fish",
+      "name": "Salt-Grilled Fish",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any fish",
+          "tag": "fish",
+          "categoryHint": "fish",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Salt-Grilled Fish",
+      "image": {
+        "path": "/images/recipes/salt-grilled-fish.jpg",
+        "filename": "salt-grilled-fish.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/b/ba/Salt-grilledfish.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "copious-fish-skewers",
+      "name": "Copious Fish Skewers",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any four different fish",
+          "tag": "fish",
+          "categoryHint": "fish",
+          "count": 4,
+          "distinct": true
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Copious Fish Skewers",
+      "image": {
+        "path": "/images/recipes/copious-fish-skewers.jpg",
+        "filename": "copious-fish-skewers.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/d/dc/Copiousseafoodskewers.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "spicy-peppered-seafood",
+      "name": "Spicy Peppered Seafood",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any seafood",
+          "tag": "seafood",
+          "categoryHint": "seafood",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Spicy Pepper",
+          "name": "Spicy Pepper",
+          "sourceId": 170,
+          "compendiumCategory": "materials",
+          "compendiumName": "spicy pepper",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Spicy Peppered Seafood",
+      "image": {
+        "path": "/images/recipes/spicy-peppered-seafood.jpg",
+        "filename": "spicy-peppered-seafood.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/7/70/Spicypepperseafood.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "steamed-fish",
+      "name": "Steamed Fish",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any herb, vegetable, or flower",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "herb, vegetable, or flower",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any fish",
+          "tag": "fish",
+          "categoryHint": "fish",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Steamed Fish",
+      "image": {
+        "path": "/images/recipes/steamed-fish.jpg",
+        "filename": "steamed-fish.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/a/a6/Steamedfish.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fish-and-mushroom-skewer",
+      "name": "Fish and Mushroom Skewer",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any fish",
+          "tag": "fish",
+          "categoryHint": "fish",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Fish and Mushroom Skewer",
+      "image": {
+        "path": "/images/recipes/fish-and-mushroom-skewer.jpg",
+        "filename": "fish-and-mushroom-skewer.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/30/Fishandmushroomskewer.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "seafood-skewer",
+      "name": "Seafood Skewer",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any snail or crab",
+          "tag": "snail_or_crab",
+          "categoryHint": "snail or crab",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Seafood Skewer",
+      "image": {
+        "path": "/images/recipes/seafood-skewer.jpg",
+        "filename": "seafood-skewer.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/8/8f/Seafoodskewer.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fish-skewer",
+      "name": "Fish Skewer",
+      "kind": "meal",
+      "recipeType": "Seafood Entrees",
+      "recipeTypeId": "seafood_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any fish",
+          "tag": "fish",
+          "categoryHint": "fish",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Fish Skewer",
+      "image": {
+        "path": "/images/recipes/fish-skewer.jpg",
+        "filename": "fish-skewer.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/6/60/Fishskewer.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "gourmet-meat-stew",
+      "name": "Gourmet Meat Stew",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Gourmet Meat or Raw Whole Bird",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Gourmet Meat",
+              "name": "Raw Gourmet Meat",
+              "sourceId": null,
+              "stapleId": "raw-gourmet-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Whole Bird",
+              "name": "Raw Whole Bird",
+              "sourceId": null,
+              "stapleId": "raw-whole-bird",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Gourmet Meat Stew",
+      "image": {
+        "path": "/images/recipes/gourmet-meat-stew.jpg",
+        "filename": "gourmet-meat-stew.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/c/ce/Gourmetmeatstew.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "prime-meat-stew",
+      "name": "Prime Meat Stew",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Prime Meat or Raw Bird Thigh",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Prime Meat",
+              "name": "Raw Prime Meat",
+              "sourceId": null,
+              "stapleId": "raw-prime-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Bird Thigh",
+              "name": "Raw Bird Thigh",
+              "sourceId": null,
+              "stapleId": "raw-bird-thigh",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Prime Meat Stew",
+      "image": {
+        "path": "/images/recipes/prime-meat-stew.jpg",
+        "filename": "prime-meat-stew.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/9/92/Primemeatstew.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "meat-stew",
+      "name": "Meat Stew",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Meat or Raw Bird Drumstick",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Meat",
+              "name": "Raw Meat",
+              "sourceId": null,
+              "stapleId": "raw-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Bird Drumstick",
+              "name": "Raw Bird Drumstick",
+              "sourceId": null,
+              "stapleId": "raw-bird-drumstick",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Meat Stew",
+      "image": {
+        "path": "/images/recipes/meat-stew.jpg",
+        "filename": "meat-stew.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/6/65/Meatstew.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "creamy-meat-soup",
+      "name": "Creamy Meat Soup",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any meat",
+          "tag": "meat",
+          "categoryHint": "meat",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any herb, flower, or vegetable",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "herb, flower, or vegetable",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Creamy Meat Soup",
+      "image": {
+        "path": "/images/recipes/creamy-meat-soup.jpg",
+        "filename": "creamy-meat-soup.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/9/9c/Creamymeatsoup.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "meat-curry",
+      "name": "Meat Curry",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Meat",
+          "name": "Raw Meat",
+          "sourceId": null,
+          "stapleId": "raw-meat",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Meat Curry",
+      "image": {
+        "path": "/images/recipes/meat-curry.jpg",
+        "filename": "meat-curry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/31/Meatcurry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "prime-meat-curry",
+      "name": "Prime Meat Curry",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Prime Meat",
+          "name": "Raw Prime Meat",
+          "sourceId": null,
+          "stapleId": "raw-prime-meat",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Prime Meat Curry",
+      "image": {
+        "path": "/images/recipes/prime-meat-curry.jpg",
+        "filename": "prime-meat-curry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/a/a4/Primemeatcurry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "gourmet-meat-curry",
+      "name": "Gourmet Meat Curry",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Gourmet Meat",
+          "name": "Raw Gourmet Meat",
+          "sourceId": null,
+          "stapleId": "raw-gourmet-meat",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Gourmet Meat Curry",
+      "image": {
+        "path": "/images/recipes/gourmet-meat-curry.jpg",
+        "filename": "gourmet-meat-curry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/b/bb/Gourmetmeatcurry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "poultry-curry",
+      "name": "Poultry Curry",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Bird Drumstick",
+          "name": "Raw Bird Drumstick",
+          "sourceId": null,
+          "stapleId": "raw-bird-drumstick",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Poultry Curry",
+      "image": {
+        "path": "/images/recipes/poultry-curry.jpg",
+        "filename": "poultry-curry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/f1/Poultrycurry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "prime-poultry-curry",
+      "name": "Prime Poultry Curry",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Bird Thigh",
+          "name": "Raw Bird Thigh",
+          "sourceId": null,
+          "stapleId": "raw-bird-thigh",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Prime Poultry Curry",
+      "image": {
+        "path": "/images/recipes/prime-poultry-curry.jpg",
+        "filename": "prime-poultry-curry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/1/16/Primepoultrycurry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "gourmet-poultry-curry",
+      "name": "Gourmet Poultry Curry",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Whole Bird",
+          "name": "Raw Whole Bird",
+          "sourceId": null,
+          "stapleId": "raw-whole-bird",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Gourmet Poultry Curry",
+      "image": {
+        "path": "/images/recipes/gourmet-poultry-curry.jpg",
+        "filename": "gourmet-poultry-curry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/f0/Gourmetpoultrycurry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "meaty-rice-balls",
+      "name": "Meaty Rice Balls",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any meat",
+          "tag": "meat",
+          "categoryHint": "meat",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Meaty Rice Balls",
+      "image": {
+        "path": "/images/recipes/meaty-rice-balls.jpg",
+        "filename": "meaty-rice-balls.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/6/67/Meatyriceballs.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "meat-stuffed-pumpkins",
+      "name": "Meat-Stuffed Pumpkins",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any meat",
+          "tag": "meat",
+          "categoryHint": "meat",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Fortified Pumpkin",
+          "name": "Fortified Pumpkin",
+          "sourceId": 194,
+          "compendiumCategory": "materials",
+          "compendiumName": "fortified pumpkin",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Meat-Stuffed Pumpkins",
+      "image": {
+        "path": "/images/recipes/meat-stuffed-pumpkins.jpg",
+        "filename": "meat-stuffed-pumpkins.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/f2/Meatstuffedpumpkin.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "meat-pie",
+      "name": "Meat Pie",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any meat",
+          "tag": "meat",
+          "categoryHint": "meat",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Meat Pie",
+      "image": {
+        "path": "/images/recipes/meat-pie.jpg",
+        "filename": "meat-pie.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/f4/Meatpie.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "poultry-pilaf",
+      "name": "Poultry Pilaf",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Bird Drumstick",
+          "name": "Raw Bird Drumstick",
+          "sourceId": null,
+          "stapleId": "raw-bird-drumstick",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Poultry Pilaf",
+      "image": {
+        "path": "/images/recipes/poultry-pilaf.jpg",
+        "filename": "poultry-pilaf.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/b/b6/Poultrypilaf.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "prime-poultry-pilaf",
+      "name": "Prime Poultry Pilaf",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Bird Thigh",
+          "name": "Raw Bird Thigh",
+          "sourceId": null,
+          "stapleId": "raw-bird-thigh",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Prime Poultry Pilaf",
+      "image": {
+        "path": "/images/recipes/prime-poultry-pilaf.jpg",
+        "filename": "prime-poultry-pilaf.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/c/c6/Primepoultrypilaf.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "gourmet-poultry-pilaf",
+      "name": "Gourmet Poultry Pilaf",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Whole Bird",
+          "name": "Raw Whole Bird",
+          "sourceId": null,
+          "stapleId": "raw-whole-bird",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Gourmet Poultry Pilaf",
+      "image": {
+        "path": "/images/recipes/gourmet-poultry-pilaf.jpg",
+        "filename": "gourmet-poultry-pilaf.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/0/0b/Gourmetpoultrypilaf.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "meat-and-rice-bowl",
+      "name": "Meat and Rice Bowl",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Meat or Raw Bird Drumstick",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Meat",
+              "name": "Raw Meat",
+              "sourceId": null,
+              "stapleId": "raw-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Bird Drumstick",
+              "name": "Raw Bird Drumstick",
+              "sourceId": null,
+              "stapleId": "raw-bird-drumstick",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Meat and Rice Bowl",
+      "image": {
+        "path": "/images/recipes/meat-and-rice-bowl.jpg",
+        "filename": "meat-and-rice-bowl.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/f1/Meatandricebowl.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "prime-meat-and-rice-bowl",
+      "name": "Prime Meat and Rice Bowl",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Prime Meat or Raw Bird Thigh",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Prime Meat",
+              "name": "Raw Prime Meat",
+              "sourceId": null,
+              "stapleId": "raw-prime-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Bird Thigh",
+              "name": "Raw Bird Thigh",
+              "sourceId": null,
+              "stapleId": "raw-bird-thigh",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Prime Meat and Rice Bowl",
+      "image": {
+        "path": "/images/recipes/prime-meat-and-rice-bowl.jpg",
+        "filename": "prime-meat-and-rice-bowl.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/4/4f/Primemeatandricebowl.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "gourmet-meat-and-rice-bowl",
+      "name": "Gourmet Meat and Rice Bowl",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Gourmet Meat or Raw Whole Bird",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Gourmet Meat",
+              "name": "Raw Gourmet Meat",
+              "sourceId": null,
+              "stapleId": "raw-gourmet-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Whole Bird",
+              "name": "Raw Whole Bird",
+              "sourceId": null,
+              "stapleId": "raw-whole-bird",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Gourmet Meat and Rice Bowl",
+      "image": {
+        "path": "/images/recipes/gourmet-meat-and-rice-bowl.jpg",
+        "filename": "gourmet-meat-and-rice-bowl.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/6/6e/Gourmetmeatandricebowl.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "glazed-meat",
+      "name": "Glazed Meat",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any meat",
+          "tag": "meat",
+          "categoryHint": "meat",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Courser Bee Honey",
+          "name": "Courser Bee Honey",
+          "sourceId": 200,
+          "compendiumCategory": "materials",
+          "compendiumName": "courser bee honey",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Glazed Meat",
+      "image": {
+        "path": "/images/recipes/glazed-meat.jpg",
+        "filename": "glazed-meat.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/d/dc/Glazedmeat.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "spiced-meat-skewer",
+      "name": "Spiced Meat Skewer",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Meat",
+          "name": "Raw Meat",
+          "sourceId": null,
+          "stapleId": "raw-meat",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Spiced Meat Skewer",
+      "image": {
+        "path": "/images/recipes/spiced-meat-skewer.jpg",
+        "filename": "spiced-meat-skewer.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/3f/Spicedmeatskewer.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "prime-spiced-meat-skewer",
+      "name": "Prime Spiced Meat Skewer",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Prime Meat",
+          "name": "Raw Prime Meat",
+          "sourceId": null,
+          "stapleId": "raw-prime-meat",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Prime Spiced Meat Skewer",
+      "image": {
+        "path": "/images/recipes/prime-spiced-meat-skewer.jpg",
+        "filename": "prime-spiced-meat-skewer.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/9/96/Primespicedmeatskewer.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "gourmet-spiced-meat-skewer",
+      "name": "Gourmet Spiced Meat Skewer",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Raw Gourmet Meat",
+          "name": "Raw Gourmet Meat",
+          "sourceId": null,
+          "stapleId": "raw-gourmet-meat",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Gourmet Spiced Meat Skewer",
+      "image": {
+        "path": "/images/recipes/gourmet-spiced-meat-skewer.jpg",
+        "filename": "gourmet-spiced-meat-skewer.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/0/04/Gourmetspicedmeatskewers.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "salt-grilled-meat",
+      "name": "Salt-Grilled Meat",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Meat or Raw Bird Drumstick",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Meat",
+              "name": "Raw Meat",
+              "sourceId": null,
+              "stapleId": "raw-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Bird Drumstick",
+              "name": "Raw Bird Drumstick",
+              "sourceId": null,
+              "stapleId": "raw-bird-drumstick",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Salt-Grilled Meat",
+      "image": {
+        "path": "/images/recipes/salt-grilled-meat.jpg",
+        "filename": "salt-grilled-meat.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/4/46/Salt-grilledmeat.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "salt-grilled-prime-meat",
+      "name": "Salt-Grilled Prime Meat",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Prime Meat or Raw Bird Thigh",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Prime Meat",
+              "name": "Raw Prime Meat",
+              "sourceId": null,
+              "stapleId": "raw-prime-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Bird Thigh",
+              "name": "Raw Bird Thigh",
+              "sourceId": null,
+              "stapleId": "raw-bird-thigh",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Salt-Grilled Prime Meat",
+      "image": {
+        "path": "/images/recipes/salt-grilled-prime-meat.jpg",
+        "filename": "salt-grilled-prime-meat.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/d/d9/Salt-grilledprimemeat.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "salt-grilled-gourmet-meat",
+      "name": "Salt-Grilled Gourmet Meat",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Gourmet Meat or Raw Whole Bird",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Gourmet Meat",
+              "name": "Raw Gourmet Meat",
+              "sourceId": null,
+              "stapleId": "raw-gourmet-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Whole Bird",
+              "name": "Raw Whole Bird",
+              "sourceId": null,
+              "stapleId": "raw-whole-bird",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Salt-Grilled Gourmet Meat",
+      "image": {
+        "path": "/images/recipes/salt-grilled-gourmet-meat.jpg",
+        "filename": "salt-grilled-gourmet-meat.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/e/e1/Salt-grilledgourmetmeat.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "copious-meat-skewers",
+      "name": "Copious Meat Skewers",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any four different meats",
+          "tag": "meat",
+          "categoryHint": "meats",
+          "count": 4,
+          "distinct": true
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Copious Meat Skewers",
+      "image": {
+        "path": "/images/recipes/copious-meat-skewers.jpg",
+        "filename": "copious-meat-skewers.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/9/98/Copiousmeatskewers.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "pepper-steak",
+      "name": "Pepper Steak",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any meat",
+          "tag": "meat",
+          "categoryHint": "meat",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Spicy Pepper",
+          "name": "Spicy Pepper",
+          "sourceId": 170,
+          "compendiumCategory": "materials",
+          "compendiumName": "spicy pepper",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Pepper Steak",
+      "image": {
+        "path": "/images/recipes/pepper-steak.jpg",
+        "filename": "pepper-steak.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/35/Peppersteak.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "steamed-meat",
+      "name": "Steamed Meat",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any meat",
+          "tag": "meat",
+          "categoryHint": "meat",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any vegetable, herb, or flower",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "vegetable, herb, or flower",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Steamed Meat",
+      "image": {
+        "path": "/images/recipes/steamed-meat.jpg",
+        "filename": "steamed-meat.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/32/Steamedmeat.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "meat-and-mushroom-skewer",
+      "name": "Meat and Mushroom Skewer",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any meat",
+          "tag": "meat",
+          "categoryHint": "meat",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Meat and Mushroom Skewer",
+      "image": {
+        "path": "/images/recipes/meat-and-mushroom-skewer.jpg",
+        "filename": "meat-and-mushroom-skewer.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/fa/Meatandmushroomskewer.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "meat-skewer",
+      "name": "Meat Skewer",
+      "kind": "meal",
+      "recipeType": "Poultry and Meat Entrees",
+      "recipeTypeId": "poultry_meat_entree",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any meat",
+          "tag": "meat",
+          "categoryHint": "meat",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Meat Skewer",
+      "image": {
+        "path": "/images/recipes/meat-skewer.jpg",
+        "filename": "meat-skewer.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/f/fb/Meatskewer.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "meat-and-seafood-fry",
+      "name": "Meat and Seafood Fry",
+      "kind": "meal",
+      "recipeType": "Surf and Turf Entrees",
+      "recipeTypeId": "surf_and_turf",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Meat or Raw Bird Drumstick",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Meat",
+              "name": "Raw Meat",
+              "sourceId": null,
+              "stapleId": "raw-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Bird Drumstick",
+              "name": "Raw Bird Drumstick",
+              "sourceId": null,
+              "stapleId": "raw-bird-drumstick",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "tag",
+          "raw": "Any seafood",
+          "tag": "seafood",
+          "categoryHint": "seafood",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Meat and Seafood Fry",
+      "image": {
+        "path": "/images/recipes/meat-and-seafood-fry.jpg",
+        "filename": "meat-and-seafood-fry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/36/Meatandseafoodfry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "prime-meat-and-seafood-fry",
+      "name": "Prime Meat and Seafood Fry",
+      "kind": "meal",
+      "recipeType": "Surf and Turf Entrees",
+      "recipeTypeId": "surf_and_turf",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Bird Thigh or Raw Prime Meat",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Bird Thigh",
+              "name": "Raw Bird Thigh",
+              "sourceId": null,
+              "stapleId": "raw-bird-thigh",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Prime Meat",
+              "name": "Raw Prime Meat",
+              "sourceId": null,
+              "stapleId": "raw-prime-meat",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "tag",
+          "raw": "Any seafood",
+          "tag": "seafood",
+          "categoryHint": "seafood",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Prime Meat and Seafood Fry",
+      "image": {
+        "path": "/images/recipes/prime-meat-and-seafood-fry.jpg",
+        "filename": "prime-meat-and-seafood-fry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/1/1d/Primemeatandseafoodfry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "gourmet-meat-and-seafood-fry",
+      "name": "Gourmet Meat and Seafood Fry",
+      "kind": "meal",
+      "recipeType": "Surf and Turf Entrees",
+      "recipeTypeId": "surf_and_turf",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Raw Gourmet Meat or Raw Whole Bird",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Raw Gourmet Meat",
+              "name": "Raw Gourmet Meat",
+              "sourceId": null,
+              "stapleId": "raw-gourmet-meat",
+              "resolution": "merchant_staple"
+            },
+            {
+              "kind": "item",
+              "raw": "Raw Whole Bird",
+              "name": "Raw Whole Bird",
+              "sourceId": null,
+              "stapleId": "raw-whole-bird",
+              "resolution": "merchant_staple"
+            }
+          ]
+        },
+        {
+          "kind": "tag",
+          "raw": "Any seafood",
+          "tag": "seafood",
+          "categoryHint": "seafood",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Gourmet Meat and Seafood Fry",
+      "image": {
+        "path": "/images/recipes/gourmet-meat-and-seafood-fry.jpg",
+        "filename": "gourmet-meat-and-seafood-fry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/7/7f/Gourmetmeatandseafoodfry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "spicy-meat-and-seafood-fry",
+      "name": "Spicy Meat and Seafood Fry",
+      "kind": "meal",
+      "recipeType": "Surf and Turf Entrees",
+      "recipeTypeId": "surf_and_turf",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Spicy Pepper",
+          "name": "Spicy Pepper",
+          "sourceId": 170,
+          "compendiumCategory": "materials",
+          "compendiumName": "spicy pepper",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Hyrule Bass",
+          "name": "Hyrule Bass",
+          "sourceId": 48,
+          "compendiumCategory": "creatures",
+          "compendiumName": "hyrule bass",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Raw Meat",
+          "name": "Raw Meat",
+          "sourceId": null,
+          "stapleId": "raw-meat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Spicy Meat and Seafood Fry",
+      "image": {
+        "path": "/images/recipes/spicy-meat-and-seafood-fry.jpg",
+        "filename": "spicy-meat-and-seafood-fry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/34/Spicymeatandseafood.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "apple-pie",
+      "name": "Apple Pie",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Apple",
+          "name": "Apple",
+          "sourceId": 165,
+          "compendiumCategory": "materials",
+          "compendiumName": "apple",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Apple Pie",
+      "image": {
+        "path": "/images/recipes/apple-pie.jpg",
+        "filename": "apple-pie.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/2/29/Applepie.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "pumpkin-pie",
+      "name": "Pumpkin Pie",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Fortified Pumpkin",
+          "name": "Fortified Pumpkin",
+          "sourceId": 194,
+          "compendiumCategory": "materials",
+          "compendiumName": "fortified pumpkin",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Pumpkin Pie",
+      "image": {
+        "path": "/images/recipes/pumpkin-pie.jpg",
+        "filename": "pumpkin-pie.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/8/8f/Pumpkinpie.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fruit-pie",
+      "name": "Fruit Pie",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any fruit excluding apple or pumpkin",
+          "tag": "fruit",
+          "categoryHint": "fruit",
+          "count": 1,
+          "distinct": false,
+          "exclude": [
+            "apple",
+            "pumpkin"
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Fruit Pie",
+      "image": {
+        "path": "/images/recipes/fruit-pie.jpg",
+        "filename": "fruit-pie.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/4/49/Fruitpie.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fruitcake",
+      "name": "Fruitcake",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "raw": "Wildberry or Apple",
+          "options": [
+            {
+              "kind": "item",
+              "raw": "Wildberry",
+              "name": "Wildberry",
+              "sourceId": 167,
+              "compendiumCategory": "materials",
+              "compendiumName": "wildberry",
+              "resolution": "compendium"
+            },
+            {
+              "kind": "item",
+              "raw": "Apple",
+              "name": "Apple",
+              "sourceId": 165,
+              "compendiumCategory": "materials",
+              "compendiumName": "apple",
+              "resolution": "compendium"
+            }
+          ]
+        },
+        {
+          "kind": "tag",
+          "raw": "Any other fruit",
+          "tag": "fruit",
+          "categoryHint": "other fruit",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Fruitcake",
+      "image": {
+        "path": "/images/recipes/fruitcake.jpg",
+        "filename": "fruitcake.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/7/71/Fruitcake.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "carrot-cake",
+      "name": "Carrot Cake",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any carrot",
+          "tag": "carrot",
+          "categoryHint": "carrot",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Carrot Cake",
+      "image": {
+        "path": "/images/recipes/carrot-cake.jpg",
+        "filename": "carrot-cake.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/1/1d/Carrotcake.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "nutcake",
+      "name": "Nutcake",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any nut",
+          "tag": "nut",
+          "categoryHint": "nut",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Nutcake",
+      "image": {
+        "path": "/images/recipes/nutcake.jpg",
+        "filename": "nutcake.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/e/ee/Nutcake.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "plain-crepe",
+      "name": "Plain Crepe",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Plain Crepe",
+      "image": {
+        "path": "/images/recipes/plain-crepe.jpg",
+        "filename": "plain-crepe.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/d/df/Plaincrepe.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "honey-crepe",
+      "name": "Honey Crepe",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Courser Bee Honey",
+          "name": "Courser Bee Honey",
+          "sourceId": 200,
+          "compendiumCategory": "materials",
+          "compendiumName": "courser bee honey",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 5,
+      "made": "Honey Crepe",
+      "image": {
+        "path": "/images/recipes/honey-crepe.jpg",
+        "filename": "honey-crepe.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/6/66/Honeycrepe.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "wildberry-crepe",
+      "name": "Wildberry Crepe",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Wildberry",
+          "name": "Wildberry",
+          "sourceId": 167,
+          "compendiumCategory": "materials",
+          "compendiumName": "wildberry",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 5,
+      "made": "Wildberry Crepe",
+      "image": {
+        "path": "/images/recipes/wildberry-crepe.jpg",
+        "filename": "wildberry-crepe.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/3/34/Wildberrycrepe.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "egg-tart",
+      "name": "Egg Tart",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Egg Tart",
+      "image": {
+        "path": "/images/recipes/egg-tart.jpg",
+        "filename": "egg-tart.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/0/01/Eggtart.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "egg-pudding",
+      "name": "Egg Pudding",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Bird Egg",
+          "name": "Bird Egg",
+          "sourceId": null,
+          "stapleId": "bird-egg",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Egg Pudding",
+      "image": {
+        "path": "/images/recipes/egg-pudding.jpg",
+        "filename": "egg-pudding.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/d/d9/Eggpudding.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fried-bananas",
+      "name": "Fried Bananas",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Mighty Bananas",
+          "name": "Mighty Bananas",
+          "sourceId": 173,
+          "compendiumCategory": "materials",
+          "compendiumName": "mighty bananas",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Fried Bananas",
+      "image": {
+        "path": "/images/recipes/fried-bananas.jpg",
+        "filename": "fried-bananas.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/c/ce/Friedbananas.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "hot-buttered-apple",
+      "name": "Hot Buttered Apple",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Apple",
+          "name": "Apple",
+          "sourceId": 165,
+          "compendiumCategory": "materials",
+          "compendiumName": "apple",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Hot Buttered Apple",
+      "image": {
+        "path": "/images/recipes/hot-buttered-apple.jpg",
+        "filename": "hot-buttered-apple.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/a/a6/Honeybutteredapple.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "honeyed-apple",
+      "name": "Honeyed Apple",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Apple",
+          "name": "Apple",
+          "sourceId": 165,
+          "compendiumCategory": "materials",
+          "compendiumName": "apple",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "item",
+          "raw": "Courser Bee Honey",
+          "name": "Courser Bee Honey",
+          "sourceId": 200,
+          "compendiumCategory": "materials",
+          "compendiumName": "courser bee honey",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Honeyed Apple",
+      "image": {
+        "path": "/images/recipes/honeyed-apple.jpg",
+        "filename": "honeyed-apple.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/2/29/Honeyedapple.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "honeyed-fruits",
+      "name": "Honeyed Fruits",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any fruit excluding apples",
+          "tag": "fruit",
+          "categoryHint": "fruit",
+          "count": 1,
+          "distinct": false,
+          "exclude": [
+            "apples"
+          ]
+        },
+        {
+          "kind": "item",
+          "raw": "Courser Bee Honey",
+          "name": "Courser Bee Honey",
+          "sourceId": 200,
+          "compendiumCategory": "materials",
+          "compendiumName": "courser bee honey",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Honeyed Fruits",
+      "image": {
+        "path": "/images/recipes/honeyed-fruits.jpg",
+        "filename": "honeyed-fruits.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/d/d5/Honeyedfruits.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "honey-candy",
+      "name": "Honey Candy",
+      "kind": "meal",
+      "recipeType": "Desserts",
+      "recipeTypeId": "dessert",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Courser Bee Honey",
+          "name": "Courser Bee Honey",
+          "sourceId": 200,
+          "compendiumCategory": "materials",
+          "compendiumName": "courser bee honey",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Honey Candy",
+      "image": {
+        "path": "/images/recipes/honey-candy.jpg",
+        "filename": "honey-candy.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/1/18/Honeycandy.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "monster-soup",
+      "name": "Monster Soup",
+      "kind": "meal",
+      "recipeType": "Monster Foods",
+      "recipeTypeId": "monster_food",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Monster Extract",
+          "name": "Monster Extract",
+          "sourceId": null,
+          "stapleId": "monster-extract",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Monster Soup",
+      "image": {
+        "path": "/images/recipes/monster-soup.jpg",
+        "filename": "monster-soup.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/8/80/Monstersoup.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "monster-curry",
+      "name": "Monster Curry",
+      "kind": "meal",
+      "recipeType": "Monster Foods",
+      "recipeTypeId": "monster_food",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Monster Extract",
+          "name": "Monster Extract",
+          "sourceId": null,
+          "stapleId": "monster-extract",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goron Spice",
+          "name": "Goron Spice",
+          "sourceId": null,
+          "stapleId": "goron-spice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Monster Curry",
+      "image": {
+        "path": "/images/recipes/monster-curry.jpg",
+        "filename": "monster-curry.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/4/48/Monstercurry.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "monster-rice-balls",
+      "name": "Monster Rice Balls",
+      "kind": "meal",
+      "recipeType": "Monster Foods",
+      "recipeTypeId": "monster_food",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Monster Extract",
+          "name": "Monster Extract",
+          "sourceId": null,
+          "stapleId": "monster-extract",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Hylian Rice",
+          "name": "Hylian Rice",
+          "sourceId": null,
+          "stapleId": "hylian-rice",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Monster Rice Balls",
+      "image": {
+        "path": "/images/recipes/monster-rice-balls.jpg",
+        "filename": "monster-rice-balls.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/e/ef/Monsterriceballs.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "monster-stew",
+      "name": "Monster Stew",
+      "kind": "meal",
+      "recipeType": "Monster Foods",
+      "recipeTypeId": "monster_food",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Monster Extract",
+          "name": "Monster Extract",
+          "sourceId": null,
+          "stapleId": "monster-extract",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "tag",
+          "raw": "Any meat",
+          "tag": "meat",
+          "categoryHint": "meat",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any seafood",
+          "tag": "seafood",
+          "categoryHint": "seafood",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Monster Stew",
+      "image": {
+        "path": "/images/recipes/monster-stew.jpg",
+        "filename": "monster-stew.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/7/76/Monsterstew.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "monster-cake",
+      "name": "Monster Cake",
+      "kind": "meal",
+      "recipeType": "Monster Foods",
+      "recipeTypeId": "monster_food",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Monster Extract",
+          "name": "Monster Extract",
+          "sourceId": null,
+          "stapleId": "monster-extract",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Cane Sugar",
+          "name": "Cane Sugar",
+          "sourceId": null,
+          "stapleId": "cane-sugar",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Goat Butter",
+          "name": "Goat Butter",
+          "sourceId": null,
+          "stapleId": "goat-butter",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 4,
+      "made": "Monster Cake",
+      "image": {
+        "path": "/images/recipes/monster-cake.jpg",
+        "filename": "monster-cake.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/e/e2/Monstercake.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "dubious-food",
+      "name": "Dubious Food",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": true,
+      "ingredients": [
+        {
+          "kind": "special",
+          "raw": "Two or more items with effect"
+        },
+        {
+          "kind": "special",
+          "raw": "Monster parts"
+        },
+        {
+          "kind": "special",
+          "raw": "Generally incompatible items"
+        }
+      ],
+      "ingredientCount": 3,
+      "made": "Dubious Food",
+      "image": {
+        "path": "/images/recipes/dubious-food.jpg",
+        "filename": "dubious-food.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/5/51/Dubiousfood.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "rock-hard-food",
+      "name": "Rock-Hard Food",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": true,
+      "ingredients": [
+        {
+          "kind": "special",
+          "raw": "Wood"
+        },
+        {
+          "kind": "special",
+          "raw": "Gems (optional)"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Rock-Hard Food",
+      "image": {
+        "path": "/images/recipes/rock-hard-food.jpg",
+        "filename": "rock-hard-food.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/e/ea/Rock-hardfood.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "sauteed-peppers",
+      "name": "Sauteed Peppers",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Spicy Pepper",
+          "name": "Spicy Pepper",
+          "sourceId": 170,
+          "compendiumCategory": "materials",
+          "compendiumName": "spicy pepper",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Sauteed Peppers",
+      "image": {
+        "path": "/images/recipes/sauteed-peppers.jpg",
+        "filename": "sauteed-peppers.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/0/04/Sauteedpeppers.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fairy-tonic",
+      "name": "Fairy Tonic",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Fairy",
+          "name": "Fairy",
+          "sourceId": 66,
+          "compendiumCategory": "creatures",
+          "compendiumName": "fairy",
+          "resolution": "compendium"
+        },
+        {
+          "kind": "tag",
+          "raw": "Any gem, animal, or monster part",
+          "tag": "gem_animal_or_monster_part",
+          "categoryHint": "gem, animal, or monster part",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Fairy Tonic",
+      "image": {
+        "path": "/images/recipes/fairy-tonic.jpg",
+        "filename": "fairy-tonic.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/2/27/Fairytonic.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "sauteed-nuts",
+      "name": "Sauteed Nuts",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any nut",
+          "tag": "nut",
+          "categoryHint": "nut",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Sauteed Nuts",
+      "image": {
+        "path": "/images/recipes/sauteed-nuts.jpg",
+        "filename": "sauteed-nuts.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/8/8b/Sauteednuts.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "simmered-fruit",
+      "name": "Simmered Fruit",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any fruit",
+          "tag": "fruit",
+          "categoryHint": "fruit",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Simmered Fruit",
+      "image": {
+        "path": "/images/recipes/simmered-fruit.jpg",
+        "filename": "simmered-fruit.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/b/b5/Simmeredfruit.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "warm-milk",
+      "name": "Warm Milk",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Fresh Milk",
+          "name": "Fresh Milk",
+          "sourceId": null,
+          "stapleId": "fresh-milk",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Warm Milk",
+      "image": {
+        "path": "/images/recipes/warm-milk.jpg",
+        "filename": "warm-milk.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/c/cf/Warmmilk.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "wheat-bread",
+      "name": "Wheat Bread",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "item",
+          "raw": "Tabantha Wheat",
+          "name": "Tabantha Wheat",
+          "sourceId": null,
+          "stapleId": "tabantha-wheat",
+          "resolution": "merchant_staple"
+        },
+        {
+          "kind": "item",
+          "raw": "Rock Salt",
+          "name": "Rock Salt",
+          "sourceId": null,
+          "stapleId": "rock-salt",
+          "resolution": "merchant_staple"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Wheat Bread",
+      "image": {
+        "path": "/images/recipes/wheat-bread.jpg",
+        "filename": "wheat-bread.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/1/12/Wheatbread.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "steamed-fruit",
+      "name": "Steamed Fruit",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any fruit",
+          "tag": "fruit",
+          "categoryHint": "fruit",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any vegetable, flower, or herb",
+          "tag": "vegetable_herb_flower",
+          "categoryHint": "vegetable, flower, or herb",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Steamed Fruit",
+      "image": {
+        "path": "/images/recipes/steamed-fruit.jpg",
+        "filename": "steamed-fruit.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/9/93/Steamedfruit.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "fruit-and-mushroom-mix",
+      "name": "Fruit and Mushroom Mix",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any fruit",
+          "tag": "fruit",
+          "categoryHint": "fruit",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Fruit and Mushroom Mix",
+      "image": {
+        "path": "/images/recipes/fruit-and-mushroom-mix.jpg",
+        "filename": "fruit-and-mushroom-mix.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/9/99/Fruitandmushroommix.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "copious-simmered-fruit",
+      "name": "Copious Simmered Fruit",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Four different fruits",
+          "tag": "fruit",
+          "categoryHint": "fruits",
+          "count": 4,
+          "distinct": true
+        }
+      ],
+      "ingredientCount": 1,
+      "made": "Copious Simmered Fruit",
+      "image": {
+        "path": "/images/recipes/copious-simmered-fruit.jpg",
+        "filename": "copious-simmered-fruit.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/c/ca/Copioussimmeredfruit.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "glazed-mushrooms",
+      "name": "Glazed Mushrooms",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any mushroom",
+          "tag": "mushroom",
+          "categoryHint": "mushroom",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Courser Bee Honey",
+          "name": "Courser Bee Honey",
+          "sourceId": 200,
+          "compendiumCategory": "materials",
+          "compendiumName": "courser bee honey",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Glazed Mushrooms",
+      "image": {
+        "path": "/images/recipes/glazed-mushrooms.jpg",
+        "filename": "glazed-mushrooms.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/8/8c/Glazedmushrooms.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    },
+    {
+      "slug": "glazed-veggies",
+      "name": "Glazed Veggies",
+      "kind": "meal",
+      "recipeType": "Sides and Snacks",
+      "recipeTypeId": "side_snack",
+      "isFailureExample": false,
+      "ingredients": [
+        {
+          "kind": "tag",
+          "raw": "Any vegetable",
+          "tag": "vegetable",
+          "categoryHint": "vegetable",
+          "count": 1,
+          "distinct": false
+        },
+        {
+          "kind": "item",
+          "raw": "Courser Bee Honey",
+          "name": "Courser Bee Honey",
+          "sourceId": 200,
+          "compendiumCategory": "materials",
+          "compendiumName": "courser bee honey",
+          "resolution": "compendium"
+        }
+      ],
+      "ingredientCount": 2,
+      "made": "Glazed Veggies",
+      "image": {
+        "path": "/images/recipes/glazed-veggies.jpg",
+        "filename": "glazed-veggies.jpg",
+        "remoteSrc": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/9/90/Glazedveggies.jpg?width=150&format=jpg&auto=webp&quality=80",
+        "source": "public/images/recipes"
+      }
+    }
+  ]
+}

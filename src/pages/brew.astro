@@ -1,0 +1,115 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import BrewBench from '@/components/brew/BrewBench';
+import {
+  getAllEntries,
+  getCookables,
+  getMerchantStaples,
+  getProducts,
+  getRecipes,
+  getRegions,
+} from '@/lib/content';
+import { stapleToMaterialEntry } from '@/lib/data/enrich';
+import { isElixirCritter } from '@/lib/brew/resolve';
+import { getDailyExperiment } from '@/lib/brew/daily';
+
+const recipes = getRecipes();
+const staples = getMerchantStaples();
+const cookables = getCookables();
+const regions = getRegions();
+const allEntries = getAllEntries();
+const monsters = allEntries.filter((entry) => entry.category === 'monsters');
+const daily = getDailyExperiment(recipes);
+const products = getProducts().map((product) => ({
+  slug: product.slug,
+  sourceId: product.sourceId,
+  name: product.entry.name,
+  priceRupees: product.priceRupees,
+  stockStatus: product.stockStatus,
+}));
+
+const pickerItems = [
+  ...cookables.map((entry) => {
+    const base = {
+      sourceId: entry.sourceId,
+      name: entry.name,
+      image: entry.image,
+      commonLocations: entry.commonLocations,
+      group:
+        entry.category === 'materials'
+          ? ('material' as const)
+          : ('creature' as const),
+      isCritter: isElixirCritter(entry),
+    };
+    if (entry.category === 'materials') {
+      return {
+        ...base,
+        cookingEffect: entry.cookingEffect || undefined,
+        heartsRecovered: entry.heartsRecovered,
+      };
+    }
+    if (entry.category === 'creatures' && entry.edible === true) {
+      return {
+        ...base,
+        cookingEffect: entry.cookingEffect || undefined,
+        heartsRecovered: entry.heartsRecovered,
+      };
+    }
+    return base;
+  }),
+  ...staples.map((staple) => {
+    const entry = stapleToMaterialEntry(staple);
+    return {
+      sourceId: staple.sourceId,
+      stapleId: staple.stapleId,
+      name: staple.name,
+      image: entry.image,
+      cookingEffect: staple.cookingEffect || undefined,
+      heartsRecovered: staple.heartsRecovered,
+      commonLocations: staple.commonLocations,
+      group: 'staple' as const,
+    };
+  }),
+  ...monsters.map((entry) => ({
+    sourceId: entry.sourceId,
+    name: entry.name,
+    image: entry.image,
+    commonLocations: entry.commonLocations,
+    group: 'monster' as const,
+    isMonsterPart: true,
+  })),
+];
+---
+
+<BaseLayout title="Brew">
+  <div class="stack">
+    <h1>Brewing bench</h1>
+    <p class="notice">
+      Simplified merchant cooking rules — not game-perfect formulas. Meals use
+      materials, seafood, and pantry staples. Elixirs need an effect critter plus a
+      monster part.
+    </p>
+
+    {
+      daily ? (
+        <div class="notice stack">
+          <strong>Today’s bench challenge</strong>
+          <p style="margin:0">{daily.blurb}</p>
+          <p style="margin:0">
+            <a href={`#${daily.recipe.slug}`}>Open {daily.recipe.name}</a>
+          </p>
+        </div>
+      ) : null
+    }
+
+    <BrewBench
+      client:load
+      pickerItems={pickerItems}
+      recipes={recipes}
+      staples={staples}
+      entries={[...allEntries, ...staples.map(stapleToMaterialEntry)]}
+      regions={regions}
+      products={products}
+    />
+  </div>
+</BaseLayout>

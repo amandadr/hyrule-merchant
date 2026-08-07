@@ -1,0 +1,28 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import { getCategoryCounts } from '@/lib/content';
+
+const counts = getCategoryCounts();
+---
+
+<BaseLayout title="Field Guide">
+  <div class="stack">
+    <h1>Field Guide</h1>
+    <p class="muted">
+      All snapshot records as guide entries. Some later become products; monsters
+      stay guide-only.
+    </p>
+    <ul class="grid-list">
+      {
+        Object.entries(counts).map(([category, count]) => (
+          <li class="entry-card">
+            <a href={`/guide/${category}`}>
+              <strong>{category}</strong>
+              <div class="muted">{count} entries</div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>

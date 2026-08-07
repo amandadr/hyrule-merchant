@@ -1,0 +1,94 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import { getRegionBySlug, getRegions } from '@/lib/content';
+import { titleCaseName } from '@/lib/data/normalize';
+
+export function getStaticPaths() {
+  return getRegions().map((region) => ({
+    params: { slug: region.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const region = getRegionBySlug(slug!);
+
+if (!region) {
+  throw new Error(`Unknown region slug: ${slug}`);
+}
+
+const displayName = titleCaseName(region.name);
+const editorial = [
+  { label: 'Overview', value: region.overview },
+  { label: 'Conditions', value: region.conditions },
+  { label: 'Hazards', value: region.hazards },
+  { label: 'Useful finds', value: region.usefulFinds },
+  { label: 'Route notes', value: region.routeNotes },
+  { label: 'Merchant story', value: region.merchantStory },
+];
+---
+
+<BaseLayout title={displayName}>
+  <div class="stack">
+    <p><a href="/regions">← Regions</a></p>
+    <h1>{displayName}</h1>
+
+    <section class="stack">
+      <h2>From the API</h2>
+      <div>
+        <h3>Settlements</h3>
+        {
+          region.settlements.length > 0 ? (
+            <ul>
+              {region.settlements.map((settlement) => (
+                <li>{titleCaseName(settlement)}</li>
+              ))}
+            </ul>
+          ) : (
+            <p class="muted">None listed.</p>
+          )
+        }
+      </div>
+      <div>
+        <h3>Shrines</h3>
+        <ul>
+          {
+            region.shrines.map((shrine) => (
+              <li>
+                {titleCaseName(shrine.name)}
+                <span class="muted"> — {shrine.puzzle}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      {
+        region.dlcShrines.length > 0 && (
+          <div>
+            <h3>DLC shrines</h3>
+            <ul>
+              {region.dlcShrines.map((shrine) => (
+                <li>
+                  {titleCaseName(shrine.name)}
+                  <span class="muted"> — {shrine.puzzle}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+    </section>
+
+    <section class="stack">
+      <h2>Editorial placeholders</h2>
+      <p class="muted">Filled in during later content phases.</p>
+      {
+        editorial.map((block) => (
+          <div>
+            <h3>{block.label}</h3>
+            <p class="notice">{block.value || 'TODO: author this section.'}</p>
+          </div>
+        ))
+      }
+    </section>
+  </div>
+</BaseLayout>

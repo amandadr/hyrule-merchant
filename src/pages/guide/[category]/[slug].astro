@@ -1,0 +1,43 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import EntryDetail from '@/components/EntryDetail.astro';
+import {
+  getAllEntries,
+  getEntryBySlug,
+  isEntryCategory,
+} from '@/lib/content';
+import { titleCaseName } from '@/lib/data/normalize';
+
+export function getStaticPaths() {
+  return getAllEntries().map((entry) => ({
+    params: {
+      category: entry.category,
+      slug: entry.slug,
+    },
+  }));
+}
+
+const { category, slug } = Astro.params;
+
+if (!category || !isEntryCategory(category) || !slug) {
+  throw new Error(`Invalid guide route: ${category}/${slug}`);
+}
+
+const entry = getEntryBySlug(category, slug);
+
+if (!entry) {
+  throw new Error(`Unknown guide entry: ${category}/${slug}`);
+}
+
+const displayName = titleCaseName(entry.name);
+---
+
+<BaseLayout title={displayName}>
+  <div class="stack">
+    <p>
+      <a href={`/guide/${entry.category}`}>← {entry.category}</a>
+    </p>
+    <h1>{displayName}</h1>
+    <EntryDetail entry={entry} />
+  </div>
+</BaseLayout>

@@ -1,0 +1,3394 @@
+{
+  "recipes": [
+    {
+      "slug": "creamy-heart-soup",
+      "name": "Creamy Heart Soup",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "radish"
+        },
+        {
+          "kind": "item",
+          "sourceId": 169
+        },
+        {
+          "kind": "item",
+          "sourceId": 171
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Creamy Heart Soup. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/creamy-heart-soup.jpg",
+      "sourceRefs": {
+        "ignSlug": "creamy-heart-soup"
+      }
+    },
+    {
+      "slug": "pumpkin-stew",
+      "name": "Pumpkin Stew",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 194
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Pumpkin Stew. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/pumpkin-stew.jpg",
+      "sourceRefs": {
+        "ignSlug": "pumpkin-stew"
+      }
+    },
+    {
+      "slug": "veggie-cream-soup",
+      "name": "Veggie Cream Soup",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "carrot_or_pumpkin"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Veggie Cream Soup. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/veggie-cream-soup.jpg",
+      "sourceRefs": {
+        "ignSlug": "veggie-cream-soup"
+      }
+    },
+    {
+      "slug": "cream-of-mushroom-soup",
+      "name": "Cream of Mushroom Soup",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        },
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Cream of Mushroom Soup. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/cream-of-mushroom-soup.jpg",
+      "sourceRefs": {
+        "ignSlug": "cream-of-mushroom-soup"
+      }
+    },
+    {
+      "slug": "cream-of-vegetable-soup",
+      "name": "Cream of Vegetable Soup",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Cream of Vegetable Soup. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/cream-of-vegetable-soup.jpg",
+      "sourceRefs": {
+        "ignSlug": "cream-of-vegetable-soup"
+      }
+    },
+    {
+      "slug": "carrot-stew",
+      "name": "Carrot Stew",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "carrot"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Carrot Stew. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/carrot-stew.jpg",
+      "sourceRefs": {
+        "ignSlug": "carrot-stew"
+      }
+    },
+    {
+      "slug": "vegetable-risotto",
+      "name": "Vegetable Risotto",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "carrot_or_pumpkin"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Vegetable Risotto. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/vegetable-risotto.jpg",
+      "sourceRefs": {
+        "ignSlug": "vegetable-risotto"
+      }
+    },
+    {
+      "slug": "mushroom-risotto",
+      "name": "Mushroom Risotto",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Mushroom Risotto. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/mushroom-risotto.jpg",
+      "sourceRefs": {
+        "ignSlug": "mushroom-risotto"
+      }
+    },
+    {
+      "slug": "curry-pilaf",
+      "name": "Curry Pilaf",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Curry Pilaf. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/curry-pilaf.jpg",
+      "sourceRefs": {
+        "ignSlug": "curry-pilaf"
+      }
+    },
+    {
+      "slug": "mushroom-rice-balls",
+      "name": "Mushroom Rice Balls",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        },
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Mushroom Rice Balls. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/mushroom-rice-balls.jpg",
+      "sourceRefs": {
+        "ignSlug": "mushroom-rice-balls"
+      }
+    },
+    {
+      "slug": "veggie-rice-balls",
+      "name": "Veggie Rice Balls",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        },
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Veggie Rice Balls. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/veggie-rice-balls.jpg",
+      "sourceRefs": {
+        "ignSlug": "veggie-rice-balls"
+      }
+    },
+    {
+      "slug": "curry-rice",
+      "name": "Curry Rice",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Mountain fragrance in a bowl. Pair with meat if you have it.",
+      "image": "/images/recipes/curry-rice.jpg",
+      "sourceRefs": {
+        "ignSlug": "curry-rice"
+      }
+    },
+    {
+      "slug": "fried-egg-and-rice",
+      "name": "Fried Egg and Rice",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Fried Egg and Rice. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/fried-egg-and-rice.jpg",
+      "sourceRefs": {
+        "ignSlug": "fried-egg-and-rice"
+      }
+    },
+    {
+      "slug": "mushroom-omelet",
+      "name": "Mushroom Omelet",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Mushroom Omelet. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/mushroom-omelet.jpg",
+      "sourceRefs": {
+        "ignSlug": "mushroom-omelet"
+      }
+    },
+    {
+      "slug": "vegetable-omelet",
+      "name": "Vegetable Omelet",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Vegetable Omelet. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/vegetable-omelet.jpg",
+      "sourceRefs": {
+        "ignSlug": "vegetable-omelet"
+      }
+    },
+    {
+      "slug": "vegetable-curry",
+      "name": "Vegetable Curry",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "carrot_or_pumpkin"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Vegetable Curry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/vegetable-curry.jpg",
+      "sourceRefs": {
+        "ignSlug": "vegetable-curry"
+      }
+    },
+    {
+      "slug": "fragrant-mushroom-saute",
+      "name": "Fragrant Mushroom Sauté",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Fragrant Mushroom Sauté. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/fragrant-mushroom-saute.jpg",
+      "sourceRefs": {
+        "ignSlug": "fragrant-mushroom-saute"
+      }
+    },
+    {
+      "slug": "herb-saute",
+      "name": "Herb Sauté",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Herb Sauté. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/herb-saute.jpg",
+      "sourceRefs": {
+        "ignSlug": "herb-saute"
+      }
+    },
+    {
+      "slug": "salt-grilled-greens",
+      "name": "Salt-Grilled Greens",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Salt-Grilled Greens. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/salt-grilled-greens.jpg",
+      "sourceRefs": {
+        "ignSlug": "salt-grilled-greens"
+      }
+    },
+    {
+      "slug": "salt-grilled-mushrooms",
+      "name": "Salt-Grilled Mushrooms",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Salt-Grilled Mushrooms. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/salt-grilled-mushrooms.jpg",
+      "sourceRefs": {
+        "ignSlug": "salt-grilled-mushrooms"
+      }
+    },
+    {
+      "slug": "steamed-mushrooms",
+      "name": "Steamed Mushrooms",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        },
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Steamed Mushrooms. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/steamed-mushrooms.jpg",
+      "sourceRefs": {
+        "ignSlug": "steamed-mushrooms"
+      }
+    },
+    {
+      "slug": "mushroom-skewer",
+      "name": "Mushroom Skewer",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        }
+      ],
+      "merchantNote": "One mushroom over coals. Effect follows whatever fungus you chose.",
+      "image": "/images/recipes/mushroom-skewer.jpg",
+      "sourceRefs": {
+        "ignSlug": "mushroom-skewer"
+      }
+    },
+    {
+      "slug": "copious-mushroom-skewers",
+      "name": "Copious Mushroom Skewers",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "mushroom",
+          "count": 4,
+          "distinct": true
+        }
+      ],
+      "merchantNote": "Cookbook dish: Copious Mushroom Skewers. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/copious-mushroom-skewers.jpg",
+      "sourceRefs": {
+        "ignSlug": "copious-mushroom-skewers"
+      }
+    },
+    {
+      "slug": "fried-wild-greens",
+      "name": "Fried Wild Greens",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Fried Wild Greens. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/fried-wild-greens.jpg",
+      "sourceRefs": {
+        "ignSlug": "fried-wild-greens"
+      }
+    },
+    {
+      "slug": "copious-fried-wild-greens",
+      "name": "Copious Fried Wild Greens",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower",
+          "count": 4,
+          "distinct": true
+        }
+      ],
+      "merchantNote": "Cookbook dish: Copious Fried Wild Greens. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/copious-fried-wild-greens.jpg",
+      "sourceRefs": {
+        "ignSlug": "copious-fried-wild-greens"
+      }
+    },
+    {
+      "slug": "omelet",
+      "name": "Omelet",
+      "kind": "meal",
+      "recipeTypeId": "vegetarian_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        }
+      ],
+      "merchantNote": "One egg. Sometimes that is enough.",
+      "image": "/images/recipes/omelet.jpg",
+      "sourceRefs": {
+        "ignSlug": "omelet"
+      }
+    },
+    {
+      "slug": "clam-chowder",
+      "name": "Clam Chowder",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 62
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Clam Chowder. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/clam-chowder.jpg",
+      "sourceRefs": {
+        "ignSlug": "clam-chowder"
+      }
+    },
+    {
+      "slug": "creamy-seafood-soup",
+      "name": "Creamy Seafood Soup",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "seafood"
+        },
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Creamy Seafood Soup. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/creamy-seafood-soup.jpg",
+      "sourceRefs": {
+        "ignSlug": "creamy-seafood-soup"
+      }
+    },
+    {
+      "slug": "seafood-curry",
+      "name": "Seafood Curry",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "item",
+              "sourceId": 62
+            },
+            {
+              "kind": "tag",
+              "tag": "porgy"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Seafood Curry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/seafood-curry.jpg",
+      "sourceRefs": {
+        "ignSlug": "seafood-curry"
+      }
+    },
+    {
+      "slug": "salmon-risotto",
+      "name": "Salmon Risotto",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 51
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Salmon Risotto. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/salmon-risotto.jpg",
+      "sourceRefs": {
+        "ignSlug": "salmon-risotto"
+      }
+    },
+    {
+      "slug": "crab-risotto",
+      "name": "Crab Risotto",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "crab"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Crab Risotto. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/crab-risotto.jpg",
+      "sourceRefs": {
+        "ignSlug": "crab-risotto"
+      }
+    },
+    {
+      "slug": "seafood-fried-rice",
+      "name": "Seafood Fried Rice",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "item",
+              "sourceId": 62
+            },
+            {
+              "kind": "tag",
+              "tag": "porgy"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Seafood Fried Rice. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/seafood-fried-rice.jpg",
+      "sourceRefs": {
+        "ignSlug": "seafood-fried-rice"
+      }
+    },
+    {
+      "slug": "seafood-paella",
+      "name": "Seafood Paella",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "porgy"
+        },
+        {
+          "kind": "item",
+          "sourceId": 62
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Seafood Paella. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/seafood-paella.jpg",
+      "sourceRefs": {
+        "ignSlug": "seafood-paella"
+      }
+    },
+    {
+      "slug": "crab-omelet-with-rice",
+      "name": "Crab Omelet with Rice",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "crab"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Crab Omelet with Rice. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/crab-omelet-with-rice.jpg",
+      "sourceRefs": {
+        "ignSlug": "crab-omelet-with-rice"
+      }
+    },
+    {
+      "slug": "seafood-rice-balls",
+      "name": "Seafood Rice Balls",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fish"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Trail lunch that travels well.",
+      "image": "/images/recipes/seafood-rice-balls.jpg",
+      "sourceRefs": {
+        "ignSlug": "seafood-rice-balls"
+      }
+    },
+    {
+      "slug": "fish-pie",
+      "name": "Fish Pie",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "seafood"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Fish Pie. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/fish-pie.jpg",
+      "sourceRefs": {
+        "ignSlug": "fish-pie"
+      }
+    },
+    {
+      "slug": "salmon-meuniere",
+      "name": "Salmon Meuniere",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 51
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Salmon Meuniere. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/salmon-meuniere.jpg",
+      "sourceRefs": {
+        "ignSlug": "salmon-meuniere"
+      }
+    },
+    {
+      "slug": "porgy-meuniere",
+      "name": "Porgy Meuniere",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "porgy"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Porgy Meuniere. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/porgy-meuniere.jpg",
+      "sourceRefs": {
+        "ignSlug": "porgy-meuniere"
+      }
+    },
+    {
+      "slug": "seafood-meuniere",
+      "name": "Seafood Meuniere",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "seafood",
+          "excludeNames": [
+            "hearty salmon",
+            "porgy"
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Seafood Meuniere. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/seafood-meuniere.jpg",
+      "sourceRefs": {
+        "ignSlug": "seafood-meuniere"
+      }
+    },
+    {
+      "slug": "glazed-seafood",
+      "name": "Glazed Seafood",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 200
+        },
+        {
+          "kind": "tag",
+          "tag": "seafood"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Glazed Seafood. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/glazed-seafood.jpg",
+      "sourceRefs": {
+        "ignSlug": "glazed-seafood"
+      }
+    },
+    {
+      "slug": "crab-stir-fry",
+      "name": "Crab Stir-Fry",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "crab"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Crab Stir-Fry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/crab-stir-fry.jpg",
+      "sourceRefs": {
+        "ignSlug": "crab-stir-fry"
+      }
+    },
+    {
+      "slug": "salt-grilled-crab",
+      "name": "Salt-Grilled Crab",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "crab"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Salt-Grilled Crab. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/salt-grilled-crab.jpg",
+      "sourceRefs": {
+        "ignSlug": "salt-grilled-crab"
+      }
+    },
+    {
+      "slug": "salt-grilled-fish",
+      "name": "Salt-Grilled Fish",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fish"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Salt does the talking.",
+      "image": "/images/recipes/salt-grilled-fish.jpg",
+      "sourceRefs": {
+        "ignSlug": "salt-grilled-fish"
+      }
+    },
+    {
+      "slug": "copious-fish-skewers",
+      "name": "Copious Fish Skewers",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fish",
+          "count": 4,
+          "distinct": true
+        }
+      ],
+      "merchantNote": "Cookbook dish: Copious Fish Skewers. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/copious-fish-skewers.jpg",
+      "sourceRefs": {
+        "ignSlug": "copious-fish-skewers"
+      }
+    },
+    {
+      "slug": "spicy-peppered-seafood",
+      "name": "Spicy Peppered Seafood",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "cold resistance",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "seafood"
+        },
+        {
+          "kind": "item",
+          "sourceId": 170
+        }
+      ],
+      "merchantNote": "Cookbook dish: Spicy Peppered Seafood. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/spicy-peppered-seafood.jpg",
+      "sourceRefs": {
+        "ignSlug": "spicy-peppered-seafood"
+      }
+    },
+    {
+      "slug": "steamed-fish",
+      "name": "Steamed Fish",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        },
+        {
+          "kind": "tag",
+          "tag": "fish"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Steamed Fish. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/steamed-fish.jpg",
+      "sourceRefs": {
+        "ignSlug": "steamed-fish"
+      }
+    },
+    {
+      "slug": "fish-and-mushroom-skewer",
+      "name": "Fish and Mushroom Skewer",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fish"
+        },
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Fish and Mushroom Skewer. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/fish-and-mushroom-skewer.jpg",
+      "sourceRefs": {
+        "ignSlug": "fish-and-mushroom-skewer"
+      }
+    },
+    {
+      "slug": "seafood-skewer",
+      "name": "Seafood Skewer",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "snail_or_crab"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Seafood Skewer. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/seafood-skewer.jpg",
+      "sourceRefs": {
+        "ignSlug": "seafood-skewer"
+      }
+    },
+    {
+      "slug": "fish-skewer",
+      "name": "Fish Skewer",
+      "kind": "meal",
+      "recipeTypeId": "seafood_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fish"
+        }
+      ],
+      "merchantNote": "Any fish on a stick. Effect rides with the catch.",
+      "image": "/images/recipes/fish-skewer.jpg",
+      "sourceRefs": {
+        "ignSlug": "fish-skewer"
+      }
+    },
+    {
+      "slug": "gourmet-meat-stew",
+      "name": "Gourmet Meat Stew",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-gourmet-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-whole-bird"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Gourmet Meat Stew. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/gourmet-meat-stew.jpg",
+      "sourceRefs": {
+        "ignSlug": "gourmet-meat-stew"
+      }
+    },
+    {
+      "slug": "prime-meat-stew",
+      "name": "Prime Meat Stew",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-prime-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-bird-thigh"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Prime Meat Stew. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/prime-meat-stew.jpg",
+      "sourceRefs": {
+        "ignSlug": "prime-meat-stew"
+      }
+    },
+    {
+      "slug": "meat-stew",
+      "name": "Meat Stew",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-bird-drumstick"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Inn food. Demonstrates staple alternatives: meat or drumstick.",
+      "image": "/images/recipes/meat-stew.jpg",
+      "sourceRefs": {
+        "ignSlug": "meat-stew"
+      }
+    },
+    {
+      "slug": "creamy-meat-soup",
+      "name": "Creamy Meat Soup",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "meat"
+        },
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Creamy Meat Soup. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/creamy-meat-soup.jpg",
+      "sourceRefs": {
+        "ignSlug": "creamy-meat-soup"
+      }
+    },
+    {
+      "slug": "meat-curry",
+      "name": "Meat Curry",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-meat"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Meat Curry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/meat-curry.jpg",
+      "sourceRefs": {
+        "ignSlug": "meat-curry"
+      }
+    },
+    {
+      "slug": "prime-meat-curry",
+      "name": "Prime Meat Curry",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-prime-meat"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Prime Meat Curry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/prime-meat-curry.jpg",
+      "sourceRefs": {
+        "ignSlug": "prime-meat-curry"
+      }
+    },
+    {
+      "slug": "gourmet-meat-curry",
+      "name": "Gourmet Meat Curry",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-gourmet-meat"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Gourmet Meat Curry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/gourmet-meat-curry.jpg",
+      "sourceRefs": {
+        "ignSlug": "gourmet-meat-curry"
+      }
+    },
+    {
+      "slug": "poultry-curry",
+      "name": "Poultry Curry",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-bird-drumstick"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Poultry Curry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/poultry-curry.jpg",
+      "sourceRefs": {
+        "ignSlug": "poultry-curry"
+      }
+    },
+    {
+      "slug": "prime-poultry-curry",
+      "name": "Prime Poultry Curry",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-bird-thigh"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Prime Poultry Curry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/prime-poultry-curry.jpg",
+      "sourceRefs": {
+        "ignSlug": "prime-poultry-curry"
+      }
+    },
+    {
+      "slug": "gourmet-poultry-curry",
+      "name": "Gourmet Poultry Curry",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-whole-bird"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Gourmet Poultry Curry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/gourmet-poultry-curry.jpg",
+      "sourceRefs": {
+        "ignSlug": "gourmet-poultry-curry"
+      }
+    },
+    {
+      "slug": "meaty-rice-balls",
+      "name": "Meaty Rice Balls",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "meat"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Meaty Rice Balls. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/meaty-rice-balls.jpg",
+      "sourceRefs": {
+        "ignSlug": "meaty-rice-balls"
+      }
+    },
+    {
+      "slug": "meat-stuffed-pumpkins",
+      "name": "Meat-Stuffed Pumpkins",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "meat"
+        },
+        {
+          "kind": "item",
+          "sourceId": 194
+        }
+      ],
+      "merchantNote": "Cookbook dish: Meat-Stuffed Pumpkins. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/meat-stuffed-pumpkins.jpg",
+      "sourceRefs": {
+        "ignSlug": "meat-stuffed-pumpkins"
+      }
+    },
+    {
+      "slug": "meat-pie",
+      "name": "Meat Pie",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "meat"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Meat Pie. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/meat-pie.jpg",
+      "sourceRefs": {
+        "ignSlug": "meat-pie"
+      }
+    },
+    {
+      "slug": "poultry-pilaf",
+      "name": "Poultry Pilaf",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-bird-drumstick"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Poultry Pilaf. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/poultry-pilaf.jpg",
+      "sourceRefs": {
+        "ignSlug": "poultry-pilaf"
+      }
+    },
+    {
+      "slug": "prime-poultry-pilaf",
+      "name": "Prime Poultry Pilaf",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-bird-thigh"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Prime Poultry Pilaf. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/prime-poultry-pilaf.jpg",
+      "sourceRefs": {
+        "ignSlug": "prime-poultry-pilaf"
+      }
+    },
+    {
+      "slug": "gourmet-poultry-pilaf",
+      "name": "Gourmet Poultry Pilaf",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-whole-bird"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Gourmet Poultry Pilaf. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/gourmet-poultry-pilaf.jpg",
+      "sourceRefs": {
+        "ignSlug": "gourmet-poultry-pilaf"
+      }
+    },
+    {
+      "slug": "meat-and-rice-bowl",
+      "name": "Meat and Rice Bowl",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-bird-drumstick"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Meat and Rice Bowl. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/meat-and-rice-bowl.jpg",
+      "sourceRefs": {
+        "ignSlug": "meat-and-rice-bowl"
+      }
+    },
+    {
+      "slug": "prime-meat-and-rice-bowl",
+      "name": "Prime Meat and Rice Bowl",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-prime-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-bird-thigh"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Prime Meat and Rice Bowl. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/prime-meat-and-rice-bowl.jpg",
+      "sourceRefs": {
+        "ignSlug": "prime-meat-and-rice-bowl"
+      }
+    },
+    {
+      "slug": "gourmet-meat-and-rice-bowl",
+      "name": "Gourmet Meat and Rice Bowl",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-gourmet-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-whole-bird"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Gourmet Meat and Rice Bowl. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/gourmet-meat-and-rice-bowl.jpg",
+      "sourceRefs": {
+        "ignSlug": "gourmet-meat-and-rice-bowl"
+      }
+    },
+    {
+      "slug": "glazed-meat",
+      "name": "Glazed Meat",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "meat"
+        },
+        {
+          "kind": "item",
+          "sourceId": 200
+        }
+      ],
+      "merchantNote": "Cookbook dish: Glazed Meat. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/glazed-meat.jpg",
+      "sourceRefs": {
+        "ignSlug": "glazed-meat"
+      }
+    },
+    {
+      "slug": "spiced-meat-skewer",
+      "name": "Spiced Meat Skewer",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-meat"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Spiced Meat Skewer. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/spiced-meat-skewer.jpg",
+      "sourceRefs": {
+        "ignSlug": "spiced-meat-skewer"
+      }
+    },
+    {
+      "slug": "prime-spiced-meat-skewer",
+      "name": "Prime Spiced Meat Skewer",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-prime-meat"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Prime Spiced Meat Skewer. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/prime-spiced-meat-skewer.jpg",
+      "sourceRefs": {
+        "ignSlug": "prime-spiced-meat-skewer"
+      }
+    },
+    {
+      "slug": "gourmet-spiced-meat-skewer",
+      "name": "Gourmet Spiced Meat Skewer",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "raw-gourmet-meat"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Gourmet Spiced Meat Skewer. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/gourmet-spiced-meat-skewer.jpg",
+      "sourceRefs": {
+        "ignSlug": "gourmet-spiced-meat-skewer"
+      }
+    },
+    {
+      "slug": "salt-grilled-meat",
+      "name": "Salt-Grilled Meat",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-bird-drumstick"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Salt-Grilled Meat. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/salt-grilled-meat.jpg",
+      "sourceRefs": {
+        "ignSlug": "salt-grilled-meat"
+      }
+    },
+    {
+      "slug": "salt-grilled-prime-meat",
+      "name": "Salt-Grilled Prime Meat",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-prime-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-bird-thigh"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Salt-Grilled Prime Meat. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/salt-grilled-prime-meat.jpg",
+      "sourceRefs": {
+        "ignSlug": "salt-grilled-prime-meat"
+      }
+    },
+    {
+      "slug": "salt-grilled-gourmet-meat",
+      "name": "Salt-Grilled Gourmet Meat",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-gourmet-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-whole-bird"
+            }
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Salt-Grilled Gourmet Meat. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/salt-grilled-gourmet-meat.jpg",
+      "sourceRefs": {
+        "ignSlug": "salt-grilled-gourmet-meat"
+      }
+    },
+    {
+      "slug": "copious-meat-skewers",
+      "name": "Copious Meat Skewers",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "meat",
+          "count": 4,
+          "distinct": true
+        }
+      ],
+      "merchantNote": "Cookbook dish: Copious Meat Skewers. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/copious-meat-skewers.jpg",
+      "sourceRefs": {
+        "ignSlug": "copious-meat-skewers"
+      }
+    },
+    {
+      "slug": "pepper-steak",
+      "name": "Pepper Steak",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "cold resistance",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "meat"
+        },
+        {
+          "kind": "item",
+          "sourceId": 170
+        }
+      ],
+      "merchantNote": "Cookbook dish: Pepper Steak. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/pepper-steak.jpg",
+      "sourceRefs": {
+        "ignSlug": "pepper-steak"
+      }
+    },
+    {
+      "slug": "steamed-meat",
+      "name": "Steamed Meat",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "meat"
+        },
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Steamed Meat. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/steamed-meat.jpg",
+      "sourceRefs": {
+        "ignSlug": "steamed-meat"
+      }
+    },
+    {
+      "slug": "meat-and-mushroom-skewer",
+      "name": "Meat and Mushroom Skewer",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "meat"
+        },
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Meat and Mushroom Skewer. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/meat-and-mushroom-skewer.jpg",
+      "sourceRefs": {
+        "ignSlug": "meat-and-mushroom-skewer"
+      }
+    },
+    {
+      "slug": "meat-skewer",
+      "name": "Meat Skewer",
+      "kind": "meal",
+      "recipeTypeId": "poultry_meat_entree",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "meat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Meat Skewer. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/meat-skewer.jpg",
+      "sourceRefs": {
+        "ignSlug": "meat-skewer"
+      }
+    },
+    {
+      "slug": "meat-and-seafood-fry",
+      "name": "Meat and Seafood Fry",
+      "kind": "meal",
+      "recipeTypeId": "surf_and_turf",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-bird-drumstick"
+            }
+          ]
+        },
+        {
+          "kind": "tag",
+          "tag": "seafood"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Meat and Seafood Fry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/meat-and-seafood-fry.jpg",
+      "sourceRefs": {
+        "ignSlug": "meat-and-seafood-fry"
+      }
+    },
+    {
+      "slug": "prime-meat-and-seafood-fry",
+      "name": "Prime Meat and Seafood Fry",
+      "kind": "meal",
+      "recipeTypeId": "surf_and_turf",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-bird-thigh"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-prime-meat"
+            }
+          ]
+        },
+        {
+          "kind": "tag",
+          "tag": "seafood"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Prime Meat and Seafood Fry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/prime-meat-and-seafood-fry.jpg",
+      "sourceRefs": {
+        "ignSlug": "prime-meat-and-seafood-fry"
+      }
+    },
+    {
+      "slug": "gourmet-meat-and-seafood-fry",
+      "name": "Gourmet Meat and Seafood Fry",
+      "kind": "meal",
+      "recipeTypeId": "surf_and_turf",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "staple",
+              "stapleId": "raw-gourmet-meat"
+            },
+            {
+              "kind": "staple",
+              "stapleId": "raw-whole-bird"
+            }
+          ]
+        },
+        {
+          "kind": "tag",
+          "tag": "seafood"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Gourmet Meat and Seafood Fry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/gourmet-meat-and-seafood-fry.jpg",
+      "sourceRefs": {
+        "ignSlug": "gourmet-meat-and-seafood-fry"
+      }
+    },
+    {
+      "slug": "spicy-meat-and-seafood-fry",
+      "name": "Spicy Meat and Seafood Fry",
+      "kind": "meal",
+      "recipeTypeId": "surf_and_turf",
+      "effectFamily": "cold resistance",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 170
+        },
+        {
+          "kind": "item",
+          "sourceId": 48
+        },
+        {
+          "kind": "staple",
+          "stapleId": "raw-meat"
+        }
+      ],
+      "merchantNote": "The classic first-fire recipe. Pepper does the real work.",
+      "image": "/images/recipes/spicy-meat-and-seafood-fry.jpg",
+      "sourceRefs": {
+        "ignSlug": "spicy-meat-and-seafood-fry"
+      }
+    },
+    {
+      "slug": "apple-pie",
+      "name": "Apple Pie",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 165
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Apple Pie. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/apple-pie.jpg",
+      "sourceRefs": {
+        "ignSlug": "apple-pie"
+      }
+    },
+    {
+      "slug": "pumpkin-pie",
+      "name": "Pumpkin Pie",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 194
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Pumpkin Pie. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/pumpkin-pie.jpg",
+      "sourceRefs": {
+        "ignSlug": "pumpkin-pie"
+      }
+    },
+    {
+      "slug": "fruit-pie",
+      "name": "Fruit Pie",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fruit",
+          "excludeNames": [
+            "apple",
+            "pumpkin"
+          ]
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Fruit Pie. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/fruit-pie.jpg",
+      "sourceRefs": {
+        "ignSlug": "fruit-pie"
+      }
+    },
+    {
+      "slug": "fruitcake",
+      "name": "Fruitcake",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "alternatives",
+          "options": [
+            {
+              "kind": "item",
+              "sourceId": 167
+            },
+            {
+              "kind": "item",
+              "sourceId": 165
+            }
+          ]
+        },
+        {
+          "kind": "tag",
+          "tag": "fruit"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Fruitcake. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/fruitcake.jpg",
+      "sourceRefs": {
+        "ignSlug": "fruitcake"
+      }
+    },
+    {
+      "slug": "carrot-cake",
+      "name": "Carrot Cake",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "carrot"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Carrot Cake. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/carrot-cake.jpg",
+      "sourceRefs": {
+        "ignSlug": "carrot-cake"
+      }
+    },
+    {
+      "slug": "nutcake",
+      "name": "Nutcake",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "nut"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Nutcake. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/nutcake.jpg",
+      "sourceRefs": {
+        "ignSlug": "nutcake"
+      }
+    },
+    {
+      "slug": "plain-crepe",
+      "name": "Plain Crepe",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Plain Crepe. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/plain-crepe.jpg",
+      "sourceRefs": {
+        "ignSlug": "plain-crepe"
+      }
+    },
+    {
+      "slug": "honey-crepe",
+      "name": "Honey Crepe",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 200
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Honey Crepe. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/honey-crepe.jpg",
+      "sourceRefs": {
+        "ignSlug": "honey-crepe"
+      }
+    },
+    {
+      "slug": "wildberry-crepe",
+      "name": "Wildberry Crepe",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 167
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Wildberry Crepe. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/wildberry-crepe.jpg",
+      "sourceRefs": {
+        "ignSlug": "wildberry-crepe"
+      }
+    },
+    {
+      "slug": "egg-tart",
+      "name": "Egg Tart",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "hearts",
+      "strengthBand": "strong",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Egg Tart. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/egg-tart.jpg",
+      "sourceRefs": {
+        "ignSlug": "egg-tart"
+      }
+    },
+    {
+      "slug": "egg-pudding",
+      "name": "Egg Pudding",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "bird-egg"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Egg Pudding. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/egg-pudding.jpg",
+      "sourceRefs": {
+        "ignSlug": "egg-pudding"
+      }
+    },
+    {
+      "slug": "fried-bananas",
+      "name": "Fried Bananas",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "hearts",
+      "strengthBand": "mid",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 173
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Fried Bananas. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/fried-bananas.jpg",
+      "sourceRefs": {
+        "ignSlug": "fried-bananas"
+      }
+    },
+    {
+      "slug": "hot-buttered-apple",
+      "name": "Hot Buttered Apple",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "item",
+          "sourceId": 165
+        }
+      ],
+      "merchantNote": "Cookbook dish: Hot Buttered Apple. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/hot-buttered-apple.jpg",
+      "sourceRefs": {
+        "ignSlug": "hot-buttered-apple"
+      }
+    },
+    {
+      "slug": "honeyed-apple",
+      "name": "Honeyed Apple",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "stamina recovery",
+      "strengthBand": "mid",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 165
+        },
+        {
+          "kind": "item",
+          "sourceId": 200
+        }
+      ],
+      "merchantNote": "Sweet enough for a celebration, practical enough for a climb.",
+      "image": "/images/recipes/honeyed-apple.jpg",
+      "sourceRefs": {
+        "ignSlug": "honeyed-apple"
+      }
+    },
+    {
+      "slug": "honeyed-fruits",
+      "name": "Honeyed Fruits",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fruit",
+          "excludeNames": [
+            "apple"
+          ]
+        },
+        {
+          "kind": "item",
+          "sourceId": 200
+        }
+      ],
+      "merchantNote": "Cookbook dish: Honeyed Fruits. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/honeyed-fruits.jpg",
+      "sourceRefs": {
+        "ignSlug": "honeyed-fruits"
+      }
+    },
+    {
+      "slug": "honey-candy",
+      "name": "Honey Candy",
+      "kind": "meal",
+      "recipeTypeId": "dessert",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 200
+        }
+      ],
+      "merchantNote": "Cookbook dish: Honey Candy. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/honey-candy.jpg",
+      "sourceRefs": {
+        "ignSlug": "honey-candy"
+      }
+    },
+    {
+      "slug": "monster-soup",
+      "name": "Monster Soup",
+      "kind": "meal",
+      "recipeTypeId": "monster_food",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "monster-extract"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Monster Soup. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/monster-soup.jpg",
+      "sourceRefs": {
+        "ignSlug": "monster-soup"
+      }
+    },
+    {
+      "slug": "monster-curry",
+      "name": "Monster Curry",
+      "kind": "meal",
+      "recipeTypeId": "monster_food",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "monster-extract"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goron-spice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Monster Curry. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/monster-curry.jpg",
+      "sourceRefs": {
+        "ignSlug": "monster-curry"
+      }
+    },
+    {
+      "slug": "monster-rice-balls",
+      "name": "Monster Rice Balls",
+      "kind": "meal",
+      "recipeTypeId": "monster_food",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "monster-extract"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "hylian-rice"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Monster Rice Balls. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/monster-rice-balls.jpg",
+      "sourceRefs": {
+        "ignSlug": "monster-rice-balls"
+      }
+    },
+    {
+      "slug": "monster-stew",
+      "name": "Monster Stew",
+      "kind": "meal",
+      "recipeTypeId": "monster_food",
+      "effectFamily": "variable",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "monster-extract"
+        },
+        {
+          "kind": "tag",
+          "tag": "meat"
+        },
+        {
+          "kind": "tag",
+          "tag": "seafood"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Monster Stew. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/monster-stew.jpg",
+      "sourceRefs": {
+        "ignSlug": "monster-stew"
+      }
+    },
+    {
+      "slug": "monster-cake",
+      "name": "Monster Cake",
+      "kind": "meal",
+      "recipeTypeId": "monster_food",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "monster-extract"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "cane-sugar"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "goat-butter"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Monster Cake. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/monster-cake.jpg",
+      "sourceRefs": {
+        "ignSlug": "monster-cake"
+      }
+    },
+    {
+      "slug": "dubious-food",
+      "name": "Dubious Food",
+      "kind": "failure",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "none",
+      "ingredients": [
+        {
+          "kind": "special",
+          "note": "Two or more items with effect"
+        },
+        {
+          "kind": "special",
+          "note": "Monster parts"
+        },
+        {
+          "kind": "special",
+          "note": "Generally incompatible items"
+        }
+      ],
+      "merchantNote": "Authored failure example. The merchant will still sell you the ingredients—wisdom costs extra.",
+      "image": "/images/recipes/dubious-food.jpg",
+      "sourceRefs": {
+        "ignSlug": "dubious-food"
+      }
+    },
+    {
+      "slug": "rock-hard-food",
+      "name": "Rock-Hard Food",
+      "kind": "failure",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "none",
+      "ingredients": [
+        {
+          "kind": "special",
+          "note": "Wood"
+        },
+        {
+          "kind": "special",
+          "note": "Gems (optional)"
+        }
+      ],
+      "merchantNote": "Authored failure example from the cookbook reference.",
+      "image": "/images/recipes/rock-hard-food.jpg",
+      "sourceRefs": {
+        "ignSlug": "rock-hard-food"
+      }
+    },
+    {
+      "slug": "sauteed-peppers",
+      "name": "Sauteed Peppers",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "cold resistance",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 170
+        }
+      ],
+      "merchantNote": "The simplest cold-weather snack on the cart.",
+      "image": "/images/recipes/sauteed-peppers.jpg",
+      "sourceRefs": {
+        "ignSlug": "sauteed-peppers"
+      }
+    },
+    {
+      "slug": "fairy-tonic",
+      "name": "Fairy Tonic",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 66
+        },
+        {
+          "kind": "tag",
+          "tag": "gem_animal_or_monster_part"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Fairy Tonic. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/fairy-tonic.jpg",
+      "sourceRefs": {
+        "ignSlug": "fairy-tonic"
+      }
+    },
+    {
+      "slug": "sauteed-nuts",
+      "name": "Sauteed Nuts",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "nut"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Sauteed Nuts. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/sauteed-nuts.jpg",
+      "sourceRefs": {
+        "ignSlug": "sauteed-nuts"
+      }
+    },
+    {
+      "slug": "simmered-fruit",
+      "name": "Simmered Fruit",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fruit"
+        }
+      ],
+      "merchantNote": "The gentlest fruit dish on the list.",
+      "image": "/images/recipes/simmered-fruit.jpg",
+      "sourceRefs": {
+        "ignSlug": "simmered-fruit"
+      }
+    },
+    {
+      "slug": "warm-milk",
+      "name": "Warm Milk",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "fresh-milk"
+        }
+      ],
+      "merchantNote": "Quiet evening fare.",
+      "image": "/images/recipes/warm-milk.jpg",
+      "sourceRefs": {
+        "ignSlug": "warm-milk"
+      }
+    },
+    {
+      "slug": "wheat-bread",
+      "name": "Wheat Bread",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "hearts",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "staple",
+          "stapleId": "tabantha-wheat"
+        },
+        {
+          "kind": "staple",
+          "stapleId": "rock-salt"
+        }
+      ],
+      "merchantNote": "Traveller bread. No flash, all sustenance.",
+      "image": "/images/recipes/wheat-bread.jpg",
+      "sourceRefs": {
+        "ignSlug": "wheat-bread"
+      }
+    },
+    {
+      "slug": "steamed-fruit",
+      "name": "Steamed Fruit",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fruit"
+        },
+        {
+          "kind": "tag",
+          "tag": "vegetable_herb_flower"
+        }
+      ],
+      "merchantNote": "Cookbook dish: Steamed Fruit. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/steamed-fruit.jpg",
+      "sourceRefs": {
+        "ignSlug": "steamed-fruit"
+      }
+    },
+    {
+      "slug": "fruit-and-mushroom-mix",
+      "name": "Fruit and Mushroom Mix",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fruit"
+        },
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        }
+      ],
+      "merchantNote": "Two tags, one pot — useful demo for category slots.",
+      "image": "/images/recipes/fruit-and-mushroom-mix.jpg",
+      "sourceRefs": {
+        "ignSlug": "fruit-and-mushroom-mix"
+      }
+    },
+    {
+      "slug": "copious-simmered-fruit",
+      "name": "Copious Simmered Fruit",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "variable",
+      "strengthBand": "strong",
+      "durationBand": "long",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "fruit",
+          "count": 4,
+          "distinct": true
+        }
+      ],
+      "merchantNote": "Cookbook dish: Copious Simmered Fruit. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/copious-simmered-fruit.jpg",
+      "sourceRefs": {
+        "ignSlug": "copious-simmered-fruit"
+      }
+    },
+    {
+      "slug": "glazed-mushrooms",
+      "name": "Glazed Mushrooms",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "mushroom"
+        },
+        {
+          "kind": "item",
+          "sourceId": 200
+        }
+      ],
+      "merchantNote": "Cookbook dish: Glazed Mushrooms. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/glazed-mushrooms.jpg",
+      "sourceRefs": {
+        "ignSlug": "glazed-mushrooms"
+      }
+    },
+    {
+      "slug": "glazed-veggies",
+      "name": "Glazed Veggies",
+      "kind": "meal",
+      "recipeTypeId": "side_snack",
+      "effectFamily": "variable",
+      "strengthBand": "weak",
+      "durationBand": "short",
+      "ingredients": [
+        {
+          "kind": "tag",
+          "tag": "vegetable"
+        },
+        {
+          "kind": "item",
+          "sourceId": 200
+        }
+      ],
+      "merchantNote": "Cookbook dish: Glazed Veggies. Merchant bands only — not a game-perfect formula.",
+      "image": "/images/recipes/glazed-veggies.jpg",
+      "sourceRefs": {
+        "ignSlug": "glazed-veggies"
+      }
+    },
+    {
+      "slug": "hasty-elixir",
+      "name": "Hasty Elixir",
+      "kind": "elixir",
+      "recipeTypeId": "elixir",
+      "effectFamily": "speed up",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 79
+        },
+        {
+          "kind": "item",
+          "sourceId": 84
+        }
+      ],
+      "merchantNote": "Hot-footed frog plus chuchu jelly. Merchant elixir — bands only.",
+      "sourceRefs": {
+        "ignSlug": "elixir-hasty"
+      }
+    },
+    {
+      "slug": "spicy-elixir",
+      "name": "Spicy Elixir",
+      "kind": "elixir",
+      "recipeTypeId": "elixir",
+      "effectFamily": "cold resistance",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 68
+        },
+        {
+          "kind": "item",
+          "sourceId": 84
+        }
+      ],
+      "merchantNote": "Summerwing warmth in a bottle for Hebra nights.",
+      "sourceRefs": {
+        "ignSlug": "elixir-spicy"
+      }
+    },
+    {
+      "slug": "chilly-elixir",
+      "name": "Chilly Elixir",
+      "kind": "elixir",
+      "recipeTypeId": "elixir",
+      "effectFamily": "heat resistance",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 67
+        },
+        {
+          "kind": "item",
+          "sourceId": 85
+        }
+      ],
+      "merchantNote": "Winterwing + fire chuchu jelly — odd pairing, cool result.",
+      "sourceRefs": {
+        "ignSlug": "elixir-chilly"
+      }
+    },
+    {
+      "slug": "sneaky-elixir",
+      "name": "Sneaky Elixir",
+      "kind": "elixir",
+      "recipeTypeId": "elixir",
+      "effectFamily": "stealth up",
+      "strengthBand": "mid",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 78
+        },
+        {
+          "kind": "item",
+          "sourceId": 88
+        }
+      ],
+      "merchantNote": "Sunset firefly and keese parts for quiet work.",
+      "sourceRefs": {
+        "ignSlug": "elixir-sneaky"
+      }
+    },
+    {
+      "slug": "mighty-elixir",
+      "name": "Mighty Elixir",
+      "kind": "elixir",
+      "recipeTypeId": "elixir",
+      "effectFamily": "attack up",
+      "strengthBand": "strong",
+      "durationBand": "mid",
+      "ingredients": [
+        {
+          "kind": "item",
+          "sourceId": 75
+        },
+        {
+          "kind": "item",
+          "sourceId": 84
+        }
+      ],
+      "merchantNote": "Bladed rhino beetle with jelly. Hit harder, still fictional.",
+      "sourceRefs": {
+        "ignSlug": "elixir-mighty"
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+---
+import BaseLayout from '@/components/BaseLayout.astro';
+import {
+  API_CREDIT,
+  SITE_DISCLAIMER,
+  SITE_NAME,
+  SITE_TAGLINE,
+} from '@/config/site';
+import { getSourceMeta } from '@/lib/content';
+
+const meta = getSourceMeta();
+---
+
+<BaseLayout title="The Merchant">
+  <div class="stack">
+    <h1>The Merchant</h1>
+    <p class="muted">Placeholder identity for {SITE_NAME}.</p>
+    <p>{SITE_TAGLINE}</p>
+
+    <section class="stack">
+      <h2>About this prototype</h2>
+      <p>{SITE_DISCLAIMER}</p>
+      <p>{API_CREDIT}</p>
+      <ul>
+        <li>Game scope: Breath of the Wild (`{meta.game}`)</li>
+        <li>Snapshot retrieved: {meta.retrievedAt}</li>
+        <li>Entries: {meta.counts.entries}</li>
+        <li>Regions: {meta.counts.regions}</li>
+      </ul>
+    </section>
+
+    <section class="stack">
+      <h2>Credits</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/gadhagod/Hyrule-Compendium-API">
+            Hyrule Compendium API
+          </a>
+        </li>
+        <li>
+          Built as a static Astro site with build-time validation and browser-only
+          satchel state.
+        </li>
+      </ul>
+    </section>
+  </div>
+</BaseLayout>
