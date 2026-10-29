@@ -75,7 +75,7 @@ export function defaultProductCommerce(entry: SourceEntry): {
         priceRupees,
         stockStatus,
         merchantNote:
-          'Compendium material restocked for travellers. Pricing is fictional.',
+          'For the pot or the pack. Check the cooking effect before you buy a stack.',
       };
     }
     case 'creatures': {
@@ -85,14 +85,14 @@ export function defaultProductCommerce(entry: SourceEntry): {
           priceRupees: hasEffect ? 16 + (m % 30) : 10 + (m % 18),
           stockStatus: m % 7 === 0 ? 'scarce' : 'available',
           merchantNote:
-            'Edible wildlife for the pot. Catch quality varies; price is fictional.',
+            'Cook it, or carry it for the road. Catch quality varies.',
         };
       }
       return {
         priceRupees: 8 + (m % 18),
         stockStatus: m % 9 === 0 ? 'scarce' : 'available',
-        merchantNote:
-          'Critter or companion stock for elixirs and odd requests. Pricing is fictional.',
+          merchantNote:
+            'For elixirs and odd requests. Read the Field Manual if you are not sure what it drops.',
       };
     }
     case 'monsters':
@@ -100,7 +100,7 @@ export function defaultProductCommerce(entry: SourceEntry): {
         priceRupees: 6 + (m % 22),
         stockStatus: m % 8 === 0 ? 'scarce' : 'available',
         merchantNote:
-          'Sold as part-adjacent stock for the brewing bench. Pricing is fictional.',
+          'A part for the brewing bench. Pair it with a critter that has an effect to make an elixir.',
       };
     case 'equipment': {
       const attack = entry.properties.attack ?? 0;
@@ -113,7 +113,7 @@ export function defaultProductCommerce(entry: SourceEntry): {
         priceRupees,
         stockStatus,
         merchantNote:
-          'Trail gear from the cart. Condition varies; price is fictional.',
+          'Trail gear from the cart. Read the properties before you pack it.',
       };
     }
     case 'treasure':
@@ -121,7 +121,7 @@ export function defaultProductCommerce(entry: SourceEntry): {
         priceRupees: 40 + (m % 80),
         stockStatus: 'scarce',
         merchantNote:
-          'Rare find passed along when the road is kind. Pricing is fictional.',
+          'A rare find. Take it only if this road needs it.',
       };
   }
 }

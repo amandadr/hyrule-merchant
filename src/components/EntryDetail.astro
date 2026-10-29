@@ -6,26 +6,41 @@ import { regionSlugForLocation } from '@/lib/brew/regions';
 interface Props {
   entry: SourceEntry;
   regions?: Region[];
+  /** Hide the image when the page hero already shows it. */
+  showImage?: boolean;
+  /** Hide the description when the page hero already shows it. */
+  showDescription?: boolean;
+  /** Use h3 when this block sits under another section heading. */
+  nested?: boolean;
 }
 
-const { entry, regions = [] } = Astro.props;
+const {
+  entry,
+  regions = [],
+  showImage = true,
+  showDescription = true,
+  nested = false,
+} = Astro.props;
 const displayName = titleCaseName(entry.name);
+const FactHeading = nested ? 'h3' : 'h2';
 ---
 
-<section class="detail-layout">
-  <img src={entry.image} alt={displayName} width="128" height="128" />
+<section class={showImage ? 'detail-layout' : 'stack'}>
+  {
+    showImage ? (
+      <img class="frame" src={entry.image} alt={displayName} width="128" height="128" />
+    ) : null
+  }
   <div class="stack">
-    <p class="muted">
+    <p class="cluster muted">
       <span class="badge">{titleCaseName(entry.category)}</span>
-      <span class="badge">id {entry.sourceId}</span>
-      <span class="badge">{entry.game}</span>
     </p>
-    <p>{entry.description}</p>
+    {showDescription ? <p>{entry.description}</p> : null}
 
     {
       entry.commonLocations.length > 0 ? (
-        <div>
-          <h2>Common locations</h2>
+        <div class="stack stack-tight">
+          <FactHeading>Common locations</FactHeading>
           <ul>
             {entry.commonLocations.map((location) => {
               const regionSlug = regionSlugForLocation(location, regions);
@@ -48,8 +63,8 @@ const displayName = titleCaseName(entry.name);
 
     {
       entry.category === 'creatures' && entry.edible === true && (
-        <div>
-          <h2>Cooking</h2>
+        <div class="stack stack-tight">
+          <FactHeading>Cooking</FactHeading>
           <ul>
             <li>Effect: {entry.cookingEffect || 'none'}</li>
             <li>Hearts recovered: {entry.heartsRecovered}</li>
@@ -60,8 +75,8 @@ const displayName = titleCaseName(entry.name);
 
     {
       entry.category === 'creatures' && entry.edible === false && (
-        <div>
-          <h2>Drops</h2>
+        <div class="stack stack-tight">
+          <FactHeading>Drops</FactHeading>
           {entry.drops.length > 0 ? (
             <ul>
               {entry.drops.map((drop) => (
@@ -77,8 +92,8 @@ const displayName = titleCaseName(entry.name);
 
     {
       entry.category === 'materials' && (
-        <div>
-          <h2>Cooking</h2>
+        <div class="stack stack-tight">
+          <FactHeading>Cooking</FactHeading>
           <ul>
             <li>Effect: {entry.cookingEffect || 'none'}</li>
             <li>Hearts recovered: {entry.heartsRecovered}</li>
@@ -89,8 +104,8 @@ const displayName = titleCaseName(entry.name);
 
     {
       entry.category === 'equipment' && (
-        <div>
-          <h2>Properties</h2>
+        <div class="stack stack-tight">
+          <FactHeading>Properties</FactHeading>
           <ul>
             <li>Attack: {entry.properties.attack}</li>
             <li>Defense: {entry.properties.defense}</li>
@@ -103,8 +118,8 @@ const displayName = titleCaseName(entry.name);
 
     {
       (entry.category === 'monsters' || entry.category === 'treasure') && (
-        <div>
-          <h2>Drops</h2>
+        <div class="stack stack-tight">
+          <FactHeading>Drops</FactHeading>
           {entry.drops.length > 0 ? (
             <ul>
               {entry.drops.map((drop) => (

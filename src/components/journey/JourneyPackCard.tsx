@@ -115,7 +115,7 @@ export default function JourneyPackCard({ pack }: Props) {
         </button>
         {message ? <p class="muted journey-pack-msg">{message}</p> : null}
         <p class="muted journey-pack-disclaimer">
-          Fictional prices and stock — nothing here creates a real order.
+          Adds these to your satchel. You can change quantities after.
         </p>
       </div>
     </section>

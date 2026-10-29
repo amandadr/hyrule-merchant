@@ -9,8 +9,8 @@ const STOCK_LABEL: Record<string, string> = {
   scarce: 'Scarce',
   seasonal: 'Seasonal',
   special_order: 'Special Order',
-  guide_only: 'Guide Only',
-  not_sold: 'Not Sold',
+  guide_only: 'Not for sale',
+  not_sold: 'Not for sale',
 };
 
 const SHELF_LABEL: Record<string, string> = {

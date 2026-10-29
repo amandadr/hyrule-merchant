@@ -1,6 +1,6 @@
 ---
 import SiteNav from './SiteNav.astro';
-import { PROJECT_LABEL, SITE_DISCLAIMER, SITE_NAME } from '@/config/site';
+import { SITE_DISCLAIMER, SITE_NAME } from '@/config/site';
 import '../styles/global.css';
 
 interface Props {
@@ -52,7 +52,6 @@ const footerLinks = [
         </ul>
       </nav>
       <p>{SITE_DISCLAIMER}</p>
-      <p class="muted">A {PROJECT_LABEL} portfolio project.</p>
     </footer>
   </body>
 </html>

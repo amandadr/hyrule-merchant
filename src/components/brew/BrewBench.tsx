@@ -397,7 +397,7 @@ export default function BrewBench({
     const parts: string[] = [];
     if (added > 0) {
       parts.push(
-        `Added ${added} to your satchel for ${spent} rupees (simulated).`,
+        `Added ${added} to your satchel for ${spent} rupees.`,
       );
     }
     if (failed.length > 0) {

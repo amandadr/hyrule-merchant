@@ -37,8 +37,14 @@ const itemIndex = Object.fromEntries(
 ---
 
 <BaseLayout title="My Satchel">
-  <div class="stack">
-    <h1>My Satchel</h1>
+  <div class="page">
+    <header class="section-head">
+      <p class="kicker">What you’re carrying</p>
+      <h1>My Satchel</h1>
+      <p class="muted">
+        Check what you are carrying, then see what else this road suggests.
+      </p>
+    </header>
     <SatchelPanel client:load itemIndex={itemIndex} />
     <SatchelRecommendations
       client:load

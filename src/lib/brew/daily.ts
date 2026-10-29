@@ -39,6 +39,6 @@ export function getDailyExperiment(
   return {
     dateKey,
     recipe,
-    blurb: `Today’s bench challenge (${dateKey}): brew ${recipe.name}. Effect family: ${recipe.effectFamily}.`,
+    blurb: `Today’s challenge: brew ${recipe.name}. Open it on the bench and fill the pot.`,
   };
 }

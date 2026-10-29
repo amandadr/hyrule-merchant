@@ -14,7 +14,6 @@ import {
   getProductsBySourceId,
   getRecipes,
   getRegions,
-  getSourceMeta,
 } from '@/lib/content';
 import { getDailyExperiment } from '@/lib/brew/daily';
 import { kitFace } from '@/lib/journey/packs';
@@ -25,7 +24,6 @@ const regions = getRegions();
 const entries = getAllEntries();
 const productsBySourceId = getProductsBySourceId();
 const outfits = getOutfits().filter((outfit) => outfit.regionSlug);
-const meta = getSourceMeta();
 const daily = getDailyExperiment(getRecipes());
 
 /** A few contrasting roads for the destination-first start. */
@@ -46,10 +44,10 @@ const featured = featuredSlugs
 ---
 
 <BaseLayout title="Home" description={SITE_TAGLINE}>
-  <div class="stack home-page">
+  <div class="page home-page">
     <section class="home-hero">
       <div class="home-hero-copy stack">
-        <p class="home-kicker muted">Travelling outfitter · field notes · brewing bench</p>
+        <p class="kicker">Travelling outfitter · field notes · brewing bench</p>
         <h1>{SITE_NAME}</h1>
         <p class="home-tagline">{SITE_TAGLINE}</p>
         <div class="home-merchant-beat">
@@ -63,7 +61,7 @@ const featured = featuredSlugs
           <p>
             <strong>{MERCHANT_NAME}</strong> — {MERCHANT_SHORT} to the Koroks —
             packs what the road actually asks for. {KOROK_NAME} insists on the
-            detours.
+            detours.{' '}
             <a href="/merchant">Meet the merchant</a>
           </p>
         </div>
@@ -91,12 +89,14 @@ const featured = featuredSlugs
       </div>
     </section>
 
-    <section class="stack">
-      <h2>Pick a road</h2>
-      <p class="muted">
-        Read Sorrel’s field notes, then take a recommended journey pack. Edit
-        anything once it’s in your satchel.
-      </p>
+    <section class="section">
+      <div class="section-head">
+        <h2>Pick a road</h2>
+        <p class="muted">
+          Open a road, read what the weather and the hazards ask for, and take
+          the pack Sorrel recommends. You can change it in your satchel.
+        </p>
+      </div>
       <ul class="grid-list">
         {
           featured.map(({ region, pack, cover, kitItems }) => (
@@ -116,7 +116,7 @@ const featured = featuredSlugs
       </p>
     </section>
 
-    <section class="stack">
+    <section class="section">
       <h2>Or start another way</h2>
       <ul class="home-secondary-links">
         <li>
@@ -129,19 +129,14 @@ const featured = featuredSlugs
         </li>
         <li>
           <a href="/guide">Browse the Field Manual</a>
-          <span class="muted">Then follow links back to the wagon</span>
+          <span class="muted">Look something up, then jump to the shop or a road</span>
         </li>
         <li>
           <a href="/satchel">Open your satchel</a>
-          <span class="muted">Packing receipt and recommendations</span>
+          <span class="muted">See what you are carrying, then what else to add</span>
         </li>
       </ul>
     </section>
 
-    <p class="muted home-meta">
-      Unofficial portfolio prototype. Snapshot: {meta.counts.entries} BotW
-      entries · {meta.counts.regions} regions · retrieved{' '}
-      {meta.retrievedAt.slice(0, 10)}.
-    </p>
   </div>
 </BaseLayout>

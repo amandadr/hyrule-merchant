@@ -45,15 +45,16 @@ export default function AddToSatchelButton({
   const inSatchel = items.some((item) => item.productSlug === productSlug);
 
   return (
-    <div class="stack">
-      <p class="notice muted">
-        Simulated cart only. Nothing is purchased or stored on a server.
+    <div class="stack stack-tight">
+      <p class="muted">
+        Adds to the list on this device. Nothing is purchased.
         {stockStatus === 'scarce' ? ' Scarce goods cap at 2 in the satchel.' : ''}
         {stockStatus === 'special_order' ? ' Special orders cap at 1.' : ''}
       </p>
-      <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+      <div class="cluster">
         <button
           type="button"
+          class="button button-primary"
           onClick={() => {
             const result = addToSatchel({
               productSlug,

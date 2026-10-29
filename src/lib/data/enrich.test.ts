@@ -88,7 +88,7 @@ describe('merchant staples enrich', () => {
   it('assigns fictional defaults when no override exists', () => {
     const commerce = defaultProductCommerce(chuchu);
     expect(commerce.priceRupees).toBeGreaterThan(0);
-    expect(commerce.merchantNote.toLowerCase()).toContain('fictional');
+    expect(commerce.merchantNote.toLowerCase()).toContain('brewing bench');
   });
 
   it('rejects staple ids that collide with compendium entries', () => {

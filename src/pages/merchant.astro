@@ -1,26 +1,24 @@
 ---
 import BaseLayout from '@/components/BaseLayout.astro';
 import {
-  API_CREDIT,
   KOROK_NAME,
   MERCHANT_NAME,
   MERCHANT_SHORT,
-  PROJECT_LABEL,
   SITE_DISCLAIMER,
   SITE_NAME,
   SITE_TAGLINE,
 } from '@/config/site';
-import { getSourceMeta } from '@/lib/content';
-
-const meta = getSourceMeta();
 ---
 
 <BaseLayout title="The Merchant">
-  <div class="stack">
-    <h1>The Merchant</h1>
-    <p>{SITE_TAGLINE}</p>
-
-    <section class="merchant-portraits">
+  <div class="page">
+    <header class="section">
+      <div class="section-head">
+        <p class="kicker">The wagon</p>
+        <h1>The Merchant</h1>
+        <p class="home-tagline">{SITE_TAGLINE}</p>
+      </div>
+      <div class="merchant-portraits">
       <figure class="merchant-figure">
         <img
           src="/images/Sorrel.png"
@@ -45,9 +43,10 @@ const meta = getSourceMeta();
           <span class="muted"> — insists on the detours</span>
         </figcaption>
       </figure>
-    </section>
+      </div>
+    </header>
 
-    <section class="stack">
+    <section class="prose">
       <h2>Meet {MERCHANT_NAME}</h2>
       <p>
         {MERCHANT_NAME} — {MERCHANT_SHORT} to the Koroks — spent years as a
@@ -63,12 +62,12 @@ const meta = getSourceMeta();
         outfitter for people who want to <em>experience</em> Hyrule, not just
         survive it.
       </p>
-      <p class="notice">
-        <strong>“You should go. And I want to help make sure you come back.”</strong>
+      <p class="pull-quote">
+        “You should go. And I want to help make sure you come back.”
       </p>
     </section>
 
-    <section class="stack">
+    <section class="prose">
       <h2>How the shop came to be</h2>
       <p>
         It started with extra mushrooms. Someone heading into the cold looked
@@ -87,12 +86,14 @@ const meta = getSourceMeta();
       </p>
     </section>
 
-    <section class="stack notice">
-      <h2 class="margin-0">Ready for the road?</h2>
-      <p class="margin-0">
-        The story ends here; the packing does not. Pick a destination, open the
-        bench, or browse the shelves.
-      </p>
+    <section class="primary-section">
+      <div class="section-head">
+        <h2>Ready for the road?</h2>
+        <p>
+          The story ends here; the packing does not. Pick a destination, open the
+          bench, or browse the shelves.
+        </p>
+      </div>
       <div class="home-cta-row">
         <a class="button button-primary" href="/regions">
           Where are you headed?
@@ -102,36 +103,19 @@ const meta = getSourceMeta();
       </div>
     </section>
 
-    <section class="stack">
-      <h2>About this prototype</h2>
-      <p>
-        {SITE_NAME} is the in-world storefront for the <strong
-          >{PROJECT_LABEL}</strong
-        > portfolio project.
-      </p>
-      <p>{SITE_DISCLAIMER}</p>
-      <p>{API_CREDIT}</p>
-      <ul>
-        <li>Game scope: Breath of the Wild (`{meta.game}`)</li>
-        <li>Snapshot retrieved: {meta.retrievedAt}</li>
-        <li>Entries: {meta.counts.entries}</li>
-        <li>Regions: {meta.counts.regions}</li>
-      </ul>
-    </section>
-
-    <section class="stack">
-      <h2>Credits</h2>
-      <ul>
-        <li>
+    <section class="reference">
+      <h2>Before you travel</h2>
+      <div class="prose">
+        <p>{SITE_DISCLAIMER}</p>
+        <p>
+          Place, creature, and material notes draw on the{' '}
           <a href="https://github.com/gadhagod/Hyrule-Compendium-API">
-            Hyrule Compendium API
+            Hyrule Compendium
           </a>
-        </li>
-        <li>
-          Built as a static Astro site with build-time validation and browser-only
-          satchel state.
-        </li>
-      </ul>
+          , a community project. Sorrel’s prices, packs, and recipes are the
+          shop’s own.
+        </p>
+      </div>
     </section>
   </div>
 </BaseLayout>

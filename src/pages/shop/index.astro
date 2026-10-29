@@ -82,21 +82,25 @@ const featuredPacks = featuredPackSlugs
 ---
 
 <BaseLayout title="Shop">
-  <div class="stack">
-    <h1>Shop</h1>
-    <p class="muted">
-      What Sor keeps on the wagon — shelves first, then the full crate if you
-      need it. Prices and stock are invented for the fiction; nothing here is
-      for real sale. ({products.length} goods including {stapleCount} pantry
-      staples.)
-    </p>
-
-    <section class="shop-featured notice stack">
-      <h2 class="margin-0">Sor recommends</h2>
-      <p class="muted margin-0">
-        Journey packs with a reason for every item. Open the road, or filter
-        the shop to those supplies.
+  <div class="page">
+    <header class="section-head">
+      <p class="kicker">The wagon</p>
+      <h1>Shop</h1>
+      <p class="muted">
+        Start with a pack if you have a road in mind, or search the shelves
+        when you already know the name. {products.length} goods, including {stapleCount} pantry
+        staples.
       </p>
+    </header>
+
+    <section class="primary-section" aria-labelledby="sor-recommends">
+      <div class="section-head">
+        <p class="kicker">Recommended</p>
+        <h2 id="sor-recommends">Sor recommends</h2>
+        <p class="muted">
+          Open the road to take the whole pack, or show just those goods here.
+        </p>
+      </div>
       <ul class="shop-featured-list">
         {
           featuredPacks.map((pack) => (

@@ -82,24 +82,31 @@ const pickerItems = [
 ---
 
 <BaseLayout title="Brew">
-  <div class="stack">
-    <h1>Brewing bench</h1>
-    <p class="notice">
-      Simplified merchant cooking rules — not game-perfect formulas. Meals use
-      materials, seafood, and pantry staples. Elixirs need an effect critter plus a
-      monster part. Start with today’s challenge or a named recipe above the full
-      cookbook.
-    </p>
+  <div class="page">
+    <header class="section-head">
+      <p class="kicker">The wagon</p>
+      <h1>Brewing bench</h1>
+      <p class="muted">
+        Start with today’s challenge, or choose a named recipe and fill the pot.
+        Meals use materials, seafood, and pantry staples. An elixir needs a
+        critter with an effect and a monster part.
+      </p>
+    </header>
 
     {
       daily ? (
-        <div class="notice stack">
-          <strong>Today’s bench challenge</strong>
-          <p class="margin-0">{daily.blurb}</p>
-          <p class="margin-0">
-            <a href={`#${daily.recipe.slug}`}>Open {daily.recipe.name}</a>
+        <section class="primary-section" aria-labelledby="bench-challenge">
+          <div class="section-head">
+            <p class="kicker">Today</p>
+            <h2 id="bench-challenge">Bench challenge</h2>
+            <p>{daily.blurb}</p>
+          </div>
+          <p>
+            <a class="button button-primary" href={`#${daily.recipe.slug}`}>
+              Open {daily.recipe.name}
+            </a>
           </p>
-        </div>
+        </section>
       ) : null
     }
 

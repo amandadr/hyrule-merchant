@@ -20,12 +20,15 @@ const trailFace = trailSkewer ? kitFace(trailSkewer, productsBySourceId) : [];
 ---
 
 <BaseLayout title="Regions">
-  <div class="stack">
-    <h1>Regions</h1>
-    <p class="muted">
-      Where are you headed? Pick a destination, read Sorrel’s field notes, and
-      add a recommended journey pack to your satchel.
-    </p>
+  <div class="page">
+    <header class="section-head">
+      <p class="kicker">Where are you headed?</p>
+      <h1>Regions</h1>
+      <p class="muted">
+        Choose a destination. Each page tells you the conditions, the hazards,
+        and the pack Sorrel would send with you.
+      </p>
+    </header>
     <ul class="grid-list">
       {
         regions.map((region) => {
@@ -39,12 +42,12 @@ const trailFace = trailSkewer ? kitFace(trailSkewer, productsBySourceId) : [];
                   region.settlements.length === 1 ? 'settlement' : 'settlements'
                 }`
               : '';
-          const detail = [shrineLabel, settlementLabel].filter(Boolean).join(' · ');
+          const inventory = [shrineLabel, settlementLabel].filter(Boolean).join(' · ');
           return (
             <RegionRoadCard
               href={`/regions/${region.slug}`}
               title={titleCaseName(region.name)}
-              detail={detail}
+              detail={pack?.objective || inventory}
               packName={pack?.name}
               cover={regionCover(region.slug, entries)}
               kitItems={pack ? kitFace(pack, productsBySourceId) : []}
@@ -53,10 +56,12 @@ const trailFace = trailSkewer ? kitFace(trailSkewer, productsBySourceId) : [];
         })
       }
     </ul>
-    <p class="trail-skewer-note">
-      <a href="/shop?outfit=trail-skewer-kit">Trail Skewer Pack</a>
-      <span class="muted"> — not tied to one region; supper for any road.</span>
+    <aside class="aside-note">
+      <p>
+        <a href="/shop?outfit=trail-skewer-kit">Trail Skewer Pack</a>
+        <span class="muted"> — not tied to one region; supper for any road.</span>
+      </p>
       <KitStrip items={trailFace} label="Trail Skewer Pack contents" />
-    </p>
+    </aside>
   </div>
 </BaseLayout>

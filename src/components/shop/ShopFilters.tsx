@@ -293,7 +293,7 @@ export default function ShopFilters({
           <summary>More filters</summary>
           <div class="stack stack-top-pad">
             <label for="shop-category">
-              <span class="muted">Compendium category</span>
+              <span class="muted">Kind</span>
               <select
                 id="shop-category"
                 name="category"

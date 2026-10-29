@@ -86,136 +86,180 @@ const relatedOutfits = outfits.filter((outfit) =>
 );
 const regions = getRegions();
 const sourcedNear = product.entry.commonLocations.slice(0, 4);
+const shelfLabel =
+  shelf === 'staples'
+    ? 'Pantry staple'
+    : shelf === 'equipment'
+      ? 'Equipment'
+      : shelf === 'creatures'
+        ? 'Creature'
+        : 'Material';
+const hasRelated =
+  relatedProducts.length > 0 ||
+  relatedRecipes.length > 0 ||
+  relatedOutfits.length > 0;
 ---
 
 <BaseLayout title={displayName}>
-  <div class="stack">
-    <p><a href="/shop">← Shop</a></p>
-    <h1>{displayName}</h1>
-    <ProductMeta
-      client:load
-      priceRupees={product.priceRupees}
-      stockStatus={product.stockStatus}
-      origin={product.origin}
-      category={product.entry.category}
-      cookingEffect={effect || undefined}
-      heartsRecovered={hearts}
-      shelf={shelf}
-      compactPrice={false}
-      emphasizePrice
-    />
-    <p class="notice">{product.merchantNote}</p>
+  <div class="page">
+    <p class="back-link"><a href="/shop">← Shop</a></p>
+    <header class="sidebar">
+      <img
+        class="frame"
+        src={product.entry.image}
+        alt=""
+        width="128"
+        height="128"
+      />
+      <div class="stack stack-tight">
+        <p class="kicker">{shelfLabel}</p>
+        <h1>{displayName}</h1>
+        <ProductMeta
+          client:load
+          priceRupees={product.priceRupees}
+          stockStatus={product.stockStatus}
+          origin={product.origin}
+          category={product.entry.category}
+          cookingEffect={effect || undefined}
+          heartsRecovered={hearts}
+          shelf={shelf}
+          compactPrice={false}
+          emphasizePrice
+        />
+        <p>{product.merchantNote}</p>
+        <p>{product.entry.description}</p>
+        {
+          sourcedNear.length > 0 ? (
+            <p class="muted">
+              Sourced near:{' '}
+              {sourcedNear.map((location, index) => {
+                const regionSlug = regionSlugForLocation(location, regions);
+                const prefix = index > 0 ? ', ' : '';
+                return regionSlug ? (
+                  <span>
+                    {prefix}
+                    <a href={`/regions/${regionSlug}`}>{location}</a>
+                  </span>
+                ) : (
+                  <span>
+                    {prefix}
+                    {location}
+                  </span>
+                );
+              })}
+            </p>
+          ) : null
+        }
+        <AddToSatchelButton
+          client:load
+          productSlug={product.slug}
+          sourceId={product.sourceId}
+          name={displayName}
+          priceRupees={product.priceRupees}
+          stockStatus={product.stockStatus}
+        />
+      </div>
+    </header>
+
+    <section class="reference">
+      <div class="section-head">
+        <h2>{isStaple ? 'From the pantry' : 'In the field'}</h2>
+        {
+          isStaple ? (
+            <p class="muted">
+              Sorrel keeps this in the pantry. You will not find it growing wild.
+            </p>
+          ) : (
+            <p class="muted">Where it is found, and how it cooks or holds up.</p>
+          )
+        }
+      </div>
+      <EntryDetail
+        entry={product.entry}
+        regions={regions}
+        showImage={false}
+        showDescription={false}
+        nested
+      />
+    </section>
 
     {
-      sourcedNear.length > 0 ? (
-        <p class="muted">
-          Sourced near:{' '}
-          {sourcedNear.map((location, index) => {
-            const regionSlug = regionSlugForLocation(location, regions);
-            const prefix = index > 0 ? ', ' : '';
-            return regionSlug ? (
-              <span>
-                {prefix}
-                <a href={`/regions/${regionSlug}`}>{location}</a>
-              </span>
-            ) : (
-              <span>
-                {prefix}
-                {location}
-              </span>
-            );
-          })}
-        </p>
-      ) : null
-    }
+      hasRelated ? (
+        <section class="section" aria-labelledby="carry-with">
+          <div class="section-head">
+            <h2 id="carry-with">Carry it with</h2>
+            <p class="muted">Other goods, recipes, and packs that call for this.</p>
+          </div>
 
-    <AddToSatchelButton
-      client:load
-      productSlug={product.slug}
-      sourceId={product.sourceId}
-      name={displayName}
-      priceRupees={product.priceRupees}
-      stockStatus={product.stockStatus}
-    />
+          {
+            relatedProducts.length > 0 ? (
+              <div class="stack stack-tight">
+                <h3>Pairs well with</h3>
+                <ul class="grid-list">
+                  {relatedProducts.map((related) => (
+                    <li class="entry-card">
+                      <a href={`/shop/${related.slug}`}>
+                        <img
+                          src={related.entry.image}
+                          alt=""
+                          width="64"
+                          height="64"
+                          loading="lazy"
+                        />
+                        <strong>{titleCaseName(related.entry.name)}</strong>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null
+          }
 
-    <h2>{isStaple ? 'Merchant pantry notes' : 'Source facts'}</h2>
-    {
-      isStaple ? (
-        <p class="muted">
-          Authored staple — not present in the Hyrule Compendium API materials
-          snapshot. Synthetic id {product.sourceId}
-          {product.stapleId ? ` (${product.stapleId})` : ''}.
-        </p>
-      ) : null
-    }
-    <EntryDetail entry={product.entry} regions={regions} />
+          {
+            relatedRecipes.length > 0 ? (
+              <div class="stack stack-tight">
+                <h3>Finishes these recipes</h3>
+                <ul class="bare-list">
+                  {relatedRecipes.map(({ recipe, overlap }) => (
+                    <li class="entry-card">
+                      <a href={`/brew#${recipe.slug}`}>
+                        <strong>{recipe.name}</strong>
+                        <div class="muted">
+                          You would have {overlap.have} of {overlap.need} ingredients
+                          with this alone.
+                        </div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null
+          }
 
-    {
-      relatedProducts.length > 0 ? (
-        <section class="stack">
-          <h2>Pairs well with</h2>
-          <ul class="grid-list">
-            {relatedProducts.map((related) => (
-              <li class="entry-card">
-                <a href={`/shop/${related.slug}`}>
-                  <img
-                    src={related.entry.image}
-                    alt={titleCaseName(related.entry.name)}
-                    width="64"
-                    height="64"
-                    loading="lazy"
-                  />
-                  <strong>{titleCaseName(related.entry.name)}</strong>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    {
-      relatedRecipes.length > 0 ? (
-        <section class="stack">
-          <h2>Finishes these recipes</h2>
-          <ul class="stack" style="list-style:none;padding:0;margin:0">
-            {relatedRecipes.map(({ recipe, overlap }) => (
-              <li class="entry-card">
-                <a href={`/brew#${recipe.slug}`}>
-                  <strong>{recipe.name}</strong>
-                  <div class="muted">
-                    You would have {overlap.have} of {overlap.need} ingredients
-                    with this alone.
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null
-    }
-
-    {
-      relatedOutfits.length > 0 ? (
-        <section class="stack">
-          <h2>Journey packs</h2>
-          <ul class="stack" style="list-style:none;padding:0;margin:0">
-            {relatedOutfits.map((outfit) => (
-              <li class="entry-card">
-                <a
-                  href={
-                    outfit.regionSlug
-                      ? `/regions/${outfit.regionSlug}`
-                      : `/shop?outfit=${outfit.slug}`
-                  }
-                >
-                  <strong>{outfit.name}</strong>
-                  <div class="muted">{outfit.objective}</div>
-                  <div class="muted">{outfit.merchantNote}</div>
-                </a>
-              </li>
-            ))}
-          </ul>
+          {
+            relatedOutfits.length > 0 ? (
+              <div class="stack stack-tight">
+                <h3>Journey packs</h3>
+                <ul class="bare-list">
+                  {relatedOutfits.map((outfit) => (
+                    <li class="entry-card">
+                      <a
+                        href={
+                          outfit.regionSlug
+                            ? `/regions/${outfit.regionSlug}`
+                            : `/shop?outfit=${outfit.slug}`
+                        }
+                      >
+                        <strong>{outfit.name}</strong>
+                        <div class="muted">{outfit.objective}</div>
+                        <div class="muted">{outfit.merchantNote}</div>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null
+          }
         </section>
       ) : null
     }

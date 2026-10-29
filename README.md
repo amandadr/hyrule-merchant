@@ -10,7 +10,9 @@ Powered by a build-time snapshot of the [Hyrule Compendium API](https://github.c
 
 ## Current status
 
-The data foundation, catalogue, field manual, region notes, journey packs, satchel, and brewing bench are working. Identity and world-building are drafted. Visual design and launch polish are the next work.
+Live at [merchant.amandadroy.com](https://merchant.amandadroy.com/). The site stays public while development continues. Pages send `noindex, nofollow` (HTML meta and a Netlify `X-Robots-Tag`) so crawlers can fetch them and still leave them out of search results.
+
+The data foundation, catalogue, field manual, region notes, journey packs, satchel, and brewing bench are working. Identity and world-building are drafted.
 
 | Area | State |
 | --- | --- |
@@ -22,10 +24,11 @@ The data foundation, catalogue, field manual, region notes, journey packs, satch
 | Journey packs | Authored kits with per-item reasons; add the whole pack to the satchel from a region page |
 | Brewing | Named meals from the IGN cookbook corpus, 5 merchant elixirs, free-brew rules, daily experiment |
 | Satchel | Browser-persistent cart, scarcity caps, packing receipt, recommendations |
-| Visual design | Functional parchment tokens; logo and portraits exist but are barely used |
-| Deploy / case study | Not started |
+| Visual design | Parchment layout and a text wordmark. Still being polished in public |
+| Deploy | [Netlify](https://merchant.amandadroy.com/): `npm run build`, publish `dist`, Node 22.12+. No environment variables |
+| Case study | Not started |
 
-Foundation brief phases: **0–3 are largely in place**. **Phase 4 (polish)** and **Phase 5 (case study)** are the remaining launch work. See [Next steps](#next-steps).
+Foundation brief phases: **0–3 are largely in place**, and the static site is deployed. **Phase 4 (polish)** continues on the public site. **Phase 5 (case study)** is still open. See [Next steps](#next-steps).
 
 ## Stack
 
@@ -129,12 +132,12 @@ Guides: [docs/catalogue-authoring.md](docs/catalogue-authoring.md), [docs/recipe
 
 Ordered for a polished first release rather than more systems.
 
-1. **Complete the storefront identity.** Put the logo in the header, portraits on `/merchant` and home, and replace leftover “Hyrule Merchant” / generic default notes with Sorrel’s voice.
+1. **Keep the storefront in Sorrel’s voice.** The header is the text name, The Good Detour. Replace leftover generic notes as you playtest.
 2. **Journey packs.** Done — each region has a recommended pack with reasons and add-to-satchel. Tighten copy and kits as you playtest.
 3. **Fix missing art.** Recipes and staples reference `/images/recipes/…` and `/images/staples/…` that are not in `public/` (except a staple fallback SVG).
 4. **Tighten the catalogue.** Default commerce covers every Compendium record. Curate shelves, exclusions, and merchant notes so the shop feels chosen, not dumped.
 5. **Relationship browsing.** Link monsters → drops → products → recipes → regions so the guide and shop read as one world.
-6. **Phase 4 polish.** Accessibility (keyboard, contrast, reduced motion), responsive QA, performance budget, and a static host (e.g. Cloudflare Pages / Netlify).
+6. **Phase 4 polish.** Accessibility (keyboard, contrast, reduced motion), responsive QA, and a performance pass on the live Netlify site. Keep `noindex` until you want it searchable.
 7. **Case study.** A short public page that explains the pipeline, fiction boundary, and design decisions — the portfolio artifact this project is meant to produce.
 
-Later, after launch: field journal / favourites, richer brew “use what I have,” more region kits, and a merchant circuit map. Stay out of real payments, live APIs, and full game-formula simulation.
+Later: field journal / favourites, richer brew “use what I have,” more region kits, and a merchant circuit map. Stay out of real payments, live APIs, and full game-formula simulation.

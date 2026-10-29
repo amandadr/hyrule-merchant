@@ -10,7 +10,7 @@
       "heartsRecovered": 1,
       "priceRupees": 12,
       "stockStatus": "available",
-      "merchantNote": "Pantry staple. Keeps if packed carefully. Pricing is fictional."
+      "merchantNote": "Pantry staple. Keeps if packed carefully."
     },
     {
       "stapleId": "cane-sugar",
@@ -22,7 +22,7 @@
       "heartsRecovered": 0,
       "priceRupees": 10,
       "stockStatus": "available",
-      "merchantNote": "Baker's coin. Pair with Tabantha Wheat. Pricing is fictional."
+      "merchantNote": "Baker's coin. Pair with Tabantha Wheat."
     },
     {
       "stapleId": "fresh-milk",
@@ -34,7 +34,7 @@
       "heartsRecovered": 0.5,
       "priceRupees": 14,
       "stockStatus": "available",
-      "merchantNote": "Sold cool from the cart. Use soon. Pricing is fictional."
+      "merchantNote": "Sold cool from the cart. Use soon."
     },
     {
       "stapleId": "goat-butter",
@@ -46,7 +46,7 @@
       "heartsRecovered": 0,
       "priceRupees": 16,
       "stockStatus": "available",
-      "merchantNote": "A cook's quiet luxury. Pricing is fictional."
+      "merchantNote": "A cook's quiet luxury."
     },
     {
       "stapleId": "goron-spice",
@@ -58,7 +58,7 @@
       "heartsRecovered": 0,
       "priceRupees": 18,
       "stockStatus": "scarce",
-      "merchantNote": "Smells like the mountain markets. Pricing is fictional."
+      "merchantNote": "Smells like the mountain markets."
     },
     {
       "stapleId": "hylian-rice",
@@ -70,7 +70,7 @@
       "heartsRecovered": 1,
       "priceRupees": 12,
       "stockStatus": "available",
-      "merchantNote": "Always restocked. Pricing is fictional."
+      "merchantNote": "Always restocked."
     },
     {
       "stapleId": "monster-extract",
@@ -82,7 +82,7 @@
       "heartsRecovered": 0,
       "priceRupees": 40,
       "stockStatus": "special_order",
-      "merchantNote": "Sold with a warning label and a wink. Pricing is fictional."
+      "merchantNote": "Sold with a warning label and a wink."
     },
     {
       "stapleId": "raw-bird-drumstick",
@@ -94,7 +94,7 @@
       "heartsRecovered": 1,
       "priceRupees": 15,
       "stockStatus": "available",
-      "merchantNote": "Trail protein, properly wrapped. Pricing is fictional."
+      "merchantNote": "Trail protein, properly wrapped."
     },
     {
       "stapleId": "raw-bird-thigh",
@@ -106,7 +106,7 @@
       "heartsRecovered": 1.5,
       "priceRupees": 28,
       "stockStatus": "available",
-      "merchantNote": "Better birds, better bowls. Pricing is fictional."
+      "merchantNote": "Better birds, better bowls."
     },
     {
       "stapleId": "raw-gourmet-meat",
@@ -118,7 +118,7 @@
       "heartsRecovered": 3,
       "priceRupees": 55,
       "stockStatus": "scarce",
-      "merchantNote": "For celebrations and hard climbs. Pricing is fictional."
+      "merchantNote": "For celebrations and hard climbs."
     },
     {
       "stapleId": "raw-meat",
@@ -130,7 +130,7 @@
       "heartsRecovered": 1,
       "priceRupees": 18,
       "stockStatus": "available",
-      "merchantNote": "Honest meat at an honest (fictional) price."
+      "merchantNote": "Honest meat from the cart."
     },
     {
       "stapleId": "raw-prime-meat",
@@ -142,7 +142,7 @@
       "heartsRecovered": 1.5,
       "priceRupees": 32,
       "stockStatus": "available",
-      "merchantNote": "Mid-road indulgence. Pricing is fictional."
+      "merchantNote": "Mid-road indulgence."
     },
     {
       "stapleId": "raw-whole-bird",
@@ -154,7 +154,7 @@
       "heartsRecovered": 3,
       "priceRupees": 60,
       "stockStatus": "scarce",
-      "merchantNote": "Special-order energy, shelf-stocked when the hunt is good. Pricing is fictional."
+      "merchantNote": "Special-order energy, shelf-stocked when the hunt is good."
     },
     {
       "stapleId": "rock-salt",
@@ -166,7 +166,7 @@
       "heartsRecovered": 0,
       "priceRupees": 8,
       "stockStatus": "available",
-      "merchantNote": "Cheap, essential, always in the front crate. Pricing is fictional."
+      "merchantNote": "Cheap, essential, always in the front crate."
     },
     {
       "stapleId": "tabantha-wheat",
@@ -178,7 +178,7 @@
       "heartsRecovered": 1,
       "priceRupees": 14,
       "stockStatus": "available",
-      "merchantNote": "Milled for travellers who still bake. Pricing is fictional."
+      "merchantNote": "Milled for travellers who still bake."
     }
   ]
 }

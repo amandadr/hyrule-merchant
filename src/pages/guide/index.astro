@@ -18,12 +18,15 @@ const categoryBlurb: Record<string, string> = {
 ---
 
 <BaseLayout title="Field Manual">
-  <div class="stack">
-    <h1>Field Manual</h1>
-    <p class="muted">
-      Sorrel’s working notes on the world. Follow a record to the shop, a road, or
-      the brewing bench — this is not a second Compendium dump.
-    </p>
+  <div class="page">
+    <header class="section-head">
+      <p class="kicker">Working notes</p>
+      <h1>Field Manual</h1>
+      <p class="muted">
+        Pick a category. Open a record to buy it, see which roads know it, or
+        cook with it.
+      </p>
+    </header>
     <ul class="grid-list">
       {
         categories.map((category) => {

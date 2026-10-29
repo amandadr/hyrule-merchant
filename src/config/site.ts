@@ -4,10 +4,7 @@ export const SITE_TAGLINE =
   'Pack smarter. Travel farther. Return with a better story.';
 
 export const SITE_DISCLAIMER =
-  'The Good Detour is an unofficial, noncommercial portfolio prototype — not affiliated with Nintendo. No real orders, payments, or personal data are collected, and every price and stock count is invented for the fiction.';
-
-export const API_CREDIT =
-  'Compendium data sourced from the Hyrule Compendium API (community project).';
+  'An unofficial outfitter for Breath of the Wild, and not affiliated with Nintendo. Prices and stock are part of the story. Nothing is sold, and packing a satchel is not a real order.';
 
 /** Portfolio/project label kept behind the in-world brand. */
 export const PROJECT_LABEL = 'Hyrule Merchant';

@@ -247,7 +247,7 @@ export function evaluateBrew(
       strengthBand: bandFromCount(count),
       durationBand: durationFromCount(count),
       heartsEstimate: 0,
-      merchantNote: `Improvised ${effectFamily} elixir. Critter sets the effect; monster parts stretch the brew. Merchant bands only.`,
+      merchantNote: `An improvised ${effectFamily} elixir. The critter sets the effect, and the monster part stretches it.`,
     };
   }
 
@@ -281,7 +281,7 @@ export function evaluateBrew(
       effectFamily: 'none',
       heartsEstimate: 0,
       merchantNote:
-        'Critters need a monster part to become an elixir under merchant rules.',
+        'A critter needs a monster part before it will make an elixir.',
       failureReason: 'critter_without_monster',
     };
   }
@@ -303,7 +303,7 @@ export function evaluateBrew(
       ),
       merchantNote:
         failure?.merchantNote ??
-        'That combination collapses into dubious food under merchant rules.',
+        'That combination turns into dubious food. Try one effect at a time, or follow a named recipe.',
       failureReason: conflicting ? 'conflicting_effects' : 'monster_in_meal',
     };
   }
@@ -324,7 +324,7 @@ export function evaluateBrew(
     merchantNote:
       effectFamily === 'hearts'
         ? 'A simple restorative dish. No named recipe matched, but the pot is honest.'
-        : `Improvised ${effectFamily} dish. Strength and duration are merchant bands, not game formulas.`,
+        : `An improvised ${effectFamily} dish. The strength and duration shown are Sorrel’s estimate.`,
   };
 }
 

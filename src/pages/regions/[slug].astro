@@ -29,14 +29,15 @@ if (!region) {
 
 const displayName = titleCaseName(region.name);
 const cover = regionCover(region.slug, getAllEntries());
-const editorial = [
-  { label: 'Overview', value: region.overview },
+const decisionNotes = [
   { label: 'Conditions', value: region.conditions },
   { label: 'Hazards', value: region.hazards },
   { label: 'Useful finds', value: region.usefulFinds },
+];
+const referenceNotes = [
   { label: 'Route notes', value: region.routeNotes },
   { label: 'Merchant story', value: region.merchantStory },
-];
+].filter((block) => block.value);
 
 const productsBySourceId = getProductsBySourceId();
 const packs = getOutfitsForRegion(region.slug)
@@ -71,22 +72,30 @@ const nearbyFinds = getAllEntries()
 ---
 
 <BaseLayout title={displayName}>
-  <div class="stack">
-    <p><a href="/regions">← Regions</a></p>
-    <header class="subject-hero">
+  <div class="page">
+    <p class="back-link"><a href="/regions">← Regions</a></p>
+    <header class="sidebar">
       {
         cover ? (
           <img
-            class="subject-hero-image"
+            class="frame"
             src={cover.image}
-            alt={cover.label}
-            width="160"
-            height="160"
+            alt=""
+            width="128"
+            height="128"
           />
         ) : null
       }
-      <div>
+      <div class="section-head">
+        <p class="kicker">Destination</p>
         <h1>{displayName}</h1>
+        {
+          region.overview ? (
+            <p>{region.overview}</p>
+          ) : (
+            <p class="muted">Sor hasn’t written an overview for this road yet.</p>
+          )
+        }
         {
           cover ? (
             <p class="muted cover-caption">Pictured: {cover.label}</p>
@@ -95,43 +104,51 @@ const nearbyFinds = getAllEntries()
       </div>
     </header>
 
-    <section class="stack">
-      <h2>Field notes from Sor</h2>
-      <p class="muted">
-        What the merchant can tell you about travelling here.
-      </p>
-      {
-        editorial.map((block) => (
-          <div>
-            <h3>{block.label}</h3>
-            <p class="notice">
-              {block.value || 'Sor hasn’t written these notes up yet.'}
-            </p>
-          </div>
-        ))
-      }
+    <section class="section" aria-labelledby="before-you-pack">
+      <div class="section-head">
+        <h2 id="before-you-pack">Before you pack</h2>
+        <p class="muted">Read these before you take the pack.</p>
+      </div>
+      <dl class="decision-notes">
+        {
+          decisionNotes.map((block) => (
+            <div class="decision-note">
+              <dt>{block.label}</dt>
+              <dd>
+                {block.value || 'Sor hasn’t written these notes up yet.'}
+              </dd>
+            </div>
+          ))
+        }
+      </dl>
     </section>
 
     {
       packs.length > 0 ? (
-        <section class="stack">
-          <h2>Journey pack</h2>
-          <p class="muted">Sorrel’s recommended supplies for this road:</p>
-          {packs.map((pack) => (
-            <JourneyPackCard client:load pack={pack} />
-          ))}
+        <section class="section" aria-labelledby="journey-pack">
+          <div class="section-head">
+            <p class="kicker">Recommended</p>
+            <h2 id="journey-pack">Journey pack</h2>
+            <p class="muted">Add the whole pack, then change anything in your satchel.</p>
+          </div>
+          <div class="stack is-decision">
+            {packs.map((pack) => (
+              <JourneyPackCard client:load pack={pack} />
+            ))}
+          </div>
         </section>
       ) : null
     }
 
     {
       nearbyFinds.length > 0 ? (
-        <section class="stack">
-          <h2>Often found near here</h2>
-          <p class="muted">
-            Snapshot locations that map to this road — open the wagon or the
-            manual.
-          </p>
+        <section class="section" aria-labelledby="nearby-finds">
+          <div class="section-head">
+            <h2 id="nearby-finds">Often found near here</h2>
+            <p class="muted">
+              Open one in the shop if Sorrel sells it, or in the Field Manual to read the record.
+            </p>
+          </div>
           <ul class="find-list">
             {
               nearbyFinds.map((find) => (
@@ -157,56 +174,74 @@ const nearbyFinds = getAllEntries()
       ) : null
     }
 
-    <section class="stack">
-      <h2>Landmarks</h2>
-      <p class="muted">
-        Settlements and shrines from the snapshot.{' '}
-        <a href="/shop">Shop the shelves</a>
-        {' · '}
-        <a href="/guide">Open the Field Manual</a>
-      </p>
-      <div>
-        <h3>Settlements</h3>
+    <section class="reference" aria-labelledby="field-reference">
+      <div class="section-head">
+        <h2 id="field-reference">Field reference</h2>
+        <p class="muted">
+          The longer notes, settlements, and shrines. When you know what to carry,{' '}
+          <a href="/shop">shop the shelves</a>
+          {' or '}
+          <a href="/guide">look it up in the Field Manual</a>.
+        </p>
+      </div>
+      {
+        referenceNotes.map((block) => (
+          <div class="prose">
+            <h3>{block.label}</h3>
+            <p>{block.value}</p>
+          </div>
+        ))
+      }
+      <div class="split">
+        <div class="stack">
+          <h3>Settlements</h3>
+          {
+            region.settlements.length > 0 ? (
+              <ul>
+                {region.settlements.map((settlement) => (
+                  <li>{titleCaseName(settlement)}</li>
+                ))}
+              </ul>
+            ) : (
+              <p class="muted">None listed.</p>
+            )
+          }
+        </div>
+        <div class="stack">
+          <h3>Shrines</h3>
+          {
+            region.shrines.length > 0 ? (
+              <ul>
+                {
+                  region.shrines.map((shrine) => (
+                    <li>
+                      {titleCaseName(shrine.name)}
+                      <span class="muted"> — {shrine.puzzle}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            ) : (
+              <p class="muted">None listed.</p>
+            )
+          }
+        </div>
         {
-          region.settlements.length > 0 ? (
-            <ul>
-              {region.settlements.map((settlement) => (
-                <li>{titleCaseName(settlement)}</li>
-              ))}
-            </ul>
-          ) : (
-            <p class="muted">None listed.</p>
+          region.dlcShrines.length > 0 && (
+            <div class="stack">
+              <h3>DLC shrines</h3>
+              <ul>
+                {region.dlcShrines.map((shrine) => (
+                  <li>
+                    {titleCaseName(shrine.name)}
+                    <span class="muted"> — {shrine.puzzle}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )
         }
       </div>
-      <div>
-        <h3>Shrines</h3>
-        <ul>
-          {
-            region.shrines.map((shrine) => (
-              <li>
-                {titleCaseName(shrine.name)}
-                <span class="muted"> — {shrine.puzzle}</span>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-      {
-        region.dlcShrines.length > 0 && (
-          <div>
-            <h3>DLC shrines</h3>
-            <ul>
-              {region.dlcShrines.map((shrine) => (
-                <li>
-                  {titleCaseName(shrine.name)}
-                  <span class="muted"> — {shrine.puzzle}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )
-      }
     </section>
   </div>
 </BaseLayout>
