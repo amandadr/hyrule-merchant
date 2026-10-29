@@ -21,10 +21,10 @@ interface NamedImage {
   image: string;
 }
 
-const COVERS_PATH = path.resolve(
-  path.dirname(fileURLToPath(import.meta.url)),
-  '../../data/overrides/covers.json',
-);
+// Walk up to the repo root, then into src. During `astro build` this module
+// is emitted under dist/, and a path relative to src/lib/visuals lands in dist/data.
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
+const COVERS_PATH = path.join(ROOT, 'src', 'data', 'overrides', 'covers.json');
 
 let coversCache: ReturnType<typeof CoversFileSchema.parse> | null = null;
 
