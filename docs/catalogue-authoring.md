@@ -26,5 +26,5 @@ Shop UI defaults to a **shelf** (Materials / Creatures / Equipment / Pantry stap
 
 1. Valid `sourceId` from Compendium **or** staple in `900001+`
 2. `priceRupees`, `stockStatus`, voiceful `merchantNote`
-3. Prefer linking climate goods into an outfit kit
+3. Prefer linking climate goods into a region journey pack (`outfits.json`)
 4. Critters/monsters needed by elixir recipes should be purchasable

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/components/BaseLayout.astro';
+import KitStrip from '@/components/KitStrip.astro';
 import ShopFilters, { toShopCard } from '@/components/shop/ShopFilters';
 import {
   getMerchantStaples,
@@ -8,8 +9,11 @@ import {
   getRecipes,
   getAllEntries,
   getMerchantStapleEntries,
+  getRegions,
 } from '@/lib/content';
 import { resolveRecipeSlots } from '@/lib/brew/resolve';
+import { kitFace } from '@/lib/journey/packs';
+import { titleCaseName } from '@/lib/data/normalize';
 
 const products = getProducts().filter(
   (product) =>
@@ -19,6 +23,10 @@ const outfits = getOutfits();
 const recipes = getRecipes().filter((recipe) => recipe.kind !== 'failure');
 const entries = [...getAllEntries(), ...getMerchantStapleEntries()];
 const staples = getMerchantStaples();
+const regions = getRegions();
+const regionNameBySlug = new Map(
+  regions.map((region) => [region.slug, titleCaseName(region.name)]),
+);
 
 const recipeIngredientIds = new Map<string, Set<number>>();
 for (const recipe of recipes) {
@@ -46,16 +54,70 @@ const effects = [
 ].sort();
 const categories = [...new Set(cards.map((card) => card.category))].sort();
 const stapleCount = products.filter((p) => p.origin === 'merchant_staple').length;
+
+const featuredPackSlugs = [
+  'dueling-peaks-first-trip',
+  'hebra-cold-kit',
+  'gerudo-lightning',
+  'trail-skewer-kit',
+];
+const productsBySourceId = new Map(
+  products.map((product) => [product.sourceId, product]),
+);
+const featuredPacks = featuredPackSlugs
+  .map((slug) => outfits.find((outfit) => outfit.slug === slug))
+  .filter((outfit): outfit is NonNullable<typeof outfit> => Boolean(outfit))
+  .map((outfit) => ({
+    slug: outfit.slug,
+    name: outfit.name,
+    objective: outfit.objective,
+    href: outfit.regionSlug
+      ? `/regions/${outfit.regionSlug}`
+      : `/shop?outfit=${outfit.slug}`,
+    regionLabel: outfit.regionSlug
+      ? regionNameBySlug.get(outfit.regionSlug)
+      : 'Any road',
+    kitItems: kitFace(outfit, productsBySourceId),
+  }));
 ---
 
 <BaseLayout title="Shop">
   <div class="stack">
     <h1>Shop</h1>
     <p class="muted">
-      Curated Compendium catalogue ({products.length} SKUs) including{' '}
-      {stapleCount} pantry staples. Browse by shelf; prices and stock are
-      invented.
+      What Sor keeps on the wagon — shelves first, then the full crate if you
+      need it. Prices and stock are invented for the fiction; nothing here is
+      for real sale. ({products.length} goods including {stapleCount} pantry
+      staples.)
     </p>
+
+    <section class="shop-featured notice stack">
+      <h2 class="margin-0">Sor recommends</h2>
+      <p class="muted margin-0">
+        Journey packs with a reason for every item. Open the road, or filter
+        the shop to those supplies.
+      </p>
+      <ul class="shop-featured-list">
+        {
+          featuredPacks.map((pack) => (
+            <li class="entry-card media-card">
+              <a href={pack.href}>
+                <KitStrip items={pack.kitItems} label={`${pack.name} contents`} size="banner" />
+                <div class="media-card-body">
+                  <strong>{pack.name}</strong>
+                  <div class="muted">{pack.regionLabel}</div>
+                  <div class="muted">{pack.objective}</div>
+                </div>
+              </a>
+              <p class="entry-card-action">
+                <a href={`/shop?outfit=${pack.slug}`}>Show pack goods →</a>
+              </p>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
     <ShopFilters
       client:load
       products={cards}

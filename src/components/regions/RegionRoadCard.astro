@@ -1,0 +1,50 @@
+---
+import KitStrip from '@/components/KitStrip.astro';
+
+interface KitItem {
+  image: string;
+  name: string;
+}
+
+interface Props {
+  href: string;
+  title: string;
+  detail?: string;
+  packName?: string;
+  cover?: { image: string; label: string };
+  kitItems?: KitItem[];
+}
+
+const { href, title, detail, packName, cover, kitItems = [] } = Astro.props;
+---
+
+<li class="entry-card media-card">
+  <a href={href}>
+    {
+      cover ? (
+        <img
+          class="cover-image"
+          src={cover.image}
+          alt=""
+          width="280"
+          height="180"
+          loading="lazy"
+        />
+      ) : null
+    }
+    <div class="media-card-body">
+      <strong>{title}</strong>
+      {detail ? <div class="muted">{detail}</div> : null}
+      {cover ? <div class="muted cover-caption">Pictured: {cover.label}</div> : null}
+      {packName ? <div class="region-pack-badge">Pack: {packName}</div> : null}
+      {
+        kitItems.length > 0 ? (
+          <KitStrip
+            items={kitItems}
+            label={packName ? `${packName} contents` : 'Pack contents'}
+          />
+        ) : null
+      }
+    </div>
+  </a>
+</li>

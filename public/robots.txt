@@ -1,0 +1,3 @@
+# Crawlers may fetch pages so they can see the noindex tag.
+User-agent: *
+Allow: /

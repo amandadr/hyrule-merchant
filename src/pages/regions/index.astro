@@ -1,34 +1,62 @@
 ---
 import BaseLayout from '@/components/BaseLayout.astro';
-import { getRegions } from '@/lib/content';
+import KitStrip from '@/components/KitStrip.astro';
+import RegionRoadCard from '@/components/regions/RegionRoadCard.astro';
+import { getAllEntries, getOutfits, getProductsBySourceId, getRegions } from '@/lib/content';
+import { kitFace } from '@/lib/journey/packs';
 import { titleCaseName } from '@/lib/data/normalize';
+import { regionCover } from '@/lib/visuals/covers';
 
 const regions = getRegions();
+const entries = getAllEntries();
+const productsBySourceId = getProductsBySourceId();
+const packsByRegion = new Map(
+  getOutfits()
+    .filter((outfit) => outfit.regionSlug)
+    .map((outfit) => [outfit.regionSlug!, outfit]),
+);
+const trailSkewer = getOutfits().find((outfit) => outfit.slug === 'trail-skewer-kit');
+const trailFace = trailSkewer ? kitFace(trailSkewer, productsBySourceId) : [];
 ---
 
 <BaseLayout title="Regions">
   <div class="stack">
     <h1>Regions</h1>
     <p class="muted">
-      Destination shells from the Regions API. Editorial guide copy is placeholder
-      for now.
+      Where are you headed? Pick a destination, read Sorrel’s field notes, and
+      add a recommended journey pack to your satchel.
     </p>
     <ul class="grid-list">
       {
-        regions.map((region) => (
-          <li class="entry-card">
-            <a href={`/regions/${region.slug}`}>
-              <strong>{titleCaseName(region.name)}</strong>
-              <div class="muted">
-                {region.shrines.length} shrines
-                {region.settlements.length > 0
-                  ? ` · ${region.settlements.length} settlements`
-                  : ''}
-              </div>
-            </a>
-          </li>
-        ))
+        regions.map((region) => {
+          const pack = packsByRegion.get(region.slug);
+          const shrineLabel = `${region.shrines.length} ${
+            region.shrines.length === 1 ? 'shrine' : 'shrines'
+          }`;
+          const settlementLabel =
+            region.settlements.length > 0
+              ? `${region.settlements.length} ${
+                  region.settlements.length === 1 ? 'settlement' : 'settlements'
+                }`
+              : '';
+          const detail = [shrineLabel, settlementLabel].filter(Boolean).join(' · ');
+          return (
+            <RegionRoadCard
+              href={`/regions/${region.slug}`}
+              title={titleCaseName(region.name)}
+              detail={detail}
+              packName={pack?.name}
+              cover={regionCover(region.slug, entries)}
+              kitItems={pack ? kitFace(pack, productsBySourceId) : []}
+            />
+          );
+        })
       }
     </ul>
+    <p class="trail-skewer-note">
+      <a href="/shop?outfit=trail-skewer-kit">Trail Skewer Pack</a>
+      <span class="muted"> — not tied to one region; supper for any road.</span>
+      <KitStrip items={trailFace} label="Trail Skewer Pack contents" />
+    </p>
   </div>
 </BaseLayout>

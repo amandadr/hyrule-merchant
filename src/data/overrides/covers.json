@@ -1,0 +1,26 @@
+{
+  "regions": {
+    "great-plateau": "spicy pepper",
+    "dueling-peaks": "bokoblin",
+    "lanayru": "electric lizalfos",
+    "hateno": "fortified pumpkin",
+    "lake": "hearty bass",
+    "central": "guardian stalker",
+    "woodland": "forest octorok",
+    "ridgeland": "horse",
+    "gerudo": "white goat",
+    "faron": "hearty durian",
+    "akkala": "ancient arrow",
+    "hebra": "grizzlemaw bear",
+    "wasteland": "sand seal",
+    "tabantha": "tabantha moose",
+    "eldin": "fireproof lizard"
+  },
+  "categories": {
+    "creatures": "lord of the mountain",
+    "materials": "apple",
+    "equipment": "master sword",
+    "monsters": "lynel",
+    "treasure": "treasure chest"
+  }
+}

@@ -2,6 +2,10 @@
 import BaseLayout from '@/components/BaseLayout.astro';
 import {
   API_CREDIT,
+  KOROK_NAME,
+  MERCHANT_NAME,
+  MERCHANT_SHORT,
+  PROJECT_LABEL,
   SITE_DISCLAIMER,
   SITE_NAME,
   SITE_TAGLINE,
@@ -14,11 +18,97 @@ const meta = getSourceMeta();
 <BaseLayout title="The Merchant">
   <div class="stack">
     <h1>The Merchant</h1>
-    <p class="muted">Placeholder identity for {SITE_NAME}.</p>
     <p>{SITE_TAGLINE}</p>
+
+    <section class="merchant-portraits">
+      <figure class="merchant-figure">
+        <img
+          src="/images/Sorrel.png"
+          alt={`${MERCHANT_NAME}, former roadwarden and outfitter`}
+          width="160"
+          height="160"
+        />
+        <figcaption>
+          <strong>{MERCHANT_NAME}</strong>
+          <span class="muted"> — {MERCHANT_SHORT} to the Koroks</span>
+        </figcaption>
+      </figure>
+      <figure class="merchant-figure">
+        <img
+          src="/images/Pip.png"
+          alt={`${KOROK_NAME}, Korok companion`}
+          width="160"
+          height="160"
+        />
+        <figcaption>
+          <strong>{KOROK_NAME}</strong>
+          <span class="muted"> — insists on the detours</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="stack">
+      <h2>Meet {MERCHANT_NAME}</h2>
+      <p>
+        {MERCHANT_NAME} — {MERCHANT_SHORT} to the Koroks — spent years as a
+        roadwarden, scouting trails, reading the weather, and getting tired
+        travellers safely from one place to the next. They were never much of a
+        warrior. Their real skill was preparation: knowing where shelter waited,
+        which mushrooms turned up after rain, and how to avoid a fight before it
+        started.
+      </p>
+      <p>
+        Somewhere along the way they stopped believing that arriving was the
+        whole point. Now they run {SITE_NAME}, a travelling apothecary and
+        outfitter for people who want to <em>experience</em> Hyrule, not just
+        survive it.
+      </p>
+      <p class="notice">
+        <strong>“You should go. And I want to help make sure you come back.”</strong>
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>How the shop came to be</h2>
+      <p>
+        It started with extra mushrooms. Someone heading into the cold looked
+        hopelessly underpacked, so {MERCHANT_SHORT} handed over supplies from
+        their own wagon. Then it happened again. And again. Eventually replacing
+        everything they gave away got expensive, so they charged a few rupees,
+        started tracking what got used, and brought more next time.
+      </p>
+      <p>
+        {MERCHANT_SHORT} still insists this is not a shop. Their Korok friend,
+        {KOROK_NAME}, made a sign anyway. The sign stayed.
+      </p>
+      <p class="muted">
+        {KOROK_NAME}, for the record, maintains that they started the whole
+        thing. {KOROK_NAME} cannot be persuaded otherwise.
+      </p>
+    </section>
+
+    <section class="stack notice">
+      <h2 class="margin-0">Ready for the road?</h2>
+      <p class="margin-0">
+        The story ends here; the packing does not. Pick a destination, open the
+        bench, or browse the shelves.
+      </p>
+      <div class="home-cta-row">
+        <a class="button button-primary" href="/regions">
+          Where are you headed?
+        </a>
+        <a class="button" href="/brew">Open the brewing bench</a>
+        <a class="button" href="/shop">Shop the shelves</a>
+      </div>
+    </section>
 
     <section class="stack">
       <h2>About this prototype</h2>
+      <p>
+        {SITE_NAME} is the in-world storefront for the <strong
+          >{PROJECT_LABEL}</strong
+        > portfolio project.
+      </p>
       <p>{SITE_DISCLAIMER}</p>
       <p>{API_CREDIT}</p>
       <ul>

@@ -1,24 +1,387 @@
 {
   "outfits": [
     {
+      "slug": "great-plateau-first-steps",
+      "name": "Plateau First Steps",
+      "regionSlug": "great-plateau",
+      "objective": "Survive the summit and the first long glide down.",
+      "merchantNote": "You arrive with nothing — that is rather the point. This is the smallest kit I will pack for someone heading up before they jump.",
+      "items": [
+        {
+          "sourceId": 170,
+          "quantity": 3,
+          "reason": "Mount Hylia is proper winter. Peppers first; arguments later."
+        },
+        {
+          "sourceId": 165,
+          "quantity": 3,
+          "reason": "Apples by the old temple — or from my crate, if you are already cold."
+        },
+        {
+          "sourceId": 186,
+          "quantity": 2,
+          "reason": "Something green for the pot on your first night out."
+        }
+      ]
+    },
+    {
+      "slug": "dueling-peaks-first-trip",
+      "name": "Kakariko First Trip",
+      "regionSlug": "dueling-peaks",
+      "objective": "Reach Kakariko before dark on a forgiving first road.",
+      "merchantNote": "The trip I recommend most. Close enough to finish, interesting enough that you will want another.",
+      "items": [
+        {
+          "sourceId": 165,
+          "quantity": 3,
+          "reason": "Easy food for the walk between the peaks."
+        },
+        {
+          "sourceId": 174,
+          "quantity": 2,
+          "reason": "Riverbank foraging is generous, but start with something already packed."
+        },
+        {
+          "sourceId": 360,
+          "quantity": 1,
+          "reason": "A light shield for the odd Bokoblin at a crossing — not a war, just sense."
+        }
+      ]
+    },
+    {
+      "slug": "lanayru-wetland",
+      "name": "Lanayru Wetland Pack",
+      "regionSlug": "lanayru",
+      "objective": "Cross the marsh without learning about Lizalfos the hard way.",
+      "merchantNote": "Slow country. Pack for electricity and soft ground, not for speed.",
+      "items": [
+        {
+          "sourceId": 171,
+          "quantity": 2,
+          "reason": "Voltfruit for the crackle near the springs."
+        },
+        {
+          "sourceId": 191,
+          "quantity": 2,
+          "reason": "Electric safflina when the storm builds and metal wants a holiday."
+        },
+        {
+          "sourceId": 174,
+          "quantity": 2,
+          "reason": "Something simple to cook once you stop guessing at shortcuts."
+        }
+      ]
+    },
+    {
+      "slug": "hateno-easy-road",
+      "name": "Hateno Easy Road",
+      "regionSlug": "hateno",
+      "objective": "A gentle coastal walk to farmland and a proper village.",
+      "merchantNote": "If Kakariko taught you to travel, Hateno teaches you to enjoy it. Pack light.",
+      "items": [
+        {
+          "sourceId": 165,
+          "quantity": 3,
+          "reason": "Orchard country — apples travel well either direction."
+        },
+        {
+          "sourceId": 186,
+          "quantity": 2,
+          "reason": "Herbs for a quiet supper after the beach road."
+        },
+        {
+          "sourceId": 900011,
+          "quantity": 1,
+          "reason": "One honest cut of meat for the cooking pot in town."
+        }
+      ]
+    },
+    {
+      "slug": "lake-hylia-shore",
+      "name": "Lake Hylia Shore Pack",
+      "regionSlug": "lake",
+      "objective": "Sit beside the water with a meal worth the patience.",
+      "merchantNote": "Bring a reason to be still. The ruins look climbable; most of them are not.",
+      "items": [
+        {
+          "sourceId": 174,
+          "quantity": 2,
+          "reason": "Shrooms from the grassy banks, or from me if the bank is stingy."
+        },
+        {
+          "sourceId": 165,
+          "quantity": 2,
+          "reason": "Fruit for a lakeside lunch that does not require a fight."
+        },
+        {
+          "sourceId": 900014,
+          "quantity": 1,
+          "reason": "Salt for fish you catch — or for fish you wisely buy instead."
+        }
+      ]
+    },
+    {
+      "slug": "central-cautious",
+      "name": "Central Cautious Pack",
+      "regionSlug": "central",
+      "objective": "Cross the plains without testing the old sentinels.",
+      "merchantNote": "Not a first trip. Stay on worn roads, give the castle a wide margin, and do not get curious at the wrong moment.",
+      "items": [
+        {
+          "sourceId": 184,
+          "quantity": 2,
+          "reason": "Defense in the pot for when the open fields feel too open."
+        },
+        {
+          "sourceId": 360,
+          "quantity": 1,
+          "reason": "A shield you can actually carry — not heroics, just cover."
+        },
+        {
+          "sourceId": 177,
+          "quantity": 1,
+          "reason": "Extra hearts for the long exposed stretches between help."
+        }
+      ]
+    },
+    {
+      "slug": "woodland-fog",
+      "name": "Woodland Fog Pack",
+      "regionSlug": "woodland",
+      "objective": "Follow the lit path into the forest without improvising.",
+      "merchantNote": "The forest itself is the hazard. Pip finds my lost sense of direction endlessly funny. Follow the lights.",
+      "items": [
+        {
+          "sourceId": 185,
+          "quantity": 2,
+          "reason": "Stealth helps when the fog makes every sound feel like company."
+        },
+        {
+          "sourceId": 175,
+          "quantity": 2,
+          "reason": "Extra stamina for the winding path that refuses to be a straight line."
+        },
+        {
+          "sourceId": 165,
+          "quantity": 2,
+          "reason": "Quiet food — you will be walking longer than the map admits."
+        }
+      ]
+    },
+    {
+      "slug": "ridgeland-horse",
+      "name": "Ridgeland Horse Pack",
+      "regionSlug": "ridgeland",
+      "objective": "Travel the ridge with a mount in mind and a fountain stop.",
+      "merchantNote": "Open grass, wild horses, and a fairy fountain worth the walk. Patience matters more than skill.",
+      "items": [
+        {
+          "sourceId": 192,
+          "quantity": 3,
+          "reason": "Swift carrots — for you, or for a horse that needs convincing."
+        },
+        {
+          "sourceId": 200,
+          "quantity": 1,
+          "reason": "Courser bee honey for stamina when the ridge wind picks up."
+        },
+        {
+          "sourceId": 186,
+          "quantity": 2,
+          "reason": "Ordinary herbs for an evening camp that is not a production."
+        }
+      ]
+    },
+    {
+      "slug": "gerudo-lightning",
+      "name": "Gerudo Highlands Pack",
+      "regionSlug": "gerudo",
+      "objective": "Cross high, dry ground without inviting the lightning.",
+      "merchantNote": "Strip metal when the sky builds. I learned that in four very loud seconds.",
+      "items": [
+        {
+          "sourceId": 171,
+          "quantity": 2,
+          "reason": "Voltfruit for storms that behave like they are looking for you."
+        },
+        {
+          "sourceId": 191,
+          "quantity": 2,
+          "reason": "Electric safflina when voltfruit alone is not enough reassurance."
+        },
+        {
+          "sourceId": 184,
+          "quantity": 1,
+          "reason": "A little defense for camps you would rather walk around."
+        }
+      ]
+    },
+    {
+      "slug": "faron-jungle",
+      "name": "Faron Jungle Pack",
+      "regionSlug": "faron",
+      "objective": "Move through warm overgrowth without buying bananas from strangers.",
+      "merchantNote": "Lush, humid, and full of cover for things that like cover. Follow the river valleys.",
+      "items": [
+        {
+          "sourceId": 173,
+          "quantity": 2,
+          "reason": "Mighty bananas from a seller you trust — namely me."
+        },
+        {
+          "sourceId": 185,
+          "quantity": 2,
+          "reason": "Stealth for jungle camps you would rather not announce yourself to."
+        },
+        {
+          "sourceId": 171,
+          "quantity": 1,
+          "reason": "Shock resistance never hurts this close to electric wildlife."
+        }
+      ]
+    },
+    {
+      "slug": "akkala-long-road",
+      "name": "Akkala Long Road",
+      "regionSlug": "akkala",
+      "objective": "Reach the quiet edge of the kingdom without running short.",
+      "merchantNote": "Help is farther away out here. Carry more than you think you need. I always do.",
+      "items": [
+        {
+          "sourceId": 193,
+          "quantity": 2,
+          "reason": "Endura carrots for roads that look shorter on the map than underfoot."
+        },
+        {
+          "sourceId": 177,
+          "quantity": 1,
+          "reason": "Hearty insurance when the next stable is a long story away."
+        },
+        {
+          "sourceId": 165,
+          "quantity": 3,
+          "reason": "Apples that do not argue about shelf life."
+        }
+      ]
+    },
+    {
       "slug": "hebra-cold-kit",
-      "name": "Hebra Cold Kit",
-      "sourceIds": [170, 180, 366],
+      "name": "Hebra Cold Pack",
       "regionSlug": "hebra",
-      "merchantNote": "Spicy peppers, sunshrooms, and a kite shield for snowy ridges. Not a full armor set—just a merchant's cold-road bundle."
+      "objective": "Enter proper winter with cold resistance already sorted.",
+      "merchantNote": "Do not attempt Hebra without this conversation. The cold is the main hazard, full stop.",
+      "items": [
+        {
+          "sourceId": 170,
+          "quantity": 3,
+          "reason": "Spicy peppers — warm food before warm arguments."
+        },
+        {
+          "sourceId": 180,
+          "quantity": 2,
+          "reason": "Sunshrooms for the ridges when peppers alone feel thin."
+        },
+        {
+          "sourceId": 366,
+          "quantity": 1,
+          "reason": "A kite shield for snow and footing — not a full armour set, just sense."
+        }
+      ]
+    },
+    {
+      "slug": "wasteland-crossing",
+      "name": "Wasteland Crossing",
+      "regionSlug": "wasteland",
+      "objective": "Cross heat and sand between oases without guessing at the dunes.",
+      "merchantNote": "Pack for day heat and night cold. Travel marked routes. Some questions under the sand are better left unanswered.",
+      "items": [
+        {
+          "sourceId": 169,
+          "quantity": 3,
+          "reason": "Hydromelon for the brutal midday stretch."
+        },
+        {
+          "sourceId": 179,
+          "quantity": 2,
+          "reason": "Chillshrooms when the sand is still radiating after sunset."
+        },
+        {
+          "sourceId": 171,
+          "quantity": 1,
+          "reason": "Voltfruit near the oasis — heat is not the only surprise out here."
+        }
+      ]
+    },
+    {
+      "slug": "tabantha-wind",
+      "name": "Tabantha Wind Pack",
+      "regionSlug": "tabantha",
+      "objective": "Use the frontier wind and stay warm toward the snow line.",
+      "merchantNote": "Respect the wind and it will help you cover ground. I lost a hat here once. Once.",
+      "items": [
+        {
+          "sourceId": 192,
+          "quantity": 2,
+          "reason": "Swift carrots for long open stretches."
+        },
+        {
+          "sourceId": 200,
+          "quantity": 1,
+          "reason": "Courser bee honey when the updrafts are doing half the work."
+        },
+        {
+          "sourceId": 190,
+          "quantity": 2,
+          "reason": "Warm safflina as you head north toward colder air."
+        }
+      ]
     },
     {
       "slug": "eldin-heat-kit",
-      "name": "Eldin Heat Kit",
-      "sourceIds": [169, 179, 305],
+      "name": "Eldin Heat Pack",
       "regionSlug": "eldin",
-      "merchantNote": "Hydromelon, chillshroom, and a flamespear for volcanic approaches."
+      "objective": "Approach the mountain with heat resistance before you climb.",
+      "merchantNote": "Fire resistance is essential near the peak — not a suggestion. Sort it before you start climbing.",
+      "items": [
+        {
+          "sourceId": 169,
+          "quantity": 3,
+          "reason": "Hydromelon for volcanic approaches."
+        },
+        {
+          "sourceId": 179,
+          "quantity": 2,
+          "reason": "Chillshrooms when the ground reminds you what it sits on."
+        },
+        {
+          "sourceId": 305,
+          "quantity": 1,
+          "reason": "A flamespear if you insist on poking things that glow. Special order energy."
+        }
+      ]
     },
     {
       "slug": "trail-skewer-kit",
-      "name": "Trail Skewer Kit",
-      "sourceIds": [174, 900011, 900014],
-      "merchantNote": "Hylian shroom, raw meat, and rock salt—enough for simple skewers at any stable."
+      "name": "Trail Skewer Pack",
+      "objective": "Cook simple skewers at any stable on any road.",
+      "merchantNote": "Not tied to one region — just enough for supper when the map is still deciding.",
+      "items": [
+        {
+          "sourceId": 174,
+          "quantity": 2,
+          "reason": "Hylian shrooms that behave in a pan."
+        },
+        {
+          "sourceId": 900011,
+          "quantity": 1,
+          "reason": "Raw meat — the workhorse behind a decent skewer."
+        },
+        {
+          "sourceId": 900014,
+          "quantity": 1,
+          "reason": "Rock salt. The difference between a skewer and a supper."
+        }
+      ]
     }
   ]
 }

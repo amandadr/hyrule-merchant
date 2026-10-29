@@ -1,27 +1,62 @@
 ---
 import BaseLayout from '@/components/BaseLayout.astro';
-import { getCategoryCounts } from '@/lib/content';
+import { getAllEntries, getCategories, getCategoryCounts } from '@/lib/content';
+import { titleCaseName } from '@/lib/data/normalize';
+import { categoryCover } from '@/lib/visuals/covers';
 
 const counts = getCategoryCounts();
+const entries = getAllEntries();
+const categories = getCategories();
+
+const categoryBlurb: Record<string, string> = {
+  creatures: 'Wildlife, fish, and critters — some cook, some drop parts.',
+  materials: 'Forage, ore, and monster parts for the pot and the pack.',
+  equipment: 'Arms and tools the wagon may stock.',
+  monsters: 'Threats and sourcing notes — not for sale.',
+  treasure: 'Chests, deposits, and salvage leads.',
+};
 ---
 
-<BaseLayout title="Field Guide">
+<BaseLayout title="Field Manual">
   <div class="stack">
-    <h1>Field Guide</h1>
+    <h1>Field Manual</h1>
     <p class="muted">
-      All snapshot records as guide entries. Some later become products; monsters
-      stay guide-only.
+      Sorrel’s working notes on the world. Follow a record to the shop, a road, or
+      the brewing bench — this is not a second Compendium dump.
     </p>
     <ul class="grid-list">
       {
-        Object.entries(counts).map(([category, count]) => (
-          <li class="entry-card">
-            <a href={`/guide/${category}`}>
-              <strong>{category}</strong>
-              <div class="muted">{count} entries</div>
-            </a>
-          </li>
-        ))
+        categories.map((category) => {
+          const cover = categoryCover(category, entries);
+          return (
+            <li class="entry-card media-card">
+              <a href={`/guide/${category}`}>
+                {
+                  cover ? (
+                    <img
+                      class="cover-image"
+                      src={cover.image}
+                      alt=""
+                      width="280"
+                      height="180"
+                      loading="lazy"
+                    />
+                  ) : null
+                }
+                <div class="media-card-body">
+                  <strong>{titleCaseName(category)}</strong>
+                  <div class="muted">{counts[category]} entries</div>
+                  <div class="muted">{categoryBlurb[category] ?? ''}</div>
+                  {
+                    cover ? (
+                      <div class="muted cover-caption">Pictured: {cover.label}</div>
+                    ) : null
+                  }
+                </div>
+              </a>
+            </li>
+          );
+        })
       }
     </ul>
   </div>

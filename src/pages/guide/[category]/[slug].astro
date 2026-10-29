@@ -4,8 +4,14 @@ import EntryDetail from '@/components/EntryDetail.astro';
 import {
   getAllEntries,
   getEntryBySlug,
+  getMerchantStaples,
+  getOutfits,
+  getProducts,
+  getRecipes,
+  getRegions,
   isEntryCategory,
 } from '@/lib/content';
+import { buildGuideRelationships } from '@/lib/guide/relationships';
 import { titleCaseName } from '@/lib/data/normalize';
 
 export function getStaticPaths() {
@@ -30,14 +36,170 @@ if (!entry) {
 }
 
 const displayName = titleCaseName(entry.name);
+const categoryLabel = titleCaseName(entry.category);
+const relationships = buildGuideRelationships(entry, {
+  products: getProducts(),
+  entries: getAllEntries(),
+  regions: getRegions(),
+  recipes: getRecipes(),
+  outfits: getOutfits(),
+  staples: getMerchantStaples(),
+});
+
+const hasHandoffs =
+  relationships.product ||
+  relationships.locations.length > 0 ||
+  relationships.drops.length > 0 ||
+  relationships.droppedBy.length > 0 ||
+  relationships.recipes.length > 0 ||
+  relationships.packs.length > 0;
 ---
 
 <BaseLayout title={displayName}>
   <div class="stack">
     <p>
-      <a href={`/guide/${entry.category}`}>← {entry.category}</a>
+      <a href={`/guide/${entry.category}`}>← {categoryLabel}</a>
     </p>
     <h1>{displayName}</h1>
-    <EntryDetail entry={entry} />
+    <EntryDetail entry={entry} regions={getRegions()} />
+
+    {
+      hasHandoffs ? (
+        <section class="guide-handoffs notice stack">
+          <h2 style="margin:0">From the wagon</h2>
+          <p class="muted" style="margin:0">
+            What Sorrel would hand you next — shop, road, recipe, or pack.
+          </p>
+
+          {
+            relationships.product ? (
+              <div>
+                <h3>Sold here?</h3>
+                <p style="margin:0">
+                  <a href={relationships.product.href}>
+                    {relationships.product.label}
+                  </a>
+                  {
+                    relationships.product.note ? (
+                      <span class="muted"> — {relationships.product.note}</span>
+                    ) : null
+                  }
+                </p>
+              </div>
+            ) : null
+          }
+
+          {
+            relationships.locations.length > 0 ? (
+              <div>
+                <h3>Roads that know this place</h3>
+                <ul class="guide-handoff-list">
+                  {relationships.locations.map((link) => (
+                    <li>
+                      {link.href ? (
+                        <a href={link.href}>{link.label}</a>
+                      ) : (
+                        link.label
+                      )}
+                      {link.note ? (
+                        <span class="muted"> — {link.note}</span>
+                      ) : null}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null
+          }
+
+          {
+            relationships.drops.length > 0 ? (
+              <div>
+                <h3>Drops worth following</h3>
+                <ul class="guide-handoff-list">
+                  {relationships.drops.map((link) => (
+                    <li>
+                      {link.href ? (
+                        <a href={link.href}>{link.label}</a>
+                      ) : (
+                        link.label
+                      )}
+                      {link.note ? (
+                        <span class="muted"> — {link.note}</span>
+                      ) : null}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null
+          }
+
+          {
+            relationships.droppedBy.length > 0 ? (
+              <div>
+                <h3>Dropped by</h3>
+                <ul class="guide-handoff-list">
+                  {relationships.droppedBy.map((link) => (
+                    <li>
+                      {link.href ? (
+                        <a href={link.href}>{link.label}</a>
+                      ) : (
+                        link.label
+                      )}
+                      {link.note ? (
+                        <span class="muted"> — {link.note}</span>
+                      ) : null}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null
+          }
+
+          {
+            relationships.recipes.length > 0 ? (
+              <div>
+                <h3>Finishes these recipes</h3>
+                <ul class="guide-handoff-list">
+                  {relationships.recipes.map((link) => (
+                    <li>
+                      {link.href ? (
+                        <a href={link.href}>{link.label}</a>
+                      ) : (
+                        link.label
+                      )}
+                      {link.note ? (
+                        <span class="muted"> — {link.note}</span>
+                      ) : null}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null
+          }
+
+          {
+            relationships.packs.length > 0 ? (
+              <div>
+                <h3>Journey packs</h3>
+                <ul class="guide-handoff-list">
+                  {relationships.packs.map((link) => (
+                    <li>
+                      {link.href ? (
+                        <a href={link.href}>{link.label}</a>
+                      ) : (
+                        link.label
+                      )}
+                      {link.note ? (
+                        <span class="muted"> — {link.note}</span>
+                      ) : null}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null
+          }
+        </section>
+      ) : null
+    }
   </div>
 </BaseLayout>

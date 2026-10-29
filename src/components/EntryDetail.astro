@@ -1,19 +1,22 @@
 ---
-import type { SourceEntry } from '@/lib/data/normalize';
+import type { Region, SourceEntry } from '@/lib/data/normalize';
 import { titleCaseName } from '@/lib/data/normalize';
+import { regionSlugForLocation } from '@/lib/brew/regions';
 
 interface Props {
   entry: SourceEntry;
+  regions?: Region[];
 }
 
-const { entry } = Astro.props;
+const { entry, regions = [] } = Astro.props;
+const displayName = titleCaseName(entry.name);
 ---
 
 <section class="detail-layout">
-  <img src={entry.image} alt="" width="128" height="128" />
+  <img src={entry.image} alt={displayName} width="128" height="128" />
   <div class="stack">
     <p class="muted">
-      <span class="badge">{entry.category}</span>
+      <span class="badge">{titleCaseName(entry.category)}</span>
       <span class="badge">id {entry.sourceId}</span>
       <span class="badge">{entry.game}</span>
     </p>
@@ -24,9 +27,18 @@ const { entry } = Astro.props;
         <div>
           <h2>Common locations</h2>
           <ul>
-            {entry.commonLocations.map((location) => (
-              <li>{location}</li>
-            ))}
+            {entry.commonLocations.map((location) => {
+              const regionSlug = regionSlugForLocation(location, regions);
+              return (
+                <li>
+                  {regionSlug ? (
+                    <a href={`/regions/${regionSlug}`}>{location}</a>
+                  ) : (
+                    location
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       ) : (

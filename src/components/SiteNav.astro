@@ -1,14 +1,15 @@
 ---
 import { SITE_NAME } from '@/config/site';
+import SatchelNavBadge from '@/components/satchel/SatchelNavBadge';
 
 const pathname = Astro.url.pathname;
 
 const links = [
   { href: '/shop', label: 'Shop' },
   { href: '/regions', label: 'Regions' },
-  { href: '/guide', label: 'Field Guide' },
+  { href: '/guide', label: 'Field Manual' },
   { href: '/brew', label: 'Brew' },
-  { href: '/satchel', label: 'My Satchel' },
+  { href: '/satchel', label: 'My Satchel', satchel: true },
   { href: '/merchant', label: 'The Merchant' },
 ];
 
@@ -18,19 +19,29 @@ function isCurrent(href: string): boolean {
 }
 ---
 
+<a class="skip-link" href="#main-content">Skip to content</a>
+
 <header class="site-header">
   <a class="site-brand" href="/">{SITE_NAME}</a>
-  <nav aria-label="Primary">
-    <ul class="site-nav">
-      {
-        links.map((link) => (
-          <li>
-            <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>
-              {link.label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
+  <details class="nav-menu">
+    <summary>Menu</summary>
+    <nav aria-label="Primary">
+      <ul class="site-nav">
+        {
+          links.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                aria-current={isCurrent(link.href) ? 'page' : undefined}
+                class={link.satchel ? 'site-nav-satchel' : undefined}
+              >
+                {link.label}
+                {link.satchel ? <SatchelNavBadge client:load /> : null}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </details>
 </header>

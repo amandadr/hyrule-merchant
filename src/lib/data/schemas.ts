@@ -89,6 +89,33 @@ export const RawRegionSchema = z.object({
   dlc_shrines: z.array(ShrineSchema).optional().default([]),
 });
 
+/** Merchant-authored editorial copy layered onto an API region by slug. */
+export const RegionOverrideSchema = z.object({
+  slug: z.string().min(1),
+  overview: z.string().optional(),
+  conditions: z.string().optional(),
+  hazards: z.string().optional(),
+  usefulFinds: z.string().optional(),
+  routeNotes: z.string().optional(),
+  merchantStory: z.string().optional(),
+});
+
+export const RegionOverridesFileSchema = z.object({
+  regions: z.array(RegionOverrideSchema),
+});
+
+/** Compendium entry names used as portraits. The snapshot has no map tiles. */
+export const CoversFileSchema = z.object({
+  regions: z.record(z.string(), z.string().min(1)),
+  categories: z.object({
+    creatures: z.string().min(1),
+    materials: z.string().min(1),
+    equipment: z.string().min(1),
+    monsters: z.string().min(1),
+    treasure: z.string().min(1),
+  }),
+});
+
 export const ProductOverrideSchema = z.object({
   sourceId: z.number().int(),
   priceRupees: z.number().nonnegative(),
@@ -232,19 +259,37 @@ export const RecipesFileSchema = z.object({
   recipes: z.array(RecipeSchema),
 });
 
-export const OutfitSchema = z.object({
-  slug: z.string().min(1),
-  name: z.string().min(1),
-  sourceIds: z.array(z.number().int()).min(2).max(4),
-  merchantNote: z.string(),
-  regionSlug: z.string().optional(),
+/** One line item in a merchant journey pack. */
+export const OutfitItemSchema = z.object({
+  sourceId: z.number().int(),
+  reason: z.string().min(1),
+  quantity: z.number().int().min(1).max(5).default(1),
 });
+
+/**
+ * Authored journey pack (still stored as `outfits.json` for continuity).
+ * Prefer `items` for reasons and quantities; `sourceIds` is derived at load.
+ */
+export const OutfitSchema = z
+  .object({
+    slug: z.string().min(1),
+    name: z.string().min(1),
+    items: z.array(OutfitItemSchema).min(2).max(5),
+    merchantNote: z.string(),
+    objective: z.string().min(1),
+    regionSlug: z.string().optional(),
+  })
+  .transform((outfit) => ({
+    ...outfit,
+    sourceIds: outfit.items.map((item) => item.sourceId),
+  }));
 
 export const OutfitsFileSchema = z.object({
   outfits: z.array(OutfitSchema),
 });
 
 export type RawRegion = z.infer<typeof RawRegionSchema>;
+export type RegionOverride = z.infer<typeof RegionOverrideSchema>;
 export type ProductOverride = z.infer<typeof ProductOverrideSchema>;
 export type MerchantStaple = z.infer<typeof MerchantStapleSchema>;
 export type Recipe = z.infer<typeof RecipeSchema>;

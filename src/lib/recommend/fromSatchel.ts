@@ -79,7 +79,9 @@ export function recommendFromSatchel(input: {
         kind: 'outfit' as const,
         slug: outfit.slug,
         title: outfit.name,
-        href: `/shop?outfit=${outfit.slug}`,
+        href: outfit.regionSlug
+          ? `/regions/${outfit.regionSlug}`
+          : `/shop?outfit=${outfit.slug}`,
         reason: outfit.merchantNote,
         score: 3,
       })),
@@ -182,7 +184,9 @@ export function recommendFromSatchel(input: {
       kind: 'outfit',
       slug: outfit.slug,
       title: outfit.name,
-      href: `/shop?outfit=${outfit.slug}`,
+      href: outfit.regionSlug
+        ? `/regions/${outfit.regionSlug}`
+        : `/shop?outfit=${outfit.slug}`,
       reason: `You own ${have} of ${outfit.sourceIds.length} pieces`,
       score: have * 5,
     });

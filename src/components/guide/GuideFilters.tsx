@@ -207,7 +207,7 @@ export default function GuideFilters({
           <button type="button" onClick={reset} disabled={!hasActive}>
             Reset filters
           </button>
-          <p class="muted" style={{ margin: 0 }}>
+          <p class="muted margin-0">
             Showing {visible.length} of {entries.length}
           </p>
         </div>
@@ -227,7 +227,7 @@ export default function GuideFilters({
               <a href={`/guide/${category}/${entry.slug}`}>
                 <img
                   src={entry.image}
-                  alt=""
+                  alt={titleCase(entry.name)}
                   width="80"
                   height="80"
                   loading="lazy"

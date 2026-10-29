@@ -1,73 +1,147 @@
 ---
 import BaseLayout from '@/components/BaseLayout.astro';
-import { SITE_NAME, SITE_TAGLINE } from '@/config/site';
+import RegionRoadCard from '@/components/regions/RegionRoadCard.astro';
 import {
-  getCategoryCounts,
-  getProducts,
+  KOROK_NAME,
+  MERCHANT_NAME,
+  MERCHANT_SHORT,
+  SITE_NAME,
+  SITE_TAGLINE,
+} from '@/config/site';
+import {
+  getAllEntries,
+  getOutfits,
+  getProductsBySourceId,
   getRecipes,
   getRegions,
   getSourceMeta,
 } from '@/lib/content';
 import { getDailyExperiment } from '@/lib/brew/daily';
+import { kitFace } from '@/lib/journey/packs';
+import { titleCaseName } from '@/lib/data/normalize';
+import { regionCover } from '@/lib/visuals/covers';
 
-const counts = getCategoryCounts();
-const products = getProducts();
 const regions = getRegions();
+const entries = getAllEntries();
+const productsBySourceId = getProductsBySourceId();
+const outfits = getOutfits().filter((outfit) => outfit.regionSlug);
 const meta = getSourceMeta();
 const daily = getDailyExperiment(getRecipes());
+
+/** A few contrasting roads for the destination-first start. */
+const featuredSlugs = ['dueling-peaks', 'hebra', 'gerudo'];
+const featured = featuredSlugs
+  .map((slug) => {
+    const region = regions.find((item) => item.slug === slug);
+    const pack = outfits.find((item) => item.regionSlug === slug);
+    if (!region || !pack) return null;
+    return {
+      region,
+      pack,
+      cover: regionCover(region.slug, entries),
+      kitItems: kitFace(pack, productsBySourceId),
+    };
+  })
+  .filter((item): item is NonNullable<typeof item> => item != null);
 ---
 
 <BaseLayout title="Home" description={SITE_TAGLINE}>
-  <div class="stack">
-    <h1>{SITE_NAME}</h1>
-    <p>{SITE_TAGLINE}</p>
-    <p class="muted">
-      Unofficial portfolio prototype. Snapshot: {meta.counts.entries} BotW entries ·{' '}
-      {meta.counts.regions} regions · retrieved {meta.retrievedAt.slice(0, 10)}.
-    </p>
-
-    {
-      daily ? (
-        <div class="notice stack">
-          <strong>Today’s bench challenge</strong>
-          <p style="margin:0">{daily.blurb}</p>
-          <p style="margin:0">
-            <a href={`/brew#${daily.recipe.slug}`}>Open the brewing bench</a>
+  <div class="stack home-page">
+    <section class="home-hero">
+      <div class="home-hero-copy stack">
+        <p class="home-kicker muted">Travelling outfitter · field notes · brewing bench</p>
+        <h1>{SITE_NAME}</h1>
+        <p class="home-tagline">{SITE_TAGLINE}</p>
+        <div class="home-merchant-beat">
+          <img
+            class="sorrel-portrait home-portrait"
+            src="/images/Sorrel.png"
+            alt={`${MERCHANT_NAME}, the merchant`}
+            width="64"
+            height="64"
+          />
+          <p>
+            <strong>{MERCHANT_NAME}</strong> — {MERCHANT_SHORT} to the Koroks —
+            packs what the road actually asks for. {KOROK_NAME} insists on the
+            detours.
+            <a href="/merchant">Meet the merchant</a>
           </p>
         </div>
-      ) : null
-    }
+        <div class="home-cta-row">
+          <a class="button button-primary" href="/regions">
+            Where are you headed?
+          </a>
+          {
+            daily ? (
+              <a class="button" href={`/brew#${daily.recipe.slug}`}>
+                Today’s bench challenge
+              </a>
+            ) : (
+              <a class="button" href="/brew">
+                Open the brewing bench
+              </a>
+            )
+          }
+        </div>
+        {
+          daily ? (
+            <p class="home-daily-blurb muted">{daily.blurb}</p>
+          ) : null
+        }
+      </div>
+    </section>
 
-    <div class="stack">
-      <h2>Start here</h2>
-      <ul>
-        <li>
-          <a href="/shop">Shop</a> — {products.length} Compendium goods & pantry
-          staples
-        </li>
-        <li><a href="/regions">Regions</a> — {regions.length} destinations</li>
-        <li><a href="/guide">Field Guide</a> — browse & filter the full snapshot</li>
-        <li>
-          <a href="/brew">Brew</a> — meals, elixirs, and today’s experiment
-        </li>
-        <li><a href="/satchel">My Satchel</a> — cart & recommendations</li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>Guide categories</h2>
+    <section class="stack">
+      <h2>Pick a road</h2>
+      <p class="muted">
+        Read Sorrel’s field notes, then take a recommended journey pack. Edit
+        anything once it’s in your satchel.
+      </p>
       <ul class="grid-list">
         {
-          Object.entries(counts).map(([category, count]) => (
-            <li class="entry-card">
-              <a href={`/guide/${category}`}>
-                <strong>{category}</strong>
-                <div class="muted">{count} entries</div>
-              </a>
-            </li>
+          featured.map(({ region, pack, cover, kitItems }) => (
+            <RegionRoadCard
+              href={`/regions/${region.slug}`}
+              title={titleCaseName(region.name)}
+              detail={pack.objective}
+              packName={pack.name}
+              cover={cover}
+              kitItems={kitItems}
+            />
           ))
         }
       </ul>
-    </div>
+      <p>
+        <a href="/regions">All {regions.length} destinations →</a>
+      </p>
+    </section>
+
+    <section class="stack">
+      <h2>Or start another way</h2>
+      <ul class="home-secondary-links">
+        <li>
+          <a href="/shop">Shop the shelves</a>
+          <span class="muted">When you already know what you need</span>
+        </li>
+        <li>
+          <a href="/brew">Brew a meal or elixir</a>
+          <span class="muted">Cook, fail safely, buy the pot</span>
+        </li>
+        <li>
+          <a href="/guide">Browse the Field Manual</a>
+          <span class="muted">Then follow links back to the wagon</span>
+        </li>
+        <li>
+          <a href="/satchel">Open your satchel</a>
+          <span class="muted">Packing receipt and recommendations</span>
+        </li>
+      </ul>
+    </section>
+
+    <p class="muted home-meta">
+      Unofficial portfolio prototype. Snapshot: {meta.counts.entries} BotW
+      entries · {meta.counts.regions} regions · retrieved{' '}
+      {meta.retrievedAt.slice(0, 10)}.
+    </p>
   </div>
 </BaseLayout>

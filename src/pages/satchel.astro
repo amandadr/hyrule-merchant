@@ -18,12 +18,28 @@ const regions = getRegions();
 const outfits = getOutfits();
 const staples = getMerchantStaples();
 const entries = [...getAllEntries(), ...getMerchantStapleEntries()];
+
+// Slim, authoritative lookup so satchel rows can show thumbnails and current
+// scarcity without migrating the persisted store shape.
+const itemIndex = Object.fromEntries(
+  products.map((product) => [
+    product.slug,
+    {
+      image: product.entry.image,
+      category: product.entry.category,
+      origin: product.origin,
+      stockStatus: product.stockStatus,
+      cookingEffect:
+        'cookingEffect' in product.entry ? product.entry.cookingEffect ?? '' : '',
+    },
+  ]),
+);
 ---
 
 <BaseLayout title="My Satchel">
   <div class="stack">
     <h1>My Satchel</h1>
-    <SatchelPanel client:load />
+    <SatchelPanel client:load itemIndex={itemIndex} />
     <SatchelRecommendations
       client:load
       products={products}

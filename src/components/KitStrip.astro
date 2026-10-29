@@ -1,0 +1,29 @@
+---
+interface KitItem {
+  image: string;
+  name: string;
+}
+
+interface Props {
+  items: KitItem[];
+  label: string;
+  size?: 'compact' | 'banner';
+}
+
+const { items, label, size = 'compact' } = Astro.props;
+---
+
+{
+  items.length > 0 ? (
+    <ul
+      class:list={['kit-strip', size === 'banner' && 'kit-strip-banner']}
+      aria-label={label}
+    >
+      {items.map((item) => (
+        <li>
+          <img src={item.image} alt={item.name} width="64" height="64" loading="lazy" />
+        </li>
+      ))}
+    </ul>
+  ) : null
+}

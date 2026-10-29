@@ -148,7 +148,7 @@ const sourcedNear = product.entry.commonLocations.slice(0, 4);
         </p>
       ) : null
     }
-    <EntryDetail entry={product.entry} />
+    <EntryDetail entry={product.entry} regions={regions} />
 
     {
       relatedProducts.length > 0 ? (
@@ -160,7 +160,7 @@ const sourcedNear = product.entry.commonLocations.slice(0, 4);
                 <a href={`/shop/${related.slug}`}>
                   <img
                     src={related.entry.image}
-                    alt=""
+                    alt={titleCaseName(related.entry.name)}
                     width="64"
                     height="64"
                     loading="lazy"
@@ -198,12 +198,19 @@ const sourcedNear = product.entry.commonLocations.slice(0, 4);
     {
       relatedOutfits.length > 0 ? (
         <section class="stack">
-          <h2>Outfit kits</h2>
+          <h2>Journey packs</h2>
           <ul class="stack" style="list-style:none;padding:0;margin:0">
             {relatedOutfits.map((outfit) => (
               <li class="entry-card">
-                <a href={`/shop?outfit=${outfit.slug}`}>
+                <a
+                  href={
+                    outfit.regionSlug
+                      ? `/regions/${outfit.regionSlug}`
+                      : `/shop?outfit=${outfit.slug}`
+                  }
+                >
                   <strong>{outfit.name}</strong>
+                  <div class="muted">{outfit.objective}</div>
                   <div class="muted">{outfit.merchantNote}</div>
                 </a>
               </li>

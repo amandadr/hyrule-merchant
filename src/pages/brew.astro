@@ -87,15 +87,16 @@ const pickerItems = [
     <p class="notice">
       Simplified merchant cooking rules — not game-perfect formulas. Meals use
       materials, seafood, and pantry staples. Elixirs need an effect critter plus a
-      monster part.
+      monster part. Start with today’s challenge or a named recipe above the full
+      cookbook.
     </p>
 
     {
       daily ? (
         <div class="notice stack">
           <strong>Today’s bench challenge</strong>
-          <p style="margin:0">{daily.blurb}</p>
-          <p style="margin:0">
+          <p class="margin-0">{daily.blurb}</p>
+          <p class="margin-0">
             <a href={`#${daily.recipe.slug}`}>Open {daily.recipe.name}</a>
           </p>
         </div>

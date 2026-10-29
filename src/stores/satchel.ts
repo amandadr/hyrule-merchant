@@ -65,10 +65,61 @@ export function removeFromSatchel(productSlug: string): void {
   satchelItems.set(satchelItems.get().filter((entry) => entry.productSlug !== productSlug));
 }
 
+/** Bump an existing item up by one, honouring the fictional stock cap. */
+export function incrementSatchel(productSlug: string): { ok: boolean; reason?: string } {
+  const current = satchelItems.get();
+  const existing = current.find((entry) => entry.productSlug === productSlug);
+  if (!existing) {
+    return { ok: false, reason: 'Item is not in the satchel.' };
+  }
+
+  const stockStatus = existing.stockStatus ?? 'available';
+  const check = canAddToSatchel(stockStatus, existing.quantity, 1);
+  if (!check.ok) {
+    return { ok: false, reason: check.reason };
+  }
+
+  satchelItems.set(
+    current.map((entry) =>
+      entry.productSlug === productSlug
+        ? { ...entry, quantity: entry.quantity + 1 }
+        : entry,
+    ),
+  );
+  return { ok: true };
+}
+
+/** Drop an existing item by one; remove the row entirely when it reaches zero. */
+export function decrementSatchel(productSlug: string): void {
+  const current = satchelItems.get();
+  const existing = current.find((entry) => entry.productSlug === productSlug);
+  if (!existing) {
+    return;
+  }
+
+  if (existing.quantity <= 1) {
+    removeFromSatchel(productSlug);
+    return;
+  }
+
+  satchelItems.set(
+    current.map((entry) =>
+      entry.productSlug === productSlug
+        ? { ...entry, quantity: entry.quantity - 1 }
+        : entry,
+    ),
+  );
+}
+
 export function clearSatchel(): void {
   satchelItems.set([]);
 }
 
 export function satchelTotal(items: SatchelItem[]): number {
   return items.reduce((sum, item) => sum + item.priceRupees * item.quantity, 0);
+}
+
+/** Total number of individual supplies (sum of quantities). */
+export function satchelCount(items: SatchelItem[]): number {
+  return items.reduce((sum, item) => sum + item.quantity, 0);
 }

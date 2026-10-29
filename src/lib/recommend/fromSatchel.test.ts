@@ -85,8 +85,14 @@ const outfits: Outfit[] = [
   {
     slug: 'hebra-cold-kit',
     name: 'Hebra Cold Kit',
+    items: [
+      { sourceId: 170, reason: 'Warm food', quantity: 1 },
+      { sourceId: 180, reason: 'Cold ridge', quantity: 1 },
+    ],
     sourceIds: [170, 180],
+    objective: 'Enter the mountains prepared.',
     merchantNote: 'Cold kit',
+    regionSlug: 'hebra',
   },
 ];
 

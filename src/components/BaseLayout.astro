@@ -1,6 +1,6 @@
 ---
 import SiteNav from './SiteNav.astro';
-import { SITE_DISCLAIMER, SITE_NAME } from '@/config/site';
+import { PROJECT_LABEL, SITE_DISCLAIMER, SITE_NAME } from '@/config/site';
 import '../styles/global.css';
 
 interface Props {
@@ -10,26 +10,49 @@ interface Props {
 
 const { title, description } = Astro.props;
 const pageTitle = title ? `${title} · ${SITE_NAME}` : SITE_NAME;
+
+const footerLinks = [
+  { href: '/shop', label: 'Shop' },
+  { href: '/regions', label: 'Regions' },
+  { href: '/guide', label: 'Field Manual' },
+  { href: '/brew', label: 'Brew' },
+  { href: '/satchel', label: 'My Satchel' },
+  { href: '/merchant', label: 'The Merchant' },
+];
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="64x64" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description ?? SITE_DISCLAIMER} />
     <title>{pageTitle}</title>
   </head>
   <body>
     <SiteNav />
-    <main class="site-main">
+    <main id="main-content" class="site-main" tabindex="-1">
       <slot />
     </main>
     <footer class="site-footer">
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          {
+            footerLinks.map((link) => (
+              <li>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
       <p>{SITE_DISCLAIMER}</p>
+      <p class="muted">A {PROJECT_LABEL} portfolio project.</p>
     </footer>
   </body>
 </html>

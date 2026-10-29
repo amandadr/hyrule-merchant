@@ -11,7 +11,13 @@ const { entry, href } = Astro.props;
 
 <li class="entry-card">
   <a href={href}>
-    <img src={entry.image} alt="" width="80" height="80" loading="lazy" />
+    <img
+      src={entry.image}
+      alt={titleCaseName(entry.name)}
+      width="80"
+      height="80"
+      loading="lazy"
+    />
     <strong>{titleCaseName(entry.name)}</strong>
     <div class="muted"><span class="badge">{entry.category}</span></div>
   </a>

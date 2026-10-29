@@ -1,5 +1,5 @@
 import type { ComponentChildren } from 'preact';
-import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useStore } from '@nanostores/preact';
 import { addToSatchel, satchelItems } from '@/stores/satchel';
 import {
@@ -69,9 +69,11 @@ function titleCase(name: string): string {
 function LocationLinks({
   locations,
   regions,
+  linkRegions = true,
 }: {
   locations: string[];
   regions: Region[];
+  linkRegions?: boolean;
 }) {
   const shown = locations.slice(0, 3);
   if (shown.length === 0) {
@@ -85,7 +87,11 @@ function LocationLinks({
         return (
           <span key={`${location}-${index}`}>
             {index > 0 ? ', ' : ''}
-            {slug ? <a href={`/regions/${slug}`}>{location}</a> : location}
+            {slug && linkRegions ? (
+              <a href={`/regions/${slug}`}>{location}</a>
+            ) : (
+              location
+            )}
           </span>
         );
       })}
@@ -114,17 +120,30 @@ function IngredientRow({
   disabled?: boolean;
   asButton?: boolean;
 }) {
+  const linkRegions = !asButton;
+
   const body = (
     <>
       {image ? (
-        <img class="brew-thumb" src={image} alt="" width="72" height="72" loading="lazy" />
+        <img
+          class="brew-thumb"
+          src={image}
+          alt={title}
+          width="72"
+          height="72"
+          loading="lazy"
+        />
       ) : (
         <span class="brew-thumb brew-thumb-placeholder badge">?</span>
       )}
       <div class="brew-row-body">
         <strong>{title}</strong>
         {meta ? <div class="brew-meta">{meta}</div> : null}
-        <LocationLinks locations={locations} regions={regions} />
+        <LocationLinks
+          locations={locations}
+          regions={regions}
+          linkRegions={linkRegions}
+        />
       </div>
       {actionLabel ? <span class="brew-row-action muted">{actionLabel}</span> : null}
     </>
@@ -184,13 +203,22 @@ export default function BrewBench({
       }
     }
 
-    // Recipe guide stays closed on load; open only when the hash changes
-    // (e.g. daily challenge "Open …" link) or the user picks a cookbook recipe.
+    // Open the recipe guide when arriving via a recipe deep link (e.g. a
+    // "Head to the brew bench →" suggestion or the daily-challenge link), and
+    // whenever the hash changes afterwards.
+    syncHash();
     window.addEventListener('hashchange', syncHash);
     return () => window.removeEventListener('hashchange', syncHash);
   }, [recipes]);
 
+  // Skip the very first run so we don't rewrite (and strip the hash from) an
+  // incoming deep link before the effect above has read it.
+  const didSyncUrl = useRef(false);
   useEffect(() => {
+    if (!didSyncUrl.current) {
+      didSyncUrl.current = true;
+      return;
+    }
     const params = new URLSearchParams(window.location.search);
     params.set('group', group);
     if (satchelOnly) params.set('satchel', '1');
@@ -391,7 +419,7 @@ export default function BrewBench({
         <div class="stack">
           <div class="brew-tray">
             <div class="brew-tray-header">
-              <h2 style={{ margin: 0 }}>Pot · {selected.length} of 5</h2>
+              <h2 class="margin-0">Pot · {selected.length} of 5</h2>
               <button
                 type="button"
                 onClick={clearPot}
@@ -401,7 +429,7 @@ export default function BrewBench({
               </button>
             </div>
             {selected.length === 0 ? (
-              <p class="muted" style={{ margin: 0 }}>
+              <p class="muted margin-0">
                 Add ingredients below, or pick a named recipe and fill the pot.
               </p>
             ) : (
@@ -436,7 +464,7 @@ export default function BrewBench({
             )}
             {missingFromSatchel.length > 0 && selected.length > 0 ? (
               <div class="brew-buy-pot stack">
-                <p class="muted" style={{ margin: 0 }}>
+                <p class="muted margin-0">
                   Not in your satchel:{' '}
                   {missingFromSatchel
                     .map((item) => titleCase(item.name))
@@ -448,14 +476,14 @@ export default function BrewBench({
                     Buy pot · {buyPotCost} rupees
                   </button>
                 ) : (
-                  <p class="muted" style={{ margin: 0 }}>
+                  <p class="muted margin-0">
                     These aren’t sold from the cart — gather them in the field
                     or open the{' '}
-                    <a href="/guide/materials">field guide</a>.
+                    <a href="/guide/materials">field manual</a>.
                   </p>
                 )}
                 {unsellableMissing.length > 0 && buyableMissing.length > 0 ? (
-                  <p class="muted" style={{ margin: 0 }}>
+                  <p class="muted margin-0">
                     Can’t buy:{' '}
                     {unsellableMissing
                       .map((item) => titleCase(item.name))
@@ -464,39 +492,36 @@ export default function BrewBench({
                   </p>
                 ) : null}
                 {buyMessage ? (
-                  <p class="notice" style={{ margin: 0 }}>
+                  <p class="notice margin-0">
                     {buyMessage}
                   </p>
                 ) : null}
               </div>
             ) : selected.length > 0 ? (
-              <p class="muted" style={{ margin: 0 }}>
+              <p class="muted margin-0">
                 All pot ingredients are in your satchel.
               </p>
             ) : null}
           </div>
 
           <div class="filter-panel brew-filters">
-            <div class="filter-actions" style={{ gap: '0.35rem' }}>
+            <div class="filter-actions filter-actions-tight">
               {GROUPS.map((item) => (
                 <button
                   key={item.id}
                   type="button"
                   aria-pressed={group === item.id}
                   onClick={() => setGroup(item.id)}
-                  style={
-                    group === item.id
-                      ? { borderColor: 'var(--color-fg)', fontWeight: 700 }
-                      : undefined
-                  }
                 >
                   {item.label}
                 </button>
               ))}
             </div>
-            <label>
+            <label for="brew-search">
               <span class="muted">Search in {GROUPS.find((g) => g.id === group)?.label}</span>
               <input
+                id="brew-search"
+                name="brew-search"
                 type="search"
                 value={query}
                 placeholder="Name or effect"
@@ -505,9 +530,11 @@ export default function BrewBench({
                 }
               />
             </label>
-            <label>
+            <label for="brew-location">
               <span class="muted">Found near</span>
               <select
+                id="brew-location"
+                name="brew-location"
                 value={location}
                 onChange={(event) =>
                   setLocation((event.target as HTMLSelectElement).value)
@@ -572,15 +599,15 @@ export default function BrewBench({
 
         <div class="stack">
           <section class="stack">
-            <h2 style={{ margin: 0 }}>Cook result</h2>
+            <h2 class="margin-0">Cook result</h2>
             {result == null ? (
-              <p class="notice muted" style={{ margin: 0 }}>
+              <p class="notice muted margin-0">
                 Nothing in the pot yet — add ingredients to cook. Opening a
                 recipe only shows its guide until you fill the pot.
               </p>
             ) : (
               <div class="notice stack">
-                <p style={{ margin: 0 }}>
+                <p class="margin-0">
                   <strong>
                     {result.ok
                       ? result.matchedRecipe?.name ??
@@ -597,9 +624,9 @@ export default function BrewBench({
                   durationBand={result.durationBand}
                   heartsEstimate={result.heartsEstimate}
                 />
-                <p style={{ margin: 0 }}>{result.merchantNote}</p>
+                <p class="margin-0">{result.merchantNote}</p>
                 {result.failureReason ? (
-                  <p class="muted" style={{ margin: 0 }}>
+                  <p class="muted margin-0">
                     Reason: {result.failureReason}
                   </p>
                 ) : null}
@@ -619,7 +646,7 @@ export default function BrewBench({
               id={activeRecipe.slug}
             >
               <div class="brew-tray-header">
-                <h2 style={{ margin: 0 }}>Recipe guide</h2>
+                <h2 class="margin-0">Recipe guide</h2>
                 <button type="button" onClick={clearRecipe}>
                   Close
                 </button>
@@ -628,14 +655,14 @@ export default function BrewBench({
                 <img
                   class="brew-recipe-hero"
                   src={activeRecipe.image}
-                  alt=""
+                  alt={activeRecipe.name}
                   width="128"
                   height="128"
                 />
               ) : null}
               <div>
                 <strong>{activeRecipe.name}</strong>
-                <p class="muted" style={{ margin: '0.25rem 0 0' }}>
+                <p class="muted margin-top-tight">
                   {activeRecipe.kind}
                 </p>
               </div>
@@ -644,8 +671,8 @@ export default function BrewBench({
                 strengthBand={activeRecipe.strengthBand}
                 durationBand={activeRecipe.durationBand}
               />
-              <p style={{ margin: 0 }}>{activeRecipe.merchantNote}</p>
-              <h3 style={{ margin: 0 }}>Needed ingredients</h3>
+              <p class="margin-0">{activeRecipe.merchantNote}</p>
+              <h3 class="margin-0">Needed ingredients</h3>
               <ul class="brew-row-list">
                 {resolved.slots.map((slot: ResolvedSlotExample) => (
                   <li key={slot.label}>
@@ -676,15 +703,71 @@ export default function BrewBench({
             </section>
           ) : null}
 
+          <section class="brew-featured-recipes stack">
+            <h2 class="margin-0">Try a named recipe</h2>
+            <p class="muted margin-0">
+              Meals and elixirs Sor keeps taped above the bench. Open a guide,
+              then fill the pot — the full cookbook is below.
+            </p>
+            {(['meal', 'elixir'] as const).map((kind) => {
+              const featured = recipes
+                .filter((recipe) => recipe.kind === kind)
+                .slice(0, 4);
+              if (featured.length === 0) return null;
+              return (
+                <div class="stack" key={kind}>
+                  <h3 class="margin-0">
+                    {kind === 'meal' ? 'Meals' : 'Elixirs'}
+                  </h3>
+                  <ul class="brew-featured-grid">
+                    {featured.map((recipe) => (
+                      <li key={recipe.slug}>
+                        <button
+                          type="button"
+                          class={`brew-row brew-recipe-card${
+                            activeRecipeSlug === recipe.slug ? ' is-active' : ''
+                          }`}
+                          onClick={() => selectRecipe(recipe)}
+                        >
+                          {recipe.image ? (
+                            <img
+                              class="brew-thumb"
+                              src={recipe.image}
+                              alt={recipe.name}
+                              width="72"
+                              height="72"
+                              loading="lazy"
+                            />
+                          ) : (
+                            <span class="brew-thumb brew-thumb-placeholder badge">
+                              ?
+                            </span>
+                          )}
+                          <div class="brew-row-body">
+                            <strong>{recipe.name}</strong>
+                            <div class="brew-meta">
+                              <EffectFamilyChip family={recipe.effectFamily} />
+                            </div>
+                          </div>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+          </section>
+
+          <h2 class="brew-cookbook-heading">Full cookbook</h2>
           <details class="brew-cookbook">
             <summary class="brew-cookbook-summary">
-              <h2 style={{ margin: 0 }}>Cookbook</h2>
-              <span class="muted">{recipes.length}</span>
+              <span>Browse every recipe</span>
+              <span class="muted">{recipes.length} recipes</span>
             </summary>
             <div class="stack brew-cookbook-body">
-              <p class="muted" style={{ margin: 0 }}>
-                Open a recipe for its ingredient guide (does not cook until you
-                fill the pot).
+              <p class="muted margin-0">
+                Every named meal, elixir, and failure. Opening a recipe shows its
+                guide; it does not cook until you fill the pot.
               </p>
               <ul class="brew-row-list">
                 {recipes.map((recipe) => (
@@ -700,7 +783,7 @@ export default function BrewBench({
                         <img
                           class="brew-thumb"
                           src={recipe.image}
-                          alt=""
+                          alt={recipe.name}
                           width="72"
                           height="72"
                           loading="lazy"

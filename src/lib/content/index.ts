@@ -13,6 +13,7 @@ import {
   ProductOverridesFileSchema,
   RawRegionSchema,
   RecipesFileSchema,
+  RegionOverridesFileSchema,
   TreasureSchema,
   type EntryCategory,
   type IngredientTag,
@@ -220,6 +221,18 @@ export function getOutfitBySlug(slug: string): Outfit | undefined {
   return getOutfits().find((outfit) => outfit.slug === slug);
 }
 
+export function getOutfitsForRegion(regionSlug: string): Outfit[] {
+  return getOutfits().filter((outfit) => outfit.regionSlug === regionSlug);
+}
+
+export function getProductBySourceId(sourceId: number): Product | undefined {
+  return getProducts().find((product) => product.sourceId === sourceId);
+}
+
+export function getProductsBySourceId(): Map<number, Product> {
+  return new Map(getProducts().map((product) => [product.sourceId, product]));
+}
+
 export function getCookables(): SourceEntry[] {
   return getAllEntries().filter((entry) => {
     if (entry.category === 'materials') return true;
@@ -262,8 +275,28 @@ export function getRegions(): Region[] {
     );
   }
 
-  regionsCache = regions;
-  return regions;
+  const overridesPath = path.join(OVERRIDES_DIR, 'regions.json');
+  const overrides = RegionOverridesFileSchema.parse(readJson(overridesPath));
+  const overrideBySlug = new Map(
+    overrides.regions.map((override) => [override.slug, override]),
+  );
+
+  regionsCache = regions.map((region) => {
+    const override = overrideBySlug.get(region.slug);
+    if (!override) {
+      return region;
+    }
+    return {
+      ...region,
+      overview: override.overview ?? region.overview,
+      conditions: override.conditions ?? region.conditions,
+      hazards: override.hazards ?? region.hazards,
+      usefulFinds: override.usefulFinds ?? region.usefulFinds,
+      routeNotes: override.routeNotes ?? region.routeNotes,
+      merchantStory: override.merchantStory ?? region.merchantStory,
+    };
+  });
+  return regionsCache;
 }
 
 export function getRegionBySlug(slug: string): Region | undefined {

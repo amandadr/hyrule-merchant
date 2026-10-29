@@ -1,0 +1,139 @@
+{
+  "regions": [
+    {
+      "slug": "great-plateau",
+      "overview": "Until recently, nobody could reach the plateau at all — sheer cliffs and something stranger besides kept it sealed off for longer than anyone could explain. Now that the way's open, half of Hyrule's shrines send people paragliding straight off its edges into the wider world. It's the highest, most isolated stretch of land in the kingdom, holding old ruins, a frozen summit, and more history per square foot than almost anywhere else. I don't sell much for here specifically — you arrive with nothing, and that's rather the point.",
+      "conditions": "Weather changes fast with the elevation. The lower slopes and old Temple of Time ruins stay mild, but Mount Hylia's summit is proper winter — driving snow, thin air, the kind of cold that punishes anyone without real protection. Plan for both extremes in the same afternoon.",
+      "hazards": "Nothing here should overwhelm someone paying attention — a handful of Bokoblins linger near the ruins, more startled than dangerous. The summit itself is the real test: exposure, not enemies. Turn back before your hands stop working properly.",
+      "usefulFinds": "Hyrule herbs and apples grow wild near the old temple grounds, and there's decent fishing in the plateau's small lake if you know where the fish gather. Nothing rare, but everything you need to eat well on your first night out.",
+      "routeNotes": "There's only one reliable way down, and it isn't a road — it's a jump. Once you're equipped to paraglide, follow the ridgeline toward the lowest cliff face and trust the fabric. Everyone remembers that first jump. Most people grin the whole way down.",
+      "merchantStory": "I'd heard about the plateau my whole career and never once managed to reach it — something about the cliffs refused every route I tried. The day the way finally opened, I went up like everyone else did: curious, and completely unprepared for how cold that summit really is. Pip beat me to the top, obviously, and has not stopped mentioning it since."
+    },
+    {
+      "slug": "dueling-peaks",
+      "overview": "If you're only just starting to travel, start here. The Dueling Peaks are the two great stone twins you can see from half of Hyrule, and the road that splits between them is about as forgiving as roads get. Kakariko Village sits tucked in the hills beyond — quiet, walkable, and full of people happy to point a newcomer in the right direction. This is the trip I recommend most: close enough to reach before dark, interesting enough that you'll want to come back.",
+      "conditions": "Mild most of the year. Warm days, cool nights, the odd rain squall rolling off the peaks that passes as quickly as it arrives. No special gear needed — you can make this journey in whatever you'd wear to a market. Bring a light layer for the evening and you'll be comfortable.",
+      "hazards": "Gentle by Hyrule standards, which is exactly why I send new travellers this way. A few Bokoblins camp near the river crossings and along the old road east — avoidable if you're paying attention, manageable if you're not. The real hazard is the river itself after heavy rain. You can make the crossing. I wouldn't make it after dark.",
+      "usefulFinds": "The riverbanks are generous. Hylian shrooms and hearty truffles turn up in the shaded rock hollows, apples hang low along the tree line, and there's fish enough in the pools below the peaks to feed you the whole way. Around Kakariko you'll find fresh produce worth carrying home and a cooking pot you're welcome to use. Take what you'll eat, leave the patch to recover, and you can come back to a full one next season.",
+      "routeNotes": "From the eastern edge of the plateau, follow the main road down and east toward the twin peaks — you genuinely cannot miss them. Keep the river on your right and cross at the marked bridge, not before it. Kakariko is a short climb up into the hills past the crossing. Half a day at a comfortable pace, though I'll admit my 'half a day' tends to include a stop or two for foraging. Ask at the stable before you commit if the weather looks uncertain.",
+      "merchantStory": "This is the road that first made me a merchant, near enough. Someone stood right where you might be standing and asked, 'Do you think I could make it to Kakariko?' They could. They did. And they came back grinning, wanting to know where to go next — which is the whole point, really. Pip loves the peaks because there's a particular tree up near the ridge they insist everyone must see. It is never close. Go anyway."
+    },
+    {
+      "slug": "lanayru",
+      "overview": "Lanayru is where Hyrule turns green and wet — marsh grass, quiet channels, mist that never quite burns off even at midday. It's not a hard journey, but it's a slow one; the ground doesn't want to be walked in a hurry, and honestly, neither do I. Good for travellers who want scenery over speed.",
+      "conditions": "Humid year-round, with rain rolling through often enough that I'd call it a certainty rather than a risk. Footing turns soft and slick along the wetlands. Nothing here demands special clothing, but dry socks are a small luxury you'll be grateful for.",
+      "hazards": "Lizalfos favour the reeds and channels, ambushing from water you didn't think anything could hide in. Electric ones cluster nearer the springs — respect the crackle before you hear it, not after. Keep your metal gear sheathed if a storm builds.",
+      "usefulFinds": "Voltfruit grows wild along the drier hummocks, useful for anyone nervous about the electric wildlife. Fish are plentiful in the channels, and hyrule herbs and blue nightshade turn up more often than you'd expect in the shaded, damp ground.",
+      "routeNotes": "Follow the bridges — Lanayru doesn't reward wading. The main crossings hold even in wet weather; the shortcuts through the marsh do not. Give yourself more time than the map suggests. Everyone underestimates this region once, myself included.",
+      "merchantStory": "I misjudged a crossing here early in my travelling-shop days and lost half a wagon load of dry goods to water that looked ankle-deep and wasn't. Pip found it hilarious. I now check the depth of anything I can't see the bottom of, which is a lesson I apparently needed to learn the expensive way."
+    },
+    {
+      "slug": "hateno",
+      "overview": "Hateno is the gentlest stretch of coastline I send anyone to, and often the first proper village most travellers see. Farmland, orchards, a beach, and a waterfall settlement further up the water that's worth the extra walking. If Kakariko is where people learn to travel, Hateno is where they learn to relax while doing it.",
+      "conditions": "Mild and coastal — sea air, easy temperatures, the occasional squall blowing in off the water that clears fast. Warmer near the beach, cooler and mistier up toward the domain. Pack light; you won't need much here.",
+      "hazards": "About as safe as Hyrule gets, which is exactly why I like it. A few restless creatures patrol the dunes to the southeast — give that stretch a wide, unhurried berth and you'll never have a problem. The waterfall paths near the domain get slick; watch your footing more than your surroundings.",
+      "usefulFinds": "Hateno's farmland means fresh produce nearly year-round — pumpkins, apples, whatever's currently in season from the fields near the village. Up near the domain, the fish practically announce themselves; I've never had a bad meal that far up the water.",
+      "routeNotes": "Easy walking the whole way if you come from the peaks — follow the coast road south and keep the water on your right until the farmland opens up. The domain is a separate detour north from the village; budget a full extra day if you want to see both properly.",
+      "merchantStory": "I keep a permanent soft spot for Hateno because it's the first place that ever let me set up the wagon for more than an afternoon without someone asking what I thought I was doing. Good farmland, good neighbours, no rush. Pip disappeared into the orchard for three days once and came back smelling like apples and refusing to explain."
+    },
+    {
+      "slug": "lake",
+      "overview": "Lake Hylia is Hyrule's biggest piece of still water, and there's a particular kind of traveller who just wants to sit beside it for a while. Ruined structures rise out of the deep water here and there, remnants of something grander than what's left. Bring a reason to be patient and you'll enjoy this stop more than you expect.",
+      "conditions": "Calm in general, though the lake makes its own weather — mist off the water in the morning, sudden squalls in the afternoon. Warmer than the surrounding highlands thanks to all that water holding onto the day's heat.",
+      "hazards": "The water hides more than it shows. Lizalfos and the odd Octorok work the shallows and will happily startle anyone wading without looking first. The old ruins offshore look climbable. Most of them are not, at least not safely.",
+      "usefulFinds": "Fish here are as good as anywhere in Hyrule — hearty bass especially. The grassy banks produce hylian shrooms and, if you're very lucky and very quiet, the occasional silent princess. I leave those where they grow.",
+      "routeNotes": "The lakeside road is easy and well-travelled; stick to it rather than cutting across the shoreline, which is softer and slower than it looks. Lakeside Stable is a sensible place to stop before continuing on toward the wetlands or the plains.",
+      "merchantStory": "I once spent an entire afternoon here doing nothing useful at all — no foraging, no selling, just watching the light change on the water — and called it a scouting trip when anyone asked. Pip did not believe me for a second and has brought it up regularly ever since. Worth it."
+    },
+    {
+      "slug": "central",
+      "overview": "Central Hyrule used to be the heart of the kingdom, and you can still feel the shape of that even now — wide fields, old roads, and the castle itself watching over all of it from a distance no one gets too comfortable closing. This is a region for travellers who've already found their footing elsewhere. Not a first trip.",
+      "conditions": "Open plains, exposed to whatever weather's moving through — clear skies most of the year, but nothing to hide behind if a storm catches you out in the open. Ash drifts in occasionally from the castle's direction. Ignore it and keep walking.",
+      "hazards": "The old sentinels that still patrol the ruins are the reason I don't recommend this region lightly. They are slow, they are visible from a distance, and they are absolutely not worth testing. If you see one moving, you have already seen it too late to be careless.",
+      "usefulFinds": "Wild hyrule herbs and armoranth cover more of the open fields than you'd guess for land this exposed. There's decent foraging near the old farmsteads, half-collapsed but still growing whatever was originally planted there a century back.",
+      "routeNotes": "Stay on the worn roads and give the castle a wide margin no matter how curious you are. The fields are honest, flat, easy walking — the ruins closer to the centre are not, and they're rarely worth the detour they cost you.",
+      "merchantStory": "I underestimated once how seriously a new traveller needed to hear the warning about the old sentinels out here. They came back fine — badly rattled, but fine — and I have never undersold that warning since."
+    },
+    {
+      "slug": "woodland",
+      "overview": "The Great Hyrule Forest is the strangest walk in the kingdom, and I mean that as a compliment. Fog sits permanently over the old growth, and the trees close in tight enough that the ordinary rules of 'just walk toward where you're going' stop applying. Somewhere in the middle of it is Korok Forest, which is exactly as it sounds — full of them.",
+      "conditions": "Cool, damp, and dim under the canopy regardless of the season outside it. The fog thickens the deeper you go. Nothing dangerous about the weather itself, only about how easy it makes losing your sense of direction.",
+      "hazards": "The forest itself is the hazard, not the wildlife — wander off the marked path in the fog and you will find yourself walking in circles that feel like progress. Follow the lit route exactly. It exists for a reason, and that reason is you.",
+      "usefulFinds": "Mushrooms everywhere, more varieties than I bother cataloguing properly. Deep in the older growth there are herbs I genuinely cannot get anywhere else in Hyrule, foraged carefully and in small amounts because the forest doesn't restock on my schedule.",
+      "routeNotes": "Follow the lit path from the forest's edge and do not improvise. It winds more than it needs to, deliberately I suspect, but it always comes out the other side. If the lights ever go dark ahead of you, stop and wait rather than guess.",
+      "merchantStory": "This is Pip's home ground, obviously, and the one place in Hyrule where I am unambiguously the visitor rather than the guide. I've been coming here for years and still can't navigate it without help. Pip finds this endlessly, deeply funny and has never once let me forget it."
+    },
+    {
+      "slug": "ridgeland",
+      "overview": "Hyrule Ridge is open, grassy, and full of horses that answer to nobody — good highland country for anyone who wants to travel with a mount rather than on foot. There's a fairy fountain tucked into the hills that's worth the walk on its own, quite apart from anything practical it offers.",
+      "conditions": "Comfortable and breezy most of the year, cooler once the elevation climbs. Grass stays green even when the lowlands are dry. Bring a layer for the evening wind, nothing heavier.",
+      "hazards": "A handful of monster camps scatter the lower ridge, more of a nuisance than a genuine threat if you keep your distance and pick your route with any care. Wild horses aren't a hazard exactly, but a startled herd will absolutely change your afternoon's plans.",
+      "usefulFinds": "Swift carrots and safflina both grow well up here, along with plenty of ordinary hyrule herbs. If you're after a horse, this is one of the better places in Hyrule to find and tame a good one — patience matters more than skill.",
+      "routeNotes": "Follow the ridge road rather than cutting across open grass — it's gentler on the legs and keeps you near the fairy fountain if you decide, as most people eventually do, that you want to stop there.",
+      "merchantStory": "I spent a small fortune at that fountain once having my gear looked over, and Pip has never once let me forget the bill. Worth every rupee. I will not be taking further questions on the subject."
+    },
+    {
+      "slug": "gerudo",
+      "overview": "The Gerudo highlands are rock and wind more than anything else — high, dry, exposed country that punishes anyone moving through it carelessly. Lightning finds the high ground here more often than seems fair. It's a serious region, not a scenic one, though it has its moments.",
+      "conditions": "Dry and cold at elevation, hot lower down near the desert border. Storms build fast over the highlands and bring lightning that behaves like it's looking for something metal to hit. Watch the sky more than you watch the trail.",
+      "hazards": "Lightning is the real danger — strip anything metal off your back the moment a storm starts building, weapon, shield, all of it. There's an icy patch on the higher ground too, unexpectedly slick underfoot. Respect both and you'll be fine.",
+      "usefulFinds": "Rugged herbs that don't mind the wind, and enough voltfruit scattered through the rocks to keep the lightning risk manageable if you're carrying any at all. Not a rich foraging region, but a dependable one.",
+      "routeNotes": "Move through in clear weather if you can choose your timing at all — check the sky at the last stable before committing. Once a storm starts building over the highlands, the sensible move is to wait it out, not push through.",
+      "merchantStory": "I got caught in a lightning storm out here early on, fully armed, and learned exactly why the old warnings exist in about four very loud seconds. Nothing worse than a scare and a ringing pair of ears, but I've told that story to every apprentice traveller since. Take the sky seriously."
+    },
+    {
+      "slug": "faron",
+      "overview": "Faron is Hyrule at its most overgrown — thick jungle greenery, waterfalls, and a coastline that turns into an actual fishing village if you follow it far enough. It's humid, it's lush, and it grows things nowhere else in the kingdom bothers with. My favourite region to restock in, if I'm honest.",
+      "conditions": "Warm and wet, close to tropical by Hyrule standards. Rain is frequent and doesn't linger long enough to be a real obstacle, just enough to keep everything green. Light clothing, and don't bother trying to stay dry.",
+      "hazards": "The jungle hides more monster camps than the open regions do, simply because there's more cover to hide them in. There's also a certain clan of masked bandits who've made a habit of impersonating harmless travellers along the deeper valley roads — if a stranger's banana cart seems too convenient, it probably is.",
+      "usefulFinds": "This is where the good tropical fruit comes from — bananas, mighty bananas, voltfruit, more variety than anywhere else I forage. The coastal village further south sells fish I can't get fresh anywhere inland.",
+      "routeNotes": "Follow the river valleys rather than cutting through the densest greenery — slower, but you'll actually arrive with your supplies intact. The coast road to the fishing village is easy walking once you're through the jungle proper.",
+      "merchantStory": "I've been offered 'cheap' bananas by a few too many suspiciously cheerful strangers out here to ever buy from anyone I haven't met twice. Pip thinks this is the funniest possible thing to watch me get suspicious about and now narrates it every single time."
+    },
+    {
+      "slug": "akkala",
+      "overview": "Akkala is Hyrule's quiet, rugged edge — forested highlands, old ruins tucked into the hills, and a town that exists purely because one stubborn builder refused to stop building it. Fewer travellers come this far, which suits the region and, honestly, suits me too on a slow week.",
+      "conditions": "Cool and often foggy, sheltered from the worst weather by the highlands around it. Rain lingers longer here than in the open plains. Bring something warm for the evenings regardless of season.",
+      "hazards": "Remote enough that help is farther away than in most regions, so travel a little more carefully than you would elsewhere. Monster camps are scattered but manageable; the real risk is being under-supplied somewhere this far from a stable.",
+      "usefulFinds": "Good forest foraging — mushrooms, herbs, the occasional rare find in the old ruins that I'd rather document than sell. The growing town nearby is worth a visit purely to see what gets built there next.",
+      "routeNotes": "The roads in are longer than they look on a map, and less travelled, which means less traffic but also less help if something goes wrong. Carry more than you think you'll need. I always do, whatever Pip says about my pack weight.",
+      "merchantStory": "I watched that little settlement grow from a single stubborn foundation to an actual town over several seasons of passing through, and it's one of my favourite things to witness slowly. Every trip out here, something's new. Pip insists on inspecting every building personally before approving of it."
+    },
+    {
+      "slug": "hebra",
+      "overview": "Hebra is Hyrule's proper winter — real mountains, real snow, real cold that doesn't forgive poor preparation. Beautiful in the way that dangerous things often are. I don't send anyone up here without a serious conversation first.",
+      "conditions": "Genuinely cold, not the pretend kind. Blizzards roll through with little warning and visibility can drop to almost nothing. Cold resistance gear or food is not optional here — it's the whole difference between a good trip and a bad one.",
+      "hazards": "The cold itself is the main hazard, full stop. Beyond that, ice-slick footing near the peaks and a few hardy creatures who like the weather far more than any sensible traveller should. Frostbite is a slower, quieter danger than any monster up here.",
+      "usefulFinds": "Cold-hardy plants that don't grow anywhere warmer, and a particular kind of quiet that's worth the trip on its own if the weather's behaving. Practical foraging is limited — this is a region you pass through prepared, not one you live off of.",
+      "routeNotes": "Do not attempt this without cold resistance sorted first — elixir, warm clothing, or ideally both. Check conditions at the nearest stable before committing, and turn back the moment visibility drops. No destination up here is worth losing the trail over.",
+      "merchantStory": "I once underestimated how fast the weather turns up here and spent a genuinely uncomfortable night learning why every Hebra-bound traveller gets the long safety lecture from me now. Pip, being Pip, thought the whole ordeal was a marvellous adventure and still brings it up fondly."
+    },
+    {
+      "slug": "wasteland",
+      "overview": "The wasteland is heat, sand, and a horizon that never seems to get any closer. Gerudo Town rises out of the middle of it like proof that people can build anywhere given enough stubbornness, and the oasis market nearer the edge is worth the detour on its own.",
+      "conditions": "Brutally hot by day, surprisingly cold by night — pack for both, not just the one you notice first. Sandstorms roll in without much warning and cut visibility to almost nothing while they last.",
+      "hazards": "Something enormous moves under the sand in the deeper dunes, and I'd rather you heard that from me than found out the hard way. Sandstorms disorient fast — if one catches you, stop moving rather than guess at a direction. And keep an eye on anyone selling suspiciously cheap goods out here; not every traveller is who they look like.",
+      "usefulFinds": "Voltfruit and hydromelon both grow near the oasis, exactly the kind of thing you want on hand for the heat. The town market itself is worth browsing regardless of what you came here for.",
+      "routeNotes": "Travel the marked routes between oases rather than cutting across open dune — it's slower to look at on a map and considerably faster in practice, since you won't be fighting the sand the whole way. Time your crossing for early morning if you can.",
+      "merchantStory": "I still haven't decided if the thing that moved under the sand near me once was real or my imagination working overtime, and I have made a point of never finding out for certain. Some questions are better left unanswered. Pip wanted to dig for it. I said absolutely not."
+    },
+    {
+      "slug": "tabantha",
+      "overview": "Tabantha is Hyrule's windiest stretch, wide open frontier leading up toward a village built into the sky itself. If you've ever wanted to feel a good updraft catch your paraglider properly, this is the region that does it best.",
+      "conditions": "Breezy to genuinely windy most of the year, cooler as you head north toward the snow line. The wind is more feature than hazard here — respect it and it'll actually help you get where you're going.",
+      "hazards": "Nothing especially dangerous in the open frontier itself, though the terrain gets rougher and colder heading north. The wind can knock an unprepared traveller off balance on the higher ridges — nothing serious if you're braced for it.",
+      "usefulFinds": "Courser bee honey and swift carrots both do well in this open country, and the village market further along has fish and produce worth the walk regardless of what else you're after.",
+      "routeNotes": "Follow the frontier road and use the wind rather than fighting it — good updrafts along the ridges make this one of the easier regions to cover a lot of ground quickly, on foot or otherwise.",
+      "merchantStory": "I lost a hat to this wind exactly once and refuse to buy another one out here on principle. Pip found the hat two valleys over a week later and still brings it back up as evidence that I should simply listen to the weather."
+    },
+    {
+      "slug": "eldin",
+      "overview": "Eldin means the mountain, and the mountain means fire — an active volcano with a city built into its side by people who are, frankly, tougher than I am about heat. Dramatic, dangerous, and one of the more memorable regions to actually see up close.",
+      "conditions": "Hot near the mountain, properly hot the closer you get, with ash in the air and the ground occasionally reminding you it's sitting on top of a volcano. Fire resistance gear or food is essential this close to the peak, not a suggestion.",
+      "hazards": "Loose rockfall, exposed lava flows, and grass that catches fire faster than you'd like near the mountain's base. A few fire-adapted creatures make the slopes their own — treat every open flame near dry grass as a hazard, including your own torch.",
+      "usefulFinds": "Spicy peppers grow well in the warm ground here, along with sunshrooms near anything that stays lit. The mountain city itself trades in goods you genuinely cannot get anywhere else — their spice work alone is worth the trip.",
+      "routeNotes": "Stick to the marked paths up the mountain and sort your heat resistance before you start climbing, not partway through. The lower canyon is manageable without special gear; the upper slopes are not.",
+      "merchantStory": "I traded route notes for a proper taste of local spice on my first real visit up the mountain and have been quietly obsessed ever since — half my pantry's flavour comes from what I learned to appreciate on that one trip. Pip refuses to eat anything that spicy and makes sure I know it every single time."
+    }
+  ]
+}

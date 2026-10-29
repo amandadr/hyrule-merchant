@@ -1,7 +1,18 @@
 ---
 import BaseLayout from '@/components/BaseLayout.astro';
-import { getRegionBySlug, getRegions } from '@/lib/content';
+import JourneyPackCard from '@/components/journey/JourneyPackCard';
+import {
+  getAllEntries,
+  getOutfitsForRegion,
+  getProductBySourceId,
+  getProductsBySourceId,
+  getRegionBySlug,
+  getRegions,
+} from '@/lib/content';
+import { regionSlugForLocation } from '@/lib/brew/regions';
+import { resolveJourneyPack, toPackCardPayload } from '@/lib/journey/packs';
 import { titleCaseName } from '@/lib/data/normalize';
+import { regionCover } from '@/lib/visuals/covers';
 
 export function getStaticPaths() {
   return getRegions().map((region) => ({
@@ -17,6 +28,7 @@ if (!region) {
 }
 
 const displayName = titleCaseName(region.name);
+const cover = regionCover(region.slug, getAllEntries());
 const editorial = [
   { label: 'Overview', value: region.overview },
   { label: 'Conditions', value: region.conditions },
@@ -25,15 +37,134 @@ const editorial = [
   { label: 'Route notes', value: region.routeNotes },
   { label: 'Merchant story', value: region.merchantStory },
 ];
+
+const productsBySourceId = getProductsBySourceId();
+const packs = getOutfitsForRegion(region.slug)
+  .map((outfit) => resolveJourneyPack(outfit, productsBySourceId))
+  .filter((pack) => pack.items.length > 0)
+  .map(toPackCardPayload);
+
+const allRegions = getRegions();
+const nearbyFinds = getAllEntries()
+  .filter((entry) =>
+    entry.commonLocations.some(
+      (location) => regionSlugForLocation(location, allRegions) === region.slug,
+    ),
+  )
+  .filter((entry) => entry.category === 'materials' || entry.category === 'creatures')
+  .slice(0, 6)
+  .map((entry) => {
+    const product = getProductBySourceId(entry.sourceId);
+    const sellable =
+      product &&
+      product.stockStatus !== 'not_sold' &&
+      product.stockStatus !== 'guide_only';
+    return {
+      label: titleCaseName(entry.name),
+      image: entry.image,
+      href: sellable
+        ? `/shop/${product.slug}`
+        : `/guide/${entry.category}/${entry.slug}`,
+      note: sellable ? 'Shop' : 'Field Manual',
+    };
+  });
 ---
 
 <BaseLayout title={displayName}>
   <div class="stack">
     <p><a href="/regions">← Regions</a></p>
-    <h1>{displayName}</h1>
+    <header class="subject-hero">
+      {
+        cover ? (
+          <img
+            class="subject-hero-image"
+            src={cover.image}
+            alt={cover.label}
+            width="160"
+            height="160"
+          />
+        ) : null
+      }
+      <div>
+        <h1>{displayName}</h1>
+        {
+          cover ? (
+            <p class="muted cover-caption">Pictured: {cover.label}</p>
+          ) : null
+        }
+      </div>
+    </header>
 
     <section class="stack">
-      <h2>From the API</h2>
+      <h2>Field notes from Sor</h2>
+      <p class="muted">
+        What the merchant can tell you about travelling here.
+      </p>
+      {
+        editorial.map((block) => (
+          <div>
+            <h3>{block.label}</h3>
+            <p class="notice">
+              {block.value || 'Sor hasn’t written these notes up yet.'}
+            </p>
+          </div>
+        ))
+      }
+    </section>
+
+    {
+      packs.length > 0 ? (
+        <section class="stack">
+          <h2>Journey pack</h2>
+          <p class="muted">Sorrel’s recommended supplies for this road:</p>
+          {packs.map((pack) => (
+            <JourneyPackCard client:load pack={pack} />
+          ))}
+        </section>
+      ) : null
+    }
+
+    {
+      nearbyFinds.length > 0 ? (
+        <section class="stack">
+          <h2>Often found near here</h2>
+          <p class="muted">
+            Snapshot locations that map to this road — open the wagon or the
+            manual.
+          </p>
+          <ul class="find-list">
+            {
+              nearbyFinds.map((find) => (
+                <li>
+                  <a href={find.href}>
+                    <img
+                      src={find.image}
+                      alt=""
+                      width="64"
+                      height="64"
+                      loading="lazy"
+                    />
+                    <span>
+                      <strong>{find.label}</strong>
+                      <span class="muted">{find.note}</span>
+                    </span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      ) : null
+    }
+
+    <section class="stack">
+      <h2>Landmarks</h2>
+      <p class="muted">
+        Settlements and shrines from the snapshot.{' '}
+        <a href="/shop">Shop the shelves</a>
+        {' · '}
+        <a href="/guide">Open the Field Manual</a>
+      </p>
       <div>
         <h3>Settlements</h3>
         {
@@ -75,19 +206,6 @@ const editorial = [
             </ul>
           </div>
         )
-      }
-    </section>
-
-    <section class="stack">
-      <h2>Editorial placeholders</h2>
-      <p class="muted">Filled in during later content phases.</p>
-      {
-        editorial.map((block) => (
-          <div>
-            <h3>{block.label}</h3>
-            <p class="notice">{block.value || 'TODO: author this section.'}</p>
-          </div>
-        ))
       }
     </section>
   </div>

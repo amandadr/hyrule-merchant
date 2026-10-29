@@ -1,12 +1,16 @@
 ## Development
 
+This project requires Node >=22.12.0 (see `engines` in `package.json`). An `.nvmrc` pins the major version, so run `nvm use` before dev/build if your shell defaults to an older Node.
+
+`astro` is a project-local dependency, not a global command — a bare `astro …` will fail with `command not found`. Run it through `npm run` (or `npx astro …`), which resolves `node_modules/.bin`.
+
 When starting the dev server, use background mode:
 
 ```
-astro dev --background
+npm run dev:bg
 ```
 
-Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
+Manage the background server with `npm run dev:stop`, `npm run dev:status`, and `npm run dev:logs` (each maps to the matching `astro dev …` subcommand).
 
 ## Documentation
 

@@ -1,11 +1,14 @@
 ---
 import BaseLayout from '@/components/BaseLayout.astro';
 import GuideFilters from '@/components/guide/GuideFilters';
+import { titleCaseName } from '@/lib/data/normalize';
 import {
+  getAllEntries,
   getCategories,
   getEntriesByCategory,
   isEntryCategory,
 } from '@/lib/content';
+import { categoryCover } from '@/lib/visuals/covers';
 import {
   collectEffects,
   collectLocations,
@@ -31,13 +34,38 @@ const showEdible = category === 'creatures';
 const showDrops =
   category === 'creatures' || category === 'monsters' || category === 'treasure';
 const showHeartsSort = category === 'materials' || category === 'creatures';
+const categoryLabel = titleCaseName(category);
+const cover = categoryCover(category, getAllEntries());
 ---
 
-<BaseLayout title={`${category} · Field Guide`}>
+<BaseLayout title={`${categoryLabel} · Field Manual`}>
   <div class="stack">
-    <p><a href="/guide">← Field Guide</a></p>
-    <h1>{category}</h1>
-    <p class="muted">{entries.length} entries from the BotW snapshot.</p>
+    <p><a href="/guide">← Field Manual</a></p>
+    <header class="subject-hero">
+      {
+        cover ? (
+          <img
+            class="subject-hero-image"
+            src={cover.image}
+            alt={cover.label}
+            width="160"
+            height="160"
+          />
+        ) : null
+      }
+      <div>
+        <h1>{categoryLabel}</h1>
+        {
+          cover ? (
+            <p class="muted cover-caption">Pictured: {cover.label}</p>
+          ) : null
+        }
+      </div>
+    </header>
+    <p class="muted">
+      {entries.length} entries. Open any record for wagon handoffs — shop, roads,
+      recipes, and packs.
+    </p>
     <GuideFilters
       client:load
       category={category}
@@ -50,3 +78,4 @@ const showHeartsSort = category === 'materials' || category === 'creatures';
     />
   </div>
 </BaseLayout>
+
